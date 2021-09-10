@@ -1,0 +1,127 @@
+<app-navbar></app-navbar>
+<div class="wrapper">
+  <app-user-profile-level-details></app-user-profile-level-details>
+  <section class="section section-lg user-dashboard-pages">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-12">
+            <ul class="dashboard-side-bar">
+              <li [routerLink]="['/dashboard']"><p><span><img src="assets/img/feather-home.png" class="img-fluid" /></span> Dashboard </p></li>
+              <li [routerLink]="['/settings']"><p><span><img src="assets/img/feather-settings.png" class="img-fluid" /></span> Settings </p></li>
+              <li [routerLink]="['/notifications']"><p><span><img src="assets/img/feather-bell.png" class="img-fluid" /></span> Notifications <span class="no-badge">3</span></p></li> 
+              <li [routerLink]="['/bet-history']"><p><span><img src="assets/img/ionic-ios-list.png" class="img-fluid" /></span> Bet History </p></li> 
+              <li [routerLink]="['/transactions']"><p><span><img src="assets/img/awesome-hand-holding-usd.png" class="img-fluid" /></span> Transactions </p></li> 
+              <li class="dashboard-active" [routerLink]="['/jury']"><p><span><img src="assets/img/awesome-balance-scale-left.png" class="img-fluid" /></span> Jury </p></li> 
+              <li><p><span><img src="assets/img/material-add-shopping-cart.png" class="img-fluid" /></span> Shop </p></li> 
+              <li [routerLink]="['/achievements']"><p><span><img src="assets/img/awesome-first-order.png" class="img-fluid" /></span> Achievements </p></li> 
+              <li><p><span><img src="assets/img/awesome-address-card.png" class="img-fluid" /></span> Your NFTs </p></li> 
+              <li><p><span><img src="assets/img/material-chat_bubble_outline.png" class="img-fluid" /></span> Contact </p></li> 
+              <li class="last-li-logout"><p><span><img src="assets/img/open-account-logout.png" class="img-fluid" /></span> Logout </p></li>              
+            </ul>              
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-12">
+          <div class="dashboard-all-pages-ontent-container">
+            <form class="settings-form">
+              <div class="form-section-header row">
+                <div class="col-lg-9 col-md-9 col-sm-12">
+                  <h3>Jury</h3>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12">
+                  <div class="select-dropdown inner-page-dropdown">
+                    <div class="wrap-drop" id="bet-history-gases">
+                        <span>Showing all</span>
+                        <ul class="drop">
+                            <li><a>Show pending</a></li>
+                            <li><a>Show completed</a></li>
+                            <li><a>Show reclined</a></li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row box-notify jury-notify">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                  <div class="read-notfication-box">
+                    <p class="read-notification"><i class="fa fa-circle" aria-hidden="true"></i></p>
+                    <div class="bet-header-image jury-heading">
+                      <i class="fas fa-pen-nib"></i>
+                    </div>
+                    <div class="bet-history-main">
+                      <p class="notfication-main-data"><span>CINEMA</span> - <span>INTERNATIONAL</span> | <span>First Actor to Die </span></p>
+                      <p class="notfication-main-text"><span class="buy-in-bet-history">Buy In : 1 PENKY</span> | <span class="players-in-bet-history">Players : 8</span> | <span class="ended-on-bet-history">Ended on : 08/22/2021 at 19:22</span></p>
+                    </div>
+                    <div class="bet-history-footer">
+                      <div class="nf-markets-btn">
+                        <p class="details-btn"> Accept </p>
+                        <p class="offer-btn"> Decline </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row box-notify jury-notify">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                  <div class="read-notfication-box">
+                    <p class="read-notification"><i class="fa fa-circle" aria-hidden="true"></i></p>
+                    <div class="bet-header-image jury-heading">
+                      <i class="fas fa-pen-nib"></i>
+                    </div>
+                    <div class="bet-history-main">
+                      <p class="notfication-main-data"><span>SOCCER</span> - <span>Serie A TIM</span> | <span>First to score a goal </span></p>
+                      <p class="notfication-main-text"><span class="buy-in-bet-history">Buy In : 1 PENKY</span> | <span class="players-in-bet-history">Players : 8</span> | <span class="ended-on-bet-history">Ended on : 08/22/2021 at 19:22</span></p>
+                    </div>
+                    <div class="bet-history-footer">
+                      <div class="nf-markets-btn">
+                        <p class="details-btn"> Accept </p>
+                        <p class="offer-btn"> Decline </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row box-notify jury-notify">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                  <div class="read-notfication-box">
+                    <div class="bet-header-image jury-heading">
+                      <i class="fas fa-balance-scale-left"></i>
+                    </div>
+                    <div class="bet-history-main">
+                      <p class="notfication-main-data"><span>RACING</span> - <span>F1 GP</span> | <span>First pilot to smash the car </span></p>
+                      <p class="notfication-main-text"><span class="buy-in-bet-history">Buy In : 1 PENKY</span> | <span class="players-in-bet-history">Players : 50</span> | <span class="ended-on-bet-history">Ended on : 08/22/2021 at 19:22</span></p>
+                    </div>
+                    <div class="bet-history-footer">
+                      <div class="nf-markets-btn">
+                        <p class="details-btn vote-btn"> Vote </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             
+              <div class="row">
+                  <div class="col-lg-4 col-md-4 col-sm-12 text-center"></div>
+                  <div class="col-lg-4 col-md-4 col-sm-12 text-center bets-pagination">
+                      <pagination
+                          class="pagination-danger"
+                          [boundaryLinks]="true"
+                          [totalItems]="45"
+                          [ngModel]="pagination1"
+                          previousText="&lsaquo;"
+                          nextText="&rsaquo;"
+                          firstText="&laquo;"
+                          lastText="&raquo;"
+                        >
+                      </pagination>   
+                  </div>
+                  <div class="col-lg-4 col-md-12 col-sm-12 text-center"></div>
+              </div>
+            </form>
+          </div>                  
+        </div>
+      </div>
+    </div>
+  </section>
+<app-footer></app-footer>
+</div>

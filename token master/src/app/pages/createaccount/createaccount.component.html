@@ -1,0 +1,75 @@
+<app-navbar></app-navbar>
+<div class="wrapper">
+
+  <section class="section section-lg create-account-page">
+    <div class="container">
+      <div class="row row-grid text-center wallet-main">
+        <div class="col-lg-3 col-md-3 col-sm-12"></div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <h3 class="header-title">Complete your user profile</h3>
+          <p class="header-sub-title">Create your account and unlock all the functionalities.</p>
+          <p class="header-sub-title">If this is your first membership, you will be entitled to an exclusive welcome gift.
+Once registered, as a member of Penky.io you will have privileged access to events,limited edition collections and a preview of the launch.</p>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12"></div>
+      </div>   
+      <div class="row row-grid text-center wallet-main">
+        <div class="col-lg-3 col-md-3 col-sm-12"></div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <form [formGroup]="form" (ngSubmit)="onCreateClick()" novalidate>
+                  <div class="input-group form-group">
+                    <input class="form-control" type="text" ngModel formControlName="username" required/>
+                    <label class="form-control-placeholder" for="username"> <i class="fa fa-user" aria-hidden="true"></i> Username*</label>
+                    <span class="error" *ngIf="(form.get('username')?.dirty || form.get('username')?.touched) && form.get('username')?.invalid">
+                      Username is Required!
+                    </span>
+                  </div>                  
+                  <div class="input-group form-group">
+                    <input class="form-control" type="email" ngModel formControlName="email" required/>
+                    <label class="form-control-placeholder" for="emailaddress"> <i class="fa fa-envelope" aria-hidden="true"></i> Email Address*</label>
+                  </div>
+                  <div class="input-group form-group">
+                    <input class="form-control" type="email" ngModel formControlName="repeatemail" required/>
+                    <label class="form-control-placeholder" for="emailaddress"> <i class="fa fa-envelope" aria-hidden="true"></i> Repeat Email Address*</label>
+                  </div>
+                  <div class="input-group form-group">
+                    <input class="form-control" type="text" formControlName="referralcode" />
+                    <label class="form-control-placeholder" for="referralcode"> <i class="fa fa-barcode" aria-hidden="true"></i> Referral code</label>
+                  </div>
+                  <div class="input-group form-group">
+                    <input class="form-control" type="text" ngModel formControlName="nationality" />
+                    <label class="form-control-placeholder" for="nationality"> <i class="fa fa-globe" aria-hidden="true"></i> Nationality (IP Based): ITALIAN</label>
+                  </div>
+                  <div class="form-check text-left">
+                    <label class="form-check-label lable-avatar">                      
+                      <img src="assets/img/RandomUser01.png" />
+                      <p>Your avatar <br/> Click the thumbnail to generate new one.</p>
+                    </label>
+                  </div>
+                  <div class="form-check text-left">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" ngModel formControlName="isprivacypolicy" required />
+
+                      <span class="form-check-sign"> </span> Do you want a personalized experience? By clicking here, you will receive communications and promotions in line with your interests and experience on Ray-Ban.com. View the <a href="javascript:void(0)"> Privacy Policy </a> .
+                    </label>
+                  </div>
+                  <div class="form-check text-left">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" ngModel formControlName="personaldata" required />
+
+                      <span class="form-check-sign"> </span> I have read and understood the <a href="javascript:void(0)"> Privacy Policy </a> for the processing of personal data.
+                    </label>
+                  </div>
+
+                  <div class="input-group form-group text-center submit-create">
+                    <input class="btn submit-button" type="submit" value="Create Account" />                   
+                  </div>
+                </form>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12"></div>
+      </div>   
+       
+    </div>  
+  </section>
+<app-footer></app-footer>
+</div>
