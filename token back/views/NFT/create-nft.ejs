@@ -1,0 +1,607 @@
+<%- contentFor('HeaderCss') %>
+
+    <link href="public/assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css" rel="stylesheet" />
+
+    <link href="public/assets/libs/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+    <link href="public/assets/libs/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet"
+        type="text/css">
+    <link href="public/assets/libs/spectrum-colorpicker2/spectrum.min.css" rel="stylesheet" type="text/css">
+    <link href="public/assets/libs/bootstrap-timepicker/css/bootstrap-timepicker.min.css" rel="stylesheet"
+        type="text/css">
+    <link href="public/assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css" rel="stylesheet"
+        type="text/css" />
+    <link rel="stylesheet" href="public/assets/libs/@chenfengyuan/datepicker/datepicker.min.css">
+
+
+    <!-- Plugins css -->
+    <link href="public/assets/libs/dropzone/min/dropzone.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- fancyme tag multiselect -->
+    <link rel="stylesheet" type="text/css" href="/public/fancyme_tag/fancymetags.css" />
+
+    <!-- drag & drop file upload -->
+    <link rel="stylesheet" href="/public/assets/file upload drag & drop/style.css">
+
+    <%- contentFor('breadcrumb') %>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                    <!-- <h4 class="mb-sm-0 font-size-20">Players</h4> -->
+
+                    <div class="page-title-left">
+                        <ol class="breadcrumb m-0">
+                            <li class="breadcrumb-item"><a href="javascript: void(0);">NFT</a></li>
+                            <li class="breadcrumb-item active">Create New</li>
+                        </ol>
+                    </div>
+
+                    <div class="page-title-right">
+                        <ul class="nav" role="tablist">
+                            <!-- <li class="nav-item -->
+                            <a class="btn btn-danger" style="background: transparent; border: none; color: red;"
+                                href="#" role="tab">
+                                Delete
+                            </a>
+                            <!-- </li> -->
+                            <!-- <li class="nav-item"> -->
+                            <a class="nav-link" href="#" role="tab">
+                                Archive
+                            </a>
+                            <!-- </li> -->
+                            <!-- <li class="nav-item"> -->
+                            <!-- <a class="nav-link"  href="#" role="tab">
+                                Send Notification
+                            </a> -->
+                            <!-- </li> -->
+                            <button type="button" class="btn btn-primary waves-effect waves-light">Create New</button>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <%- contentFor('body') %>
+
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <form>
+                                <div class="row mb-4">
+                                    <label for="projectname" class="col-form-label col-lg-2 table-light">title</label>
+                                    <div class="col-lg-12">
+                                        <input id="projectname" name="projectname" type="text" class="form-control"
+                                            placeholder="Enter Project Name...">
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <label for="projectdesc"
+                                        class="col-form-label col-lg-4 table-light">Description</label>
+                                    <div class="col-lg-12">
+                                        <textarea class="form-control" id="projectdesc" rows="6"
+                                            placeholder="Description..."></textarea>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="col-lg-4" style="float: left;">
+                                <div class="drag-area " style="width: 85px; height: 140px; margin-bottom: 5px;"
+                                    id="dragImage1">
+                                    <header id="header1">Add Media</header>
+                                    <button id="button1">Browse File</button>
+                                    <input type="file" id="input1" hidden>
+                                </div>
+                                <a href="#" style="color:red; font-weight: 100; margin-left: 23%;">delete</a>
+                            </div>
+                            <div class="col-lg-4" style="float: left;">
+                                <div class="drag-area" style="width: 85px; height: 140px; margin-bottom: 5px;"
+                                    id="dragImage2">
+                                    <header id="header2">Add Media</header>
+                                    <button id="button2">Browse File</button>
+                                    <input type="file" id="input2" hidden>
+                                </div>
+                                <a href="#" style="color:red; font-weight: 100; margin-left: 23%;">delete</a>
+                            </div>
+                            <div class="col-lg-4" style="float: left;">
+                                <div class="drag-area" style="width: 85px; height: 140px; margin-bottom: 5px;"
+                                    id="dragImage3">
+                                    <header id="header3">Add Media</header>
+                                    <button id="button3">Browse File</button>
+                                    <input type="file" id="input3" hidden>
+                                </div>
+                                <a href="#" style="color:red; font-weight: 100; margin-left: 23%;">delete</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <form>
+                                <div class="row mb-4">
+                                    <label for="projectname" class="col-form-label col-lg-12 table-light">Price</label>
+                                    <div class="col-lg-12">
+                                        <input id="projectname" name="projectname" type="text" class="form-control"
+                                            placeholder="$49">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <form>
+                                <div class="row mb-4">
+                                    <label for="projectname" class="col-form-label col-lg-12 table-light">Inventory -
+                                        (set rarity before)</label>
+                                    <div class="col-lg-12">
+                                        <input id="projectname" name="projectname" type="text" class="form-control"
+                                            style="margin-bottom: 2%;" placeholder="1000 of 1000">&nbsp;<span>value :
+                                            $49,000</span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h6 class="mb-sm-0">Product Status</h6><br>
+                                    <input type="number" value="02" class="form-control ">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h6 class="mb-sm-0">Product Status</h6><br>
+                                    <input type="number" value="02" class="form-control "><br>
+                                </div>
+                                <a href="#">Create New One</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h6 class="mb-sm-0">Product Status</h6><br>
+                                    <input type="number" value="02" class="form-control"><br>
+                                </div>
+                                <p>Max Pack Quantity: 1,000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h6 class="mb-sm-0">Product Status</h6><br>
+                                    <input type="number" value="02" class="form-control"><br>
+                                </div>
+                                <a href="#">Create New One</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div id="tagfield">
+
+                                    </div>
+                                    <!-- <h6 class="mb-sm-0">Multiple Select</h6><br>               
+                        <input type="text" id="tagfield" class="form-control" placeholder="Tag Separated By Comma"><br>
+                        <button type="button" class="btn btn-primary waves-effect waves-light">Add</button> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-lg-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table align-middle table-nowrap table-check">
+                                    <h5 class="mb-sm-0">Sales</h5><br>
+
+                                    <p style="margin-bottom: 3px;">Sold : 10 Packs of 1,000</p>
+                                    <p style="margin-bottom: 3px;">Earning : $450 (equal to 12.151 PENKY)</p>
+                                    <p style="margin-bottom: 15px;">Last Sale : 12 min ago</p>
+
+                                    <thead class="table-light">
+
+                                    </thead>
+                                    <tbody>
+                                        <tr class="table-light">
+                                            <td><img src="public/assets/images/users/avatar-7.jpg"
+                                                    class="avatar-sm rounded-circle" style="margin: auto;"
+                                                    alt="img" />&nbsp<span>Mason</span></td>
+                                            <td style=" padding-left: 50px;">
+                                                <img src="public/assets/images/users/avatar-1.jpg" alt=""
+                                                    class="rounded avatar-sm">
+                                                <img src="public/assets/images/users/avatar-2.jpg" alt=""
+                                                    class="rounded avatar-sm">
+                                                <img src="public/assets/images/users/avatar-3.jpg" alt=""
+                                                    class="rounded avatar-sm">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="public/assets/images/users/avatar-7.jpg"
+                                                    class="avatar-sm rounded-circle" alt="img" />&nbsp Michal</td>
+                                            <td style=" padding-left: 50px;">
+                                                <img src="public/assets/images/users/avatar-4.jpg" alt=""
+                                                    class="rounded avatar-sm">
+                                                <img src="public/assets/images/users/avatar-5.jpg" alt=""
+                                                    class="rounded avatar-sm">
+                                                <img src="public/assets/images/users/avatar-6.jpg" alt=""
+                                                    class="rounded avatar-sm">
+                                            </td>
+                                        </tr>
+                                        <tr class="table-light">
+                                            <td><img src="public/assets/images/users/avatar-7.jpg"
+                                                    class="avatar-sm rounded-circle" alt="img" />&nbsp Michal</td>
+                                            <td style=" padding-left: 50px;">
+                                                <img src="public/assets/images/users/avatar-8.jpg" alt=""
+                                                    class="rounded avatar-sm">
+                                                <img src="public/assets/images/users/avatar-5.jpg" alt=""
+                                                    class="rounded avatar-sm">
+                                                <img src="public/assets/images/users/avatar-4.jpg" alt=""
+                                                    class="rounded avatar-sm">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="public/assets/images/users/avatar-7.jpg"
+                                                    class="avatar-sm rounded-circle" alt="img" />&nbsp Buyer : Mason
+                                            </td>
+                                            <td style=" padding-left: 50px;">
+                                                <img src="public/assets/images/users/avatar-1.jpg" alt=""
+                                                    class="rounded avatar-sm">
+                                                <img src="public/assets/images/users/avatar-2.jpg" alt=""
+                                                    class="rounded avatar-sm">
+                                                <img src="public/assets/images/users/avatar-3.jpg" alt=""
+                                                    class="rounded avatar-sm">
+                                            </td>
+                                        </tr>
+                                        <tr class="table-light">
+                                            <td><img src="public/assets/images/users/avatar-7.jpg"
+                                                    class="avatar-sm rounded-circle" alt="img" />&nbsp Michal</td>
+                                            <td style=" padding-left: 50px;">
+                                                <img src="public/assets/images/users/avatar-4.jpg" alt=""
+                                                    class="rounded avatar-sm">
+                                                <img src="public/assets/images/users/avatar-5.jpg" alt=""
+                                                    class="rounded avatar-sm">
+                                                <img src="public/assets/images/users/avatar-6.jpg" alt=""
+                                                    class="rounded avatar-sm">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="public/assets/images/users/avatar-7.jpg"
+                                                    class="avatar-sm rounded-circle" alt="img" />&nbsp Michal</td>
+                                            <td style=" padding-left: 50px;">
+                                                <img src="public/assets/images/users/avatar-8.jpg" alt=""
+                                                    class="rounded avatar-sm">
+                                                <img src="public/assets/images/users/avatar-5.jpg" alt=""
+                                                    class="rounded avatar-sm">
+                                                <img src="public/assets/images/users/avatar-4.jpg" alt=""
+                                                    class="rounded avatar-sm">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-body" style="margin-left: 0.6%;">
+                            <h5>Nft In This pack (20)</h5>
+                            <div style="float: left; ">
+                                <div class="drag-area" id="dragImage4">
+                                    <header id="header4">Add Media</header>
+                                    <button id="button4">Browse File</button>
+                                    <input type="file" id="input4" hidden>
+                                </div>
+                                <h6 style="text-align: center; padding-top: 5px;">350 to 350</h6>
+                                <a href="" style="color:red; font-weight: 100; margin-left: 25%;">remove</a>
+                            </div>
+                            <div style="float: left; ">
+                                <div class="drag-area" id="dragImage5">
+                                    <header id="header5">Add Media</header>
+                                    <button id="button5">Browse File</button>
+                                    <input type="file" id="input5" hidden>
+                                </div>
+                                <h6 style="text-align: center; padding-top: 5px;">350 to 350</h6>
+                                <a href="" style="color:red; font-weight: 100; margin-left: 25%;">remove</a>
+                            </div>
+                            <div style="float: left; ">
+                                <div class="drag-area" id="dragImage6">
+                                    <header id="header6">Add Media</header>
+                                    <button id="button6">Browse File</button>
+                                    <input type="file" id="input6" hidden>
+                                </div>
+                                <h6 style="text-align: center; padding-top: 5px;">350 to 350</h6>
+                                <a href="" style="color:red; font-weight: 100; margin-left: 25%;">remove</a>
+                            </div>
+                            <div style="float: left;">
+                                <div class="drag-area" id="dragImage7">
+                                    <header id="header7">Add Media</header>
+                                    <button id="button7">Browse File</button>
+                                    <input type="file" id="input7" hidden>
+                                </div>
+                                <h6 style="text-align: center; padding-top: 5px;">350 to 350</h6>
+                                <a href="#" style="color:red; font-weight: 100; margin-left: 25%;">remove</a>
+                            </div>
+                            <div style="float: left;">
+                                <div class="drag-area" id="dragImage8">
+                                    <header id="header8">Add Media</header>
+                                    <button id="button8">Browse File</button>
+                                    <input type="file" id="input8" hidden>
+                                </div>
+                                <h6 style="text-align: center; padding-top: 5px;">350 to 350</h6>
+                                <a href="#" style="color:red; font-weight: 100; margin-left: 25%;">remove</a>
+                            </div>
+                            <div style="float: left; ">
+                                <div class="drag-area" id="dragImage9">
+                                    <header id="header9">Add Media</header>
+                                    <button id="button9">Browse File</button>
+                                    <input type="file" id="input9" hidden>
+                                </div>
+                                <h6 style="text-align: center; padding-top: 5px;">350 to 350</h6>
+                                <a href="#" style="color:red; font-weight: 100; margin-left: 25%;">remove</a>
+                            </div>
+                            <div style="float: left;">
+                                <div class="drag-area" id="dragImage10">
+                                    <header id="header10">Add Media</header>
+                                    <button id="button10">Browse File</button>
+                                    <input type="file" id="input10" hidden>
+                                </div>
+                                <h6 style="text-align: center; padding-top: 5px;">350 to 350</h6>
+                                <a href="#" style="color:red; font-weight: 100; margin-left: 25%;">remove</a>
+                            </div>
+                            <div style="float: left;">
+                                <div class="drag-area" id="dragImage11">
+                                    <header id="header11">Add Media</header>
+                                    <button id="button11">Browse File</button>
+                                    <input type="file" id="input11" hidden>
+                                </div>
+                                <h6 style="text-align: center; padding-top: 5px;">350 to 350</h6>
+                                <a href="#" style="color:red; font-weight: 100; margin-left: 25%;">remove</a>
+                            </div>
+                            <div style="float: left; ">
+                                <div class="drag-area" id="dragImage12">
+                                    <header id="header12">Add Media</header>
+                                    <button id="button12">Browse File</button>
+                                    <input type="file" id="input12" hidden>
+                                </div>
+                                <h6 style="text-align: center; padding-top: 5px;">350 to 350</h6>
+                                <a href="#" style="color:red; font-weight: 100; margin-left: 25%;">remove</a>
+                            </div>
+                            <div style="float: left;">
+                                <div class="drag-area" id="dragImage13">
+                                    <header id="header13">Add Media</header>
+                                    <button id="button13">Browse File</button>
+                                    <input type="file" id="input13" hidden>
+                                </div>
+                                <h6 style="text-align: center; padding-top: 5px;">350 to 350</h6>
+                                <a href="#" style="color:red; font-weight: 100; margin-left: 25%;">remove</a>
+                            </div>
+                        </div>
+                        <div class="card-body" style="margin-left: 0.6%;">
+                            <div style="float: left;">
+                                <div class="drag-area" id="dragImage14">
+                                    <header id="header14">Add Media</header>
+                                    <button id="button14">Browse File</button>
+                                    <input type="file" id="input14" hidden>
+                                </div>
+                                <h6 style="text-align: center; padding-top: 5px;">350 to 350</h6>
+                                <a href="#" style="color:red; font-weight: 100; margin-left: 25%;">remove</a>
+                            </div>
+                            <div style="float: left;">
+                                <div class="drag-area" id="dragImage15">
+                                    <header id="header15">Add Media</header>
+                                    <button id="button15">Browse File</button>
+                                    <input type="file" id="input15" hidden>
+                                </div>
+                                <h6 style="text-align: center; padding-top: 5px;">350 to 350</h6>
+                                <a href="#" style="color:red; font-weight: 100; margin-left: 25%;">remove</a>
+                            </div>
+                            <div style="float: left;">
+                                <div class="drag-area" id="dragImage16">
+                                    <header id="header16">Add Media</header>
+                                    <button id="button16">Browse File</button>
+                                    <input type="file" id="input16" hidden>
+                                </div>
+                                <h6 style="text-align: center; padding-top: 5px;">350 to 350</h6>
+                                <a href="#" style="color:red; font-weight: 100; margin-left: 25%;">remove</a>
+                            </div>
+                            <div style="float: left;">
+                                <div class="drag-area" id="dragImage17">
+                                    <header id="header17">Add Media</header>
+                                    <button id="button17">Browse File</button>
+                                    <input type="file" id="input17" hidden>
+                                </div>
+                                <h6 style="text-align: center; padding-top: 5px;">350 to 350</h6>
+                                <a href="#" style="color:red; font-weight: 100; margin-left: 25%;">remove</a>
+                            </div>
+                            <div style="float: left;">
+                                <div class="drag-area" id="dragImage18">
+                                    <header id="header18">Add Media</header>
+                                    <button id="button18">Browse File</button>
+                                    <input type="file" id="input18" hidden>
+                                </div>
+                                <h6 style="text-align: center; padding-top: 5px;">350 to 350</h6>
+                                <a href="#" style="color:red; font-weight: 100; margin-left: 25%;">remove</a>
+                            </div>
+                            <div style="float: left;">
+                                <div class="drag-area" id="dragImage19">
+                                    <header id="header19">Add Media</header>
+                                    <button id="button19">Browse File</button>
+                                    <input type="file" id="input19" hidden>
+                                </div>
+                                <h6 style="text-align: center; padding-top: 5px;">350 to 350</h6>
+                                <a href="#" style="color:red; font-weight: 100; margin-left: 25%;">remove</a>
+                            </div>
+                            <div style="float: left;">
+                                <div class="drag-area" id="dragImage20">
+                                    <header id="header20">Add Media</header>
+                                    <button id="button20">Browse File</button>
+                                    <input type="file" id="input20" hidden>
+                                </div>
+                                <h6 style="text-align: center; padding-top: 5px;">350 to 350</h6>
+                                <a href="#" style="color:red; font-weight: 100; margin-left: 25%;">remove</a>
+                            </div>
+                            <div style="float: left;">
+                                <div class="drag-area" id="dragImage21">
+                                    <header id="header21">Add Media</header>
+                                    <button id="button21">Browse File</button>
+                                    <input type="file" id="input21" hidden>
+                                </div>
+                                <h6 style="text-align: center; padding-top: 5px;">350 to 350</h6>
+                                <a href="#" style="color:red; font-weight: 100; margin-left: 25%;">remove</a>
+                            </div>
+                            <div style="float: left;">
+                                <div class="drag-area" id="dragImage22">
+                                    <header id="header22">Add Media</header>
+                                    <button id="button22">Browse File</button>
+                                    <input type="file" id="input22" hidden>
+                                </div>
+                                <h6 style="text-align: center; padding-top: 5px;">350 to 350</h6>
+                                <a href="#" style="color:red; font-weight: 100; margin-left: 25%;">remove</a>
+                            </div>
+                            <div style="float: left;">
+                                <div class="drag-area" id="dragImage23">
+                                    <header id="header23">Add Media</header>
+                                    <button id="button23">Browse File</button>
+                                    <input type="file" id="input23" hidden>
+                                </div>
+                                <h6 style="text-align: center; padding-top: 5px;">350 to 350</h6>
+                                <a href="#" style="color:red; font-weight: 100; margin-left: 25%;">remove</a>
+                            </div>
+                        </div>
+                        <hr>
+                        <button type="button" class="btn btn-primary waves-effect waves-light"
+                            style="width: 110px; margin-left: 42%;">Add New Set</button><br>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table align-middle table-nowrap table-check">
+                                    <h5 class="mb-sm-0">Admin History</h5><br>
+                                    <thead class="">
+                                        <tr>
+                                            <th class="align-middle">Action</th>
+                                            <th class="align-middle">date</th>
+                                            <th class="align-middle">Author</th>
+                                            <th class="align-middle">Details</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><img src="public/assets/images/users/avatar-6.jpg" alt=""
+                                                    class="rounded avatar-sm">&nbsp Changed Price</a>
+                                            </td>
+                                            <td>01 Oct, 2019</td>
+                                            <td>
+                                                Gip
+                                            </td>
+                                            <td>
+                                                From 2500 to 1000
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="public/assets/images/users/avatar-6.jpg" alt=""
+                                                    class="rounded avatar-sm">&nbspChanged Price</a>
+                                            </td>
+                                            <td>01 Oct, 2019</td>
+                                            <td>
+                                                Gip
+                                            </td>
+                                            <td>
+                                                From 2500 to 1000
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="public/assets/images/users/avatar-6.jpg" alt=""
+                                                    class="rounded avatar-sm">&nbspChanged Price</a>
+                                            </td>
+                                            <td>01 Oct, 2019</td>
+                                            <td>
+                                                Gip
+                                            </td>
+                                            <td>
+                                                From 2500 to 1000
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <h6 style="text-align: center;">Load More</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <%- contentFor('FooterJs') %>
+
+
+                <!-- fancyme tag multiselect -->
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                    crossorigin="anonymous"></script>
+
+
+                <!-- Bootrstrap touchspin -->
+                <script src="public/assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js"></script>
+
+                <script src="public/assets/js/pages/ecommerce-cart.init.js"></script>
+
+                <script src="public/assets/libs/select2/js/select2.min.js"></script>
+                <script src="public/assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+                <script src="public/assets/libs/spectrum-colorpicker2/spectrum.min.js"></script>
+                <script src="public/assets/libs/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
+                <script src="public/assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js"></script>
+                <script src="public/assets/libs/bootstrap-maxlength/bootstrap-maxlength.min.js"></script>
+                <script src="public/assets/libs/@chenfengyuan/datepicker/datepicker.min.js"></script>
+
+                <!-- form advanced init -->
+                <script src="public/assets/js/pages/form-advanced.init.js"></script>
+
+                <!-- Plugins js -->
+                <script src="public/assets/libs/dropzone/min/dropzone.min.js"></script>
+                <script type="text/javascript" src="/public/fancyme_tag/fancymetags.jQuery.js"></script>
+                <script>
+                    $(function () {
+                        $("#tagfield").fancymetags({ theme: "black" });
+                    });
+                </script>
+
+
+                <!-- drag & drop file upload -->
+                <script src="/public/assets/file upload drag & drop/script.js"></script>
+
+
+                <%- contentFor('BottomJs') %>
