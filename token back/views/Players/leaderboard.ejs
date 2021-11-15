@@ -1,0 +1,445 @@
+<%- contentFor('HeaderCss') %>
+
+<!-- DataTables -->
+<link href="public/assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+<link href="public/assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
+<!-- Responsive datatable examples -->
+<link href="public/assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
+<%- contentFor('breadcrumb') %>
+<!-- start page title -->
+<div class="row">
+    <div class="col-12">
+        <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+            <h4 class="mb-sm-0 font-size-18">Players</h4>
+
+            <div class="page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item"><a href="javascript: void(0);">Players</a></li>
+                    <li class="breadcrumb-item active">Leaderboard</li>
+                </ol>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- end page title -->
+
+<%- contentFor('body') %>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="row mb-2">
+                    <div class="col-sm-2">
+                        <div class="search-box me-2 mb-2 d-inline-block">
+                            <div class="position-relative">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <i class="bx bx-search-alt search-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-10">
+                        <div class="d-sm-flex flex-wrap">
+                            <div class="ms-auto">
+                                <ul class="nav nav-pills">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#">24h</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Week</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Month</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Year</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <br>
+                        
+                        <div class="float-end">
+                            <div class="dropdown">
+                                <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="d-none d-sm-inline-block">More Filter</span></button>
+                                <div class="dropdown-menu dropdown-menu-end dropdown-menu-md">
+        
+                                    <div class="dropdown-item-text">
+                                        <label class="text-muted" >Nationality</label>
+                                        <div class="form-check mb-2">
+                                            <input class="form-check-input" type="radio" name="toast-type-radio" id="toast-type-radio1" value="success" checked>
+                                            <label class="form-check-label" for="toast-type-radio1">
+                                                Success
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-2">
+                                            <input class="form-check-input" type="radio" name="toast-type-radio" id="toast-type-radio1" value="success" checked>
+                                            <label class="form-check-label" for="toast-type-radio1">
+                                                Success
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-2">
+                                            <input class="form-check-input" type="radio" name="toast-type-radio" id="toast-type-radio1" value="success" checked>
+                                            <label class="form-check-label" for="toast-type-radio1">
+                                                Success
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="dropdown-item-text">
+                                        <div class="mt-4">
+                                            <h5 class="font-size-14">Min and max</h5>
+                                            <input type="range" class="form-range" min="0" max="5" id="customRange2">
+                                        </div>
+                                    </div>
+        
+                                    <div class="dropdown-item-text">
+                                        <div>
+                                            <p class="text-muted mb-2">Nationality</p>
+                                            <h5 class="mb-0">$ 9148.23</h5>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="dropdown-divider"></div>
+        
+                                    <a class="dropdown-item" href="#">
+                                        BTC : <span class="float-end">1.02356</span>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        ETH : <span class="float-end">0.04121</span>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        LTC : <span class="float-end">0.00356</span>
+                                    </a>
+        
+                                    <div class="dropdown-divider"></div>
+        
+                                    <a class="dropdown-item text-primary text-center" href="#">
+                                        <button type="button" class="btn btn-success">Apply</button>
+                                        <button type="button" class="btn btn-danger">Clear</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- end col-->
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table align-middle table-nowrap table-check">
+                        <thead class="table-light">
+                            <tr>
+                                <th style="width: 20px;" class="align-middle">
+                                    <div class="form-check font-size-16">
+                                        <input class="form-check-input" type="checkbox" id="checkAll">
+                                        <label class="form-check-label" for="checkAll"></label>
+                                    </div>
+                                </th>
+                                <th class="align-middle">ID</th>
+                                <th class="align-middle">Name</th>
+                                <th class="align-middle">Date</th>
+                                <th class="align-middle">Total</th>
+                                <th class="align-middle">Activity</th>
+                                <th class="align-middle">Payment Method</th>
+                                <th class="align-middle">View Details</th>
+                                <th class="align-middle">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="form-check font-size-16">
+                                        <input class="form-check-input" type="checkbox" id="orderidcheck09">
+                                        <label class="form-check-label" for="orderidcheck09"></label>
+                                    </div>
+                                </td>
+                                <td><a href="javascript: void(0);" class="text-body fw-bold">#SK2548</a> </td>
+                                <td>Benson</td>
+                                <td>
+                                    01 Oct, 2019
+                                </td>
+                                <td>
+                                    $345
+                                </td>
+                                <td>
+                                    <span class="badge badge-pill badge-soft-success font-size-12">Active</span>
+                                </td>
+                                <td>
+                                    <i class="fab fa-cc-visa me-1"></i> Visa
+                                </td>
+                                <td>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary btn-sm btn-rounded" data-bs-toggle="modal" data-bs-target=".orderdetailsModal">
+                                        View Details
+                                    </button>
+                                </td>
+                                <td>
+                                    <div class="d-flex gap-3">
+                                        <a href="javascript:void(0);" class="text-success"><i class="mdi mdi-pencil font-size-18"></i></a>
+                                        <a href="javascript:void(0);" class="text-danger"><i class="mdi mdi-delete font-size-18"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="form-check font-size-16">
+                                        <input class="form-check-input" type="checkbox" id="orderidcheck09">
+                                        <label class="form-check-label" for="orderidcheck09"></label>
+                                    </div>
+                                </td>
+                                <td><a href="javascript: void(0);" class="text-body fw-bold">#SK2548</a> </td>
+                                <td>Benson</td>
+                                <td>
+                                    01 Oct, 2019
+                                </td>
+                                <td>
+                                    $345
+                                </td>
+                                <td>
+                                    <span class="badge badge-pill badge-soft-success font-size-12">Active</span>
+                                </td>
+                                <td>
+                                    <i class="fab fa-cc-visa me-1"></i> Visa
+                                </td>
+                                <td>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary btn-sm btn-rounded" data-bs-toggle="modal" data-bs-target=".orderdetailsModal">
+                                        View Details
+                                    </button>
+                                </td>
+                                <td>
+                                    <div class="d-flex gap-3">
+                                        <a href="javascript:void(0);" class="text-success"><i class="mdi mdi-pencil font-size-18"></i></a>
+                                        <a href="javascript:void(0);" class="text-danger"><i class="mdi mdi-delete font-size-18"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <ul class="pagination pagination-rounded justify-content-end mb-2">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="javascript: void(0);" aria-label="Previous">
+                            <i class="mdi mdi-chevron-left"></i>
+                        </a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="javascript: void(0);">1</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript: void(0);">2</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript: void(0);">3</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript: void(0);">4</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript: void(0);">5</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="javascript: void(0);" aria-label="Next">
+                            <i class="mdi mdi-chevron-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-xl-4 col-sm-12">
+        <div class="card">
+            <div class="card-body">                            
+                <div class="d-sm-flex flex-wrap">
+                    <h4 class="card-title mb-4">Players Ranked By Number Of Bets</h4>
+                    <div class="ms-left">
+                        <ul class="nav nav-pills">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">24h</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Week</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Week</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Week</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row" style="margin-top:40px;">
+                    <div class="col-sm-4 col-sm-12">
+                        <h5>Name</h5>                                    
+                    </div>
+                    <div class="col-sm-4 col-sm-12">
+                        <h5>Bets</h5>                                    
+                    </div>
+                    <div class="col-sm-4 col-sm-12">
+                        <p class="text-muted"><span class="text-success me-2"> 15% <i
+                                    class="mdi mdi-arrow-up"></i> </span> From previous period</p>
+                    </div>
+                </div>                            
+            </div>
+        </div>
+        <div class="card mini-stats-wid">
+            <div class="card-body">
+                <div class="d-flex">
+                    <div class="flex-grow-1">
+                        <p class="text-muted fw-medium">Number of Ranking Poing Gained</p>
+                        <h4 class="mb-0">2%</h4>
+                    </div>
+
+                    <div
+                        class="avatar-sm rounded-circle bg-primary align-self-center mini-stat-icon">
+                        <span class="avatar-title rounded-circle bg-primary">
+                            <i class="bx bx-purchase-tag-alt font-size-24"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-4 col-sm-12">
+        <div class="card">
+            <div class="card-body">                            
+                <div class="d-sm-flex flex-wrap">
+                    <h4 class="card-title mb-4">Players Ranked By Number Of Penky</h4>
+                    <div class="ms-left">
+                        <ul class="nav nav-pills">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">24h</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Week</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Week</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Week</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row" style="margin-top:40px;">
+                    <div class="col-sm-4 col-sm-12">
+                        <h5>Name</h5>                                    
+                    </div>
+                    <div class="col-sm-4 col-sm-12">
+                        <h5>Penky</h5>                                    
+                    </div>
+                    <div class="col-sm-4 col-sm-12">
+                        <p class="text-muted"><span class="text-success me-2"> 15% <i
+                                    class="mdi mdi-arrow-up"></i> </span> From previous period</p>
+                    </div>
+                </div>                            
+            </div>
+        </div>
+        <div class="card mini-stats-wid">
+            <div class="card-body">
+                <div class="d-flex">
+                    <div class="flex-grow-1">
+                        <p class="text-muted fw-medium">Number of Times JackPoint</p>
+                        <h4 class="mb-0">1,385,382</h4>
+                    </div>
+
+                    <div
+                        class="avatar-sm rounded-circle bg-primary align-self-center mini-stat-icon">
+                        <span class="avatar-title rounded-circle bg-primary">
+                            <i class="bx bx-purchase-tag-alt font-size-24"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-4">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title mb-4">Players Rank By Win/Loss Ratio</h4>
+                
+                <div id="pie_chart" class="apex-charts" dir="ltr"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xl-12 col-sm-12">
+        <div class="row">
+            
+            <div class="col-md-6 col-sm-12">
+                <div class="card mini-stats-wid">
+                    <div class="card-body">
+                        <div class="d-flex">
+                            <div class="flex-grow-1">
+                                <p class="text-muted fw-medium">Amount JackPoint Won</p>
+                                <h4 class="mb-0">3</h4>
+                            </div>
+
+                            <div
+                                class="avatar-sm rounded-circle bg-primary align-self-center mini-stat-icon">
+                                <span class="avatar-title rounded-circle bg-primary">
+                                    <i class="bx bx-archive-in font-size-24"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="card mini-stats-wid">
+                    <div class="card-body">
+                        <div class="d-flex">
+                            <div class="flex-grow-1">
+                                <p class="text-muted fw-medium">Players With More NFTs ?</p>
+                                <p class="text-muted fw-medium">NFT OwnerShip (Name)</p>
+                                <h4 class="mb-0">$1,385,382</h4>
+                            </div>
+
+                            <div
+                                class="avatar-sm rounded-circle bg-primary align-self-center mini-stat-icon">
+                                <span class="avatar-title rounded-circle bg-primary">
+                                    <i class="bx bx-purchase-tag-alt font-size-24"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</div>
+
+<%- contentFor('FooterJs') %>
+
+
+<!-- Required datatable js -->
+
+<!-- apexcharts -->
+<script src="/public/assets/libs/apexcharts/apexcharts.min.js"></script>
+
+<!-- apexcharts init -->
+<script src="/public/assets/js/pages/apexcharts.init.js"></script>
+
+
+<script src="public/assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="public/assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+<!-- Buttons examples -->
+<script src="public/assets/libs/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+<script src="public/assets/libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js"></script>
+<script src="public/assets/libs/jszip/jszip.min.js"></script>
+<script src="public/assets/libs/pdfmake/build/pdfmake.min.js"></script>
+<script src="public/assets/libs/pdfmake/build/vfs_fonts.js"></script>
+<script src="public/assets/libs/datatables.net-buttons/js/buttons.html5.min.js"></script>
+<script src="public/assets/libs/datatables.net-buttons/js/buttons.print.min.js"></script>
+<script src="public/assets/libs/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+
+<!-- Responsive examples -->
+<script src="public/assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+<script src="public/assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+
+<!-- Datatable init js -->
+<script src="public/assets/js/pages/datatables.init.js"></script>
+
+<%- contentFor('BottomJs') %>

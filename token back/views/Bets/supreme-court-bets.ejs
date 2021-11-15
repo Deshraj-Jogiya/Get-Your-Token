@@ -1,0 +1,440 @@
+<%- contentFor('HeaderCss') %>
+
+<!-- DataTables -->
+<link href="public/assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+<link href="public/assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
+<!-- Responsive datatable examples -->
+<link href="public/assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
+<%- contentFor('breadcrumb') %>
+<!-- start page title -->
+<div class="row">
+    <div class="col-12">
+        <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+            <h4 class="mb-sm-0 font-size-18">Supreme court bets</h4>
+
+            <div class="page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item"><a href="javascript: void(0);">Bets</a></li>
+                    <li class="breadcrumb-item active">Supreme court bets</li>
+                </ol>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- end page title -->
+
+<%- contentFor('body') %>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <table id="datatable-buttons" class="table table-bordered dt-responsive nowrap w-100">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Category</th>
+                            <th>Occupation</th>
+                            <th>Tags</th>
+                            <th>Buy-in</th>
+                            <th>No. of participants</th>
+                            <th>No. of players</th>
+                            <th>No. of cloned bets</th>
+                            <th>Request</th>
+                            <th>Winner</th>
+                            <th>Disputed time</th>
+                            <th>Actions</th>
+                            <th>Close</th>
+                            <th>Other</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Tiger Nixon</td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td>Tag2, Tag2, Tag3</td>
+                            <td>20</td>
+                            <td>8</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>Niyon</td>
+                            <td>2h</td>
+                            <td>
+                                <i class="fas fa-pen" style="cursor: pointer; color: aqua;" title="Edit info"></i>
+                            </td>
+                            <td>
+                                <button class="btn btn-success btn-rounded waves-effect waves-light">Confirm winner</button>
+                                <button class="btn btn-primary btn-rounded waves-effect waves-light">Change Winner</button>                                
+                                <button class="btn btn-secondary btn-rounded waves-effect waves-light">None</button>
+                                <button class="btn btn-danger btn-rounded waves-effect waves-light">Return to running</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tiger Nixon</td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td>Tag2, Tag2, Tag3</td>
+                            <td>20</td>
+                            <td>8</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>Niyon</td>
+                            <td>2h</td>
+                            <td>
+                                <i class="fas fa-pen" style="cursor: pointer; color: aqua;" title="Edit info"></i>
+                            </td>
+                            <td>
+                                <button class="btn btn-success btn-rounded waves-effect waves-light">Confirm winner</button>
+                                <button class="btn btn-primary btn-rounded waves-effect waves-light">Change Winner</button>                                
+                                <button class="btn btn-secondary btn-rounded waves-effect waves-light">None</button>
+                                <button class="btn btn-danger btn-rounded waves-effect waves-light">Return to running</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tiger Nixon</td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td>Tag2, Tag2, Tag3</td>
+                            <td>20</td>
+                            <td>8</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>Niyon</td>
+                            <td>2h</td>
+                            <td>
+                                <i class="fas fa-pen" style="cursor: pointer; color: aqua;" title="Edit info"></i>
+                            </td>
+                            <td>
+                                <button class="btn btn-success btn-rounded waves-effect waves-light">Confirm winner</button>
+                                <button class="btn btn-primary btn-rounded waves-effect waves-light">Change Winner</button>                                
+                                <button class="btn btn-secondary btn-rounded waves-effect waves-light">None</button>
+                                <button class="btn btn-danger btn-rounded waves-effect waves-light">Return to running</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tiger Nixon</td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td>Tag2, Tag2, Tag3</td>
+                            <td>20</td>
+                            <td>8</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>Niyon</td>
+                            <td>2h</td>
+                            <td>
+                                <i class="fas fa-pen" style="cursor: pointer; color: aqua;" title="Edit info"></i>
+                            </td>
+                            <td>
+                                <button class="btn btn-success btn-rounded waves-effect waves-light">Confirm winner</button>
+                                <button class="btn btn-primary btn-rounded waves-effect waves-light">Change Winner</button>                                
+                                <button class="btn btn-secondary btn-rounded waves-effect waves-light">None</button>
+                                <button class="btn btn-danger btn-rounded waves-effect waves-light">Return to running</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tiger Nixon</td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td>Tag2, Tag2, Tag3</td>
+                            <td>20</td>
+                            <td>8</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>Niyon</td>
+                            <td>2h</td>
+                            <td>
+                                <i class="fas fa-pen" style="cursor: pointer; color: aqua;" title="Edit info"></i>
+                            </td>
+                            <td>
+                                <button class="btn btn-success btn-rounded waves-effect waves-light">Confirm winner</button>
+                                <button class="btn btn-primary btn-rounded waves-effect waves-light">Change Winner</button>                                
+                                <button class="btn btn-secondary btn-rounded waves-effect waves-light">None</button>
+                                <button class="btn btn-danger btn-rounded waves-effect waves-light">Return to running</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tiger Nixon</td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td>Tag2, Tag2, Tag3</td>
+                            <td>20</td>
+                            <td>8</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>Niyon</td>
+                            <td>2h</td>
+                            <td>
+                                <i class="fas fa-pen" style="cursor: pointer; color: aqua;" title="Edit info"></i>
+                            </td>
+                            <td>
+                                <button class="btn btn-success btn-rounded waves-effect waves-light">Confirm winner</button>
+                                <button class="btn btn-primary btn-rounded waves-effect waves-light">Change Winner</button>                                
+                                <button class="btn btn-secondary btn-rounded waves-effect waves-light">None</button>
+                                <button class="btn btn-danger btn-rounded waves-effect waves-light">Return to running</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tiger Nixon</td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td>Tag2, Tag2, Tag3</td>
+                            <td>20</td>
+                            <td>8</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>Niyon</td>
+                            <td>2h</td>
+                            <td>
+                                <i class="fas fa-pen" style="cursor: pointer; color: aqua;" title="Edit info"></i>
+                            </td>
+                            <td>
+                                <button class="btn btn-success btn-rounded waves-effect waves-light">Confirm winner</button>
+                                <button class="btn btn-primary btn-rounded waves-effect waves-light">Change Winner</button>                                
+                                <button class="btn btn-secondary btn-rounded waves-effect waves-light">None</button>
+                                <button class="btn btn-danger btn-rounded waves-effect waves-light">Return to running</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tiger Nixon</td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td>Tag2, Tag2, Tag3</td>
+                            <td>20</td>
+                            <td>8</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>Niyon</td>
+                            <td>2h</td>
+                            <td>
+                                <i class="fas fa-pen" style="cursor: pointer; color: aqua;" title="Edit info"></i>
+                            </td>
+                            <td>
+                                <button class="btn btn-success btn-rounded waves-effect waves-light">Confirm winner</button>
+                                <button class="btn btn-primary btn-rounded waves-effect waves-light">Change Winner</button>                                
+                                <button class="btn btn-secondary btn-rounded waves-effect waves-light">None</button>
+                                <button class="btn btn-danger btn-rounded waves-effect waves-light">Return to running</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tiger Nixon</td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td>Tag2, Tag2, Tag3</td>
+                            <td>20</td>
+                            <td>8</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>Niyon</td>
+                            <td>2h</td>
+                            <td>
+                                <i class="fas fa-pen" style="cursor: pointer; color: aqua;" title="Edit info"></i>
+                            </td>
+                            <td>
+                                <button class="btn btn-success btn-rounded waves-effect waves-light">Confirm winner</button>
+                                <button class="btn btn-primary btn-rounded waves-effect waves-light">Change Winner</button>                                
+                                <button class="btn btn-secondary btn-rounded waves-effect waves-light">None</button>
+                                <button class="btn btn-danger btn-rounded waves-effect waves-light">Return to running</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tiger Nixon</td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td>Tag2, Tag2, Tag3</td>
+                            <td>20</td>
+                            <td>8</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>Niyon</td>
+                            <td>2h</td>
+                            <td>
+                                <i class="fas fa-pen" style="cursor: pointer; color: aqua;" title="Edit info"></i>
+                            </td>
+                            <td>
+                                <button class="btn btn-success btn-rounded waves-effect waves-light">Confirm winner</button>
+                                <button class="btn btn-primary btn-rounded waves-effect waves-light">Change Winner</button>                                
+                                <button class="btn btn-secondary btn-rounded waves-effect waves-light">None</button>
+                                <button class="btn btn-danger btn-rounded waves-effect waves-light">Return to running</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tiger Nixon</td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td>Tag2, Tag2, Tag3</td>
+                            <td>20</td>
+                            <td>8</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>Niyon</td>
+                            <td>2h</td>
+                            <td>
+                                <i class="fas fa-pen" style="cursor: pointer; color: aqua;" title="Edit info"></i>
+                            </td>
+                            <td>
+                                <button class="btn btn-success btn-rounded waves-effect waves-light">Confirm winner</button>
+                                <button class="btn btn-primary btn-rounded waves-effect waves-light">Change Winner</button>                                
+                                <button class="btn btn-secondary btn-rounded waves-effect waves-light">None</button>
+                                <button class="btn btn-danger btn-rounded waves-effect waves-light">Return to running</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tiger Nixon</td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td>Tag2, Tag2, Tag3</td>
+                            <td>20</td>
+                            <td>8</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>Niyon</td>
+                            <td>2h</td>
+                            <td>
+                                <i class="fas fa-pen" style="cursor: pointer; color: aqua;" title="Edit info"></i>
+                            </td>
+                            <td>
+                                <button class="btn btn-success btn-rounded waves-effect waves-light">Confirm winner</button>
+                                <button class="btn btn-primary btn-rounded waves-effect waves-light">Change Winner</button>                                
+                                <button class="btn btn-secondary btn-rounded waves-effect waves-light">None</button>
+                                <button class="btn btn-danger btn-rounded waves-effect waves-light">Return to running</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tiger Nixon</td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td>Tag2, Tag2, Tag3</td>
+                            <td>20</td>
+                            <td>8</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>Niyon</td>
+                            <td>2h</td>
+                            <td>
+                                <i class="fas fa-pen" style="cursor: pointer; color: aqua;" title="Edit info"></i>
+                            </td>
+                            <td>
+                                <button class="btn btn-success btn-rounded waves-effect waves-light">Confirm winner</button>
+                                <button class="btn btn-primary btn-rounded waves-effect waves-light">Change Winner</button>                                
+                                <button class="btn btn-secondary btn-rounded waves-effect waves-light">None</button>
+                                <button class="btn btn-danger btn-rounded waves-effect waves-light">Return to running</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tiger Nixon</td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td>Tag2, Tag2, Tag3</td>
+                            <td>20</td>
+                            <td>8</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>Niyon</td>
+                            <td>2h</td>
+                            <td>
+                                <i class="fas fa-pen" style="cursor: pointer; color: aqua;" title="Edit info"></i>
+                            </td>
+                            <td>
+                                <button class="btn btn-success btn-rounded waves-effect waves-light">Confirm winner</button>
+                                <button class="btn btn-primary btn-rounded waves-effect waves-light">Change Winner</button>                                
+                                <button class="btn btn-secondary btn-rounded waves-effect waves-light">None</button>
+                                <button class="btn btn-danger btn-rounded waves-effect waves-light">Return to running</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tiger Nixon</td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td>Tag2, Tag2, Tag3</td>
+                            <td>20</td>
+                            <td>8</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>Niyon</td>
+                            <td>2h</td>
+                            <td>
+                                <i class="fas fa-pen" style="cursor: pointer; color: aqua;" title="Edit info"></i>
+                            </td>
+                            <td>
+                                <button class="btn btn-success btn-rounded waves-effect waves-light">Confirm winner</button>
+                                <button class="btn btn-primary btn-rounded waves-effect waves-light">Change Winner</button>                                
+                                <button class="btn btn-secondary btn-rounded waves-effect waves-light">None</button>
+                                <button class="btn btn-danger btn-rounded waves-effect waves-light">Return to running</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tiger Nixon</td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td>Tag2, Tag2, Tag3</td>
+                            <td>20</td>
+                            <td>8</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>Niyon</td>
+                            <td>2h</td>
+                            <td>
+                                <i class="fas fa-pen" style="cursor: pointer; color: aqua;" title="Edit info"></i>
+                            </td>
+                            <td>
+                                <button class="btn btn-success btn-rounded waves-effect waves-light">Confirm winner</button>
+                                <button class="btn btn-primary btn-rounded waves-effect waves-light">Change Winner</button>                                
+                                <button class="btn btn-secondary btn-rounded waves-effect waves-light">None</button>
+                                <button class="btn btn-danger btn-rounded waves-effect waves-light">Return to running</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div> <!-- end col -->
+</div> <!-- end row -->
+
+<%- contentFor('FooterJs') %>
+
+<!-- Required datatable js -->
+<script src="public/assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="public/assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+<!-- Buttons examples -->
+<script src="public/assets/libs/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+<script src="public/assets/libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js"></script>
+<script src="public/assets/libs/jszip/jszip.min.js"></script>
+<script src="public/assets/libs/pdfmake/build/pdfmake.min.js"></script>
+<script src="public/assets/libs/pdfmake/build/vfs_fonts.js"></script>
+<script src="public/assets/libs/datatables.net-buttons/js/buttons.html5.min.js"></script>
+<script src="public/assets/libs/datatables.net-buttons/js/buttons.print.min.js"></script>
+<script src="public/assets/libs/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+
+<!-- Responsive examples -->
+<script src="public/assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+<script src="public/assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+
+<!-- fontawesome icons init -->
+<script src="public/assets/js/pages/fontawesome.init.js"></script>
+
+<!-- Datatable init js -->
+<script src="public/assets/js/pages/datatables.init.js"></script>
+
+<%- contentFor('BottomJs') %>
