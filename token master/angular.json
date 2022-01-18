@@ -1,0 +1,150 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "penkyio-fe": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        },
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
+      "root": "",
+      "sourceRoot": "src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/penkyio-fe",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "tsconfig.app.json",
+            "inlineStyleLanguage": "scss",
+            "allowedCommonJsDependencies": [
+              "chart.js",
+              "nouislider",
+              "crypto",
+              "lodash",
+              "hash.js"
+            ],
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.scss",
+              "src/assets/css/nucleo-icons.css",
+              "node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
+              "src/assets/scss/blk-design-system.scss",
+              "src/assets/demo/demo.css"
+            ],
+            "scripts" :["node_modules/jquery/dist/jquery.min.js"]
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "5mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "5mb",
+                  "maximumError": "5mb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "browserTarget": "penkyio-fe:build:production"
+            },
+            "development": {
+              "browserTarget": "penkyio-fe:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "penkyio-fe:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "src/test.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "tsconfig.spec.json",
+            "karmaConfig": "karma.conf.js",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.scss"
+            ],
+            "scripts" :["node_modules/jquery/dist/jquery.min.js"]
+          }
+        }
+      }
+    },
+    "penkyio-fe-e2e": {
+        "root": "e2e/",
+        "projectType": "application",
+        "prefix": "",
+        "architect": {
+          "e2e": {
+            "builder": "@angular-devkit/build-angular:protractor",
+            "options": {
+              "protractorConfig": "e2e/protractor.conf.js",
+              "devServerTarget": "penkyio-fe:serve"
+            },
+            "configurations": {
+              "production": {
+                "devServerTarget": "penkyio-fe:serve:production"
+              }
+            }
+          },
+          "lint": {
+            "builder": "@angular-devkit/build-angular:tslint",
+            "options": {
+              "tsConfig": "e2e/tsconfig.e2e.json",
+              "exclude": [
+                "**/node_modules/**"
+              ]
+            }
+          }
+        }
+    }
+  },
+  "defaultProject": "penkyio-fe"
+}
