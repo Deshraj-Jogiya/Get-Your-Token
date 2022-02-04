@@ -1,0 +1,75 @@
+<section class="section section-lg user-level-user-details">
+    <div class="container">
+      <div class="row user-level-details">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <ul class="left-data-ul">
+            <li class="search-whole">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="fa fa-search"></i>
+                  </span>
+                </div>
+                <input class="form-control" placeholder="Search" type="text">
+              </div>
+            </li>
+            <li class="circle-level">
+              <circle-progress
+                [percent]="85"
+                [radius]="100"
+                [space]="-10"
+                [outerStrokeWidth]="15"
+                [innerStrokeWidth]="13"
+                [backgroundStrokeWidth]="50"
+                [outerStrokeColor]="'#EC5774'"
+                [innerStrokeColor]="'#4b556a'"
+                [animation]="true"
+                [animationDuration]="300"
+                [title]="'Lv.4'"
+                [titleColor]="'#FFF'"
+                [titleFontSize]="'60'"
+                [subtitleColor]="'#483500'"
+                [showSubtitle]="false"
+                [showInnerStroke]="true"
+                [showUnits]="false"
+                [class]="'user-circle-progress'"
+                [backgroundStrokeWidth]="50"
+              ></circle-progress>
+            </li>
+            <li class="circle-level-data">
+              <p class="user-name-level">Harry Callahan</p>
+              <p class="point-user">4335 points</p>
+            </li>
+          </ul>          
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <ul class="right-data-ul">
+            <li class="jackpot-user-data">
+              <p class="jackpot-label">Jackpot:</p>
+              <p class="jackpot-price">1442.18<span class="jackpot-currency">Penky</span></p>
+            </li>
+            <li class="jackpot-user-position">
+              <p class="jackpot-position-label">Position:</p>
+              <p class="jackpot-position-price">42 of 14.750</p>
+            </li>
+            <li class="jackpot-user-time">
+              <p class="jackpot-time-label">Time left:</p>
+              <p class="jackpot-time-price">4d 5h 55m 16s</p>
+            </li>
+          </ul>  
+          <ul class="level-progress-li">
+            <li class="progress-li added-progress-level">level1</li>
+            <li class="progress-li added-progress-level">level1</li>
+            <li class="progress-li added-progress-level">level1</li>
+            <li class="progress-li added-progress-level">level1</li>
+            <li class="progress-li">level1</li>
+            <li class="progress-li">level1</li>
+            <li class="progress-li">level1</li>
+            <li class="progress-li">level1</li>
+            <li class="progress-li">level1</li>
+            <li class="progress-li">level1</li>
+          </ul>          
+        </div>
+      </div>
+    </div>
+</section>

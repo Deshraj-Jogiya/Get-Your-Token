@@ -1,0 +1,45 @@
+<app-navbar></app-navbar>
+<div class="wrapper">
+
+  <section class="section section-lg register-connect-wallet">
+    <div class="container">
+      <div class="row row-grid text-center">
+        <div class="col-lg-12">
+          <h3 class="header-title">Connect your wallet now</h3>
+          <p class="header-sub-title">Connect with one of our available wallet providers or create a new one.</p>
+        </div>
+      </div> 
+      <div class="row row-grid text-center wallet-main">
+        <div class="col-lg-4">
+          <div class="wallet-image-div" (click)="onMetaMaskClick();"> 
+            <img
+              alt="Penky.io"
+              class="img-fluid wallet-image"
+              src="assets/img/metamask.png"
+              (click)="onMetaMaskClick();"
+            />
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="wallet-image-div walletconnect-div">
+            <img
+              alt="Penky.io"
+              class="img-fluid wallet-image walletconnect"
+              src="assets/img/walletconnect.png"
+            />
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="wallet-image-div">
+            <img
+              alt="Penky.io"
+              class="img-fluid wallet-image"
+              src="assets/img/formatic.png"
+            />
+          </div>
+        </div>
+      </div>    
+    </div>  
+  </section>
+<app-footer></app-footer>
+</div>

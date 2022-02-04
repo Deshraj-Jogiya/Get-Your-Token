@@ -1,0 +1,461 @@
+<div class="main-open-bets">
+  <div class="row">
+    <div class="col-lg-12 col-md-12">
+      <div class="bets-categories">
+        <div class="col-lg-9 col-sm-12">
+          <ul class="all-bets-category">
+            <li class="bet-active"><p class="bet-category-name">All</p></li>
+            <li><p class="bet-category-name">Soccer</p></li>
+            <li><p class="bet-category-name">Lifestyle</p></li>
+            <li><p class="bet-category-name">Politics</p></li>
+            <li><p class="bet-category-name">NFL League</p></li>
+            <li><p class="bet-category-name">Racing</p></li>
+            <li><p class="bet-category-name">Music</p></li>
+            <li><p class="bet-category-name">Baseball</p></li>
+            <li><p class="bet-category-name">Fighting</p></li>
+            <li><p class="bet-category-name">Social Media</p></li>
+            <li><p class="bet-category-name">Scandals</p></li>        
+          </ul>
+        </div>
+        <div class="col-lg-3 col-sm-12 bets-search-box">
+          <ul class="search-bets-category">
+            <li class="search-bets">
+              <div class="input-group">
+                <input class="form-control" placeholder="Search" type="text">
+                <div class="input-group-append">
+                  <span class="input-group-text">
+                    <i class="fa fa-search"></i>
+                  </span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+   </div>
+
+   <div class="row filters-row">
+        <div class="col-lg-3 col-sm-12">
+            <div class="select-dropdown">
+              <div class="wrap-drop" id="noble-gases">
+                  <span>Showing All Bets</span>
+                  <ul class="drop">
+                      <li><a>Show Your Bets</a></li>
+                      <li><a>Show 2nd lv. bets</a></li>
+                  </ul>
+              </div>
+            </div>
+        </div>
+        <div class="col-lg-9 col-sm-12">
+          <div class="filters-by-bets">
+            <ul class="filters-data">
+              <li class="main-filter-class filter-mobile"><i class="fa fa-filter" aria-hidden="true"></i> Filters</li>
+              <li class="bet-filter-active"><p class="filter-data"><a href="#">Hot now</a></p></li>
+              <li class="bet-filter-active highest-prize"><p class="filter-data"><a href="#">Highest prizepool</a></p></li>
+              <li><p class="filter-data"><a href="#">10 players</a></p></li>
+              <li><p class="filter-data"><a href="#">20 players</a></p></li>
+              <li><p class="filter-data"><a href="#">50 players</a></p></li>
+              <li><p class="filter-data"><a href="#">Jackpot</a></p></li>
+            </ul>
+          </div>
+        </div>
+   </div>
+
+   <div class="row bets-row">
+        <div class="col-lg-6 col-sm-12 bet-col">
+          <div class="bet-box">
+            <div class="bet-header">
+              <p class="bet-type-category">SOCCER - Italy Serie A TIM</p>
+              <p class="bet-type-name">first player to score a goal</p>
+            </div>
+            <div class="bet-body">
+              <p class="bet-nft">
+                <a href="#"><img src="assets/img/NFT01.png" /></a>
+              </p>
+              <p class="bet-nft">
+                <a href="#"><img src="assets/img/NFT02.png" /></a>
+              </p>
+              <p class="bet-nft">
+                <a href="#"><img src="assets/img/NFT03.png" /></a>
+              </p>
+              <div class="bet-nft bet-nft-selected">                
+                <a href="#" (click)="onNftYouPlayingClick($event)"><img src="assets/img/NFT01.png" /></a>
+                <div class="nft-playing-bet" *ngIf="displayNFT.youPlaying">
+                    <div class="innerdivForMobile">
+                    <p class="close-nft-buy" (click)="onNftYouPlayingClickDelete($event)">X</p>
+                    <div class="left-side-bet-div">
+                      <div class="nft-for-bets-header">
+                        <p>CIRO IMMOBILE</p>
+                      </div>
+                      <div class="nft-for-bets-body single-bet-card-d">
+                        <p class="playing-this-bet">You are playing this bet</p>
+                        <p class="want-to-quit-this-bet">WANT TO QUIT?</p>
+                      </div>
+                      <div class="nft-for-bets-footer">
+                        <div class="nf-markets-btn">
+                          <p class="details-btn"> YES </p>
+                          <p class="offer-btn"> NO </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="right-side-bet-div">
+                      <img src="assets/img/NFTciro.png" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="bet-nft">
+                <a href="#"><img src="assets/img/NFT06.png" /></a>
+              </p>
+              <p class="bet-nft">
+                <a href="#"><img src="assets/img/NFT07.png" /></a>
+              </p>
+              <div class="bet-nft">
+                <a href="#" (click)="onNftClickAdd($event)" *ngIf="!displayNFT.isShowAdd">
+                  <span class="select-nft"><i class="tim-icons icon-simple-add"></i></span>
+                </a>   
+                <a href="#" *ngIf="displayNFT.isShowAdd">
+                  <img src="assets/img/NFT04.png" />
+                </a>             
+                <div class="nft-for-bets" *ngIf="displayNFT.showNFTList">
+                  <div class="innerdivForMobile">
+                    <p class="close-nft-buy" (click)="onNftClickDelete($event)">X</p>
+                    <div class="nft-for-bets-header">
+                      <p>Choose Your NFT</p>
+                    </div>
+                    <div class="nft-for-bets-body">
+                      <ul class="nftslist">
+                        <li (click)="onNftSingleClickAdd($event)">
+                          <img src="assets/img/NFT04.png" />
+                          <p class="nft-name-of-nft">Duvan Zapata</p>
+                        </li>
+                        <li>
+                          <img src="assets/img/Layer-9.png" />
+                          <p class="nft-name-of-nft">Luis Muriel</p>
+                        </li>
+                        <li>
+                          <img src="assets/img/Layer-3.png" />
+                          <p class="nft-name-of-nft">Dusan Vlahovic</p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="or-tag"><span>or</span></div>
+                    <div class="nft-for-bets-footer">
+                      <p class="buy-nft-single"><a href="#">Buy new NFT</a></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="nft-single" *ngIf="displayNFT.showNFT">
+                  <div class="innerdivForMobile">
+                    <p class="close-nft-buy" (click)="onNftSingleClickDelete($event)">X</p>
+                    <div class="nft-for-bets-header">
+                      <p>Confirm bet</p>
+                    </div>
+                    <div class="nft-for-bets-body single-bet-card-d">
+                      <img src="assets/img/nft-6.png" />
+                    </div>
+                    <div class="nft-for-bets-footer">
+                      <div class="nf-markets-btn">
+                        <p class="details-btn" (click)="onNftSingleClickBack($event)"> Back </p>
+                        <p class="offer-btn" (click)="onNftSingleClickBet($event)"> Bet </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>              
+              <p class="bet-nft">
+                <a href="#">
+                  <span class="select-nft"><i class="tim-icons icon-simple-add"></i></span>
+                </a>
+              </p>
+            </div>
+            <div class="bet-footer">
+              <p class="bet-type-buy-in-players">Buy In: <span>1 PENKY ($32)</span> <span class="seperator-penky"> | </span>  Players: <span>6/8 max</span></p>
+              <p class="bet-type-prizepool">Prizepool: <span>6,4 PENKY</span></p>
+            </div>
+          </div>
+          <div class="bet-info" *ngIf="showDiv.isShowDiv1">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>            
+          </div>
+          <p class="hide-info" *ngIf="showDiv.isShowDiv1" (click)="showDiv.isShowDiv1 = false">Close Info</p>
+          <p class="show-info" *ngIf="!showDiv.isShowDiv1" (click)="showDiv.isShowDiv1 = true">More Info</p>
+        </div>
+        <div class="col-lg-6 col-sm-12 bet-col">
+          <div class="bet-box">
+            <div class="bet-header">
+              <p class="bet-type-category">CAR RACING - F1</p>
+              <p class="bet-type-name">FIRST pilot TO SMASH THE CAR</p>
+            </div>
+            <div class="bet-body">
+              <p class="bet-nft">
+                <a href="#"><img src="assets/img/Layer21.png" /></a>
+              </p>
+              <p class="bet-nft">
+                <a href="#"><img src="assets/img/Layer22.png" /></a>
+              </p>
+              <p class="bet-nft">
+                <a href="#"><img src="assets/img/Layer23.png" /></a>
+              </p>
+              <p class="bet-nft">
+                <a href="#"><img src="assets/img/Layer24.png" /></a>
+              </p>
+              <p class="bet-nft">
+                <a href="#"><img src="assets/img/Layer25.png" /></a>
+              </p>
+              <p class="bet-nft">
+                <a href="#">
+                  <span class="select-nft"><i class="tim-icons icon-simple-add"></i></span>
+                </a>
+              </p>
+              <p class="bet-nft">
+                <a href="#">
+                  <span class="select-nft"><i class="tim-icons icon-simple-add"></i></span>
+                </a>
+              </p>
+              <p class="bet-nft">
+                <a href="#">
+                  <span class="select-nft"><i class="tim-icons icon-simple-add"></i></span>
+                </a>
+              </p>
+            </div>
+            <div class="bet-footer">
+              <p class="bet-type-buy-in-players">Buy In: <span>1 PENKY ($32)</span> <span class="seperator-penky"> | </span> Players: <span>6/8 max</span></p>
+              <p class="bet-type-prizepool">Prizepool: <span>6,4 PENKY</span></p>
+            </div>
+          </div>
+          <div class="bet-info" *ngIf="showDiv.isShowDiv2">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>            
+          </div>
+          <p class="hide-info" *ngIf="showDiv.isShowDiv2" (click)="showDiv.isShowDiv2 = false">Close Info</p>
+          <p class="show-info" *ngIf="!showDiv.isShowDiv2" (click)="showDiv.isShowDiv2 = true">More Info</p>
+        </div>
+        <div class="col-lg-6 col-sm-12 bet-col">
+          <div class="bet-box">
+            <div class="bet-header">
+              <p class="bet-type-category">CINEMA - International actors</p>
+              <p class="bet-type-name">FIRST ACTOR TO DIE</p>
+            </div>
+            <div class="bet-body">
+              <p class="bet-nft">
+                <a href="#"><img src="assets/img/Layer17.png" /></a>
+              </p>
+              <p class="bet-nft">
+                <a href="#"><img src="assets/img/Layer18.png" /></a>
+              </p>
+              <p class="bet-nft">
+                <a href="#"><img src="assets/img/Layer19.png" /></a>
+              </p>
+              <p class="bet-nft">
+                <a href="#"><img src="assets/img/Layer20.png" /></a>
+              </p>
+              <p class="bet-nft">
+                <a href="#">
+                  <span class="select-nft"><i class="tim-icons icon-simple-add"></i></span>
+                </a>
+              </p>
+              <p class="bet-nft">
+                <a href="#">
+                  <span class="select-nft"><i class="tim-icons icon-simple-add"></i></span>
+                </a>
+              </p>
+              <p class="bet-nft">
+                <a href="#">
+                  <span class="select-nft"><i class="tim-icons icon-simple-add"></i></span>
+                </a>
+              </p>
+              <p class="bet-nft">
+                <a href="#">
+                  <span class="select-nft"><i class="tim-icons icon-simple-add"></i></span>
+                </a>
+              </p>
+            </div>
+            <div class="bet-footer">
+              <p class="bet-type-buy-in-players">Buy In: <span>1 PENKY ($32)</span> <span class="seperator-penky"> | </span> Players: <span>6/8 max</span></p>
+              <p class="bet-type-prizepool">Prizepool: <span>6,4 PENKY</span></p>
+            </div>
+          </div>
+          <div class="bet-info" *ngIf="showDiv.isShowDiv3">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>            
+          </div>
+          <p class="hide-info" *ngIf="showDiv.isShowDiv3" (click)="showDiv.isShowDiv3 = false">Close Info</p>
+          <p class="show-info" *ngIf="!showDiv.isShowDiv3" (click)="showDiv.isShowDiv3 = true">More Info</p>
+        </div>
+        <div class="col-lg-6 col-sm-12 bet-col">
+          <div class="bet-box">
+            <div class="bet-header">
+              <p class="bet-type-category">UFC - Mixed Martial Arts</p>
+              <p class="bet-type-name">QUICKEST FIGHTER TO LOSE THE match</p>
+            </div>
+            <div class="bet-body">
+              <p class="bet-nft">
+                <a href="#"><img src="assets/img/Layer4.png" /></a>
+              </p>
+              <p class="bet-nft">
+                <a href="#"><img src="assets/img/Layer5.png" /></a>
+              </p>
+              <p class="bet-nft">
+                <a href="#"><img src="assets/img/Layer6.png" /></a>
+              </p>
+              <p class="bet-nft">
+                <a href="#"><img src="assets/img/Layer7.png" /></a>
+              </p>
+              <p class="bet-nft">
+                <a href="#"><img src="assets/img/Layer8.png" /></a>
+              </p>
+              <p class="bet-nft">
+                <a href="#"><img src="assets/img/Layer9.png" /></a>
+              </p>
+              <p class="bet-nft">
+                <a href="#">
+                  <span class="select-nft"><i class="tim-icons icon-simple-add"></i></span>
+                </a>
+              </p>
+              <p class="bet-nft">
+                <a href="#">
+                  <span class="select-nft"><i class="tim-icons icon-simple-add"></i></span>
+                </a>
+              </p>
+            </div>
+            <div class="bet-footer">
+              <p class="bet-type-buy-in-players">Buy In: <span>1 PENKY ($32)</span>  |  Players: <span>6/8 max</span></p>
+              <p class="bet-type-prizepool">Prizepool: <span>6,4 PENKY</span></p>
+            </div>
+          </div>
+          <div class="bet-info" *ngIf="showDiv.isShowDiv4">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>            
+          </div>
+          <p class="hide-info" *ngIf="showDiv.isShowDiv4" (click)="showDiv.isShowDiv4 = false">Close Info</p>
+          <p class="show-info" *ngIf="!showDiv.isShowDiv4" (click)="showDiv.isShowDiv4 = true">More Info</p>
+        </div>
+        <div class="col-lg-6 col-sm-12 bet-col">
+          <div class="bet-box">
+            <div class="bet-header">
+              <p class="bet-type-category">MOTO RACING - Moto GP</p>
+              <p class="bet-type-name">FIRST RIDER TO BREAK A BONE</p>
+            </div>
+            <div class="bet-body">
+              <p class="bet-nft">
+                <a href="#"><img src="assets/img/Layer1.png" /></a>
+              </p>
+              <p class="bet-nft">
+                <a href="#"><img src="assets/img/Layer2.png" /></a>
+              </p>
+              <p class="bet-nft">
+                <a href="#"><img src="assets/img/Layer3.png" /></a>
+              </p>
+              <p class="bet-nft">
+                <a href="#">
+                  <span class="select-nft"><i class="tim-icons icon-simple-add"></i></span>
+                </a>
+              </p>
+              <p class="bet-nft">
+                <a href="#">
+                  <span class="select-nft"><i class="tim-icons icon-simple-add"></i></span>
+                </a>
+              </p>
+              <p class="bet-nft">
+                <a href="#">
+                  <span class="select-nft"><i class="tim-icons icon-simple-add"></i></span>
+                </a>
+              </p>
+              <p class="bet-nft">
+                <a href="#">
+                  <span class="select-nft"><i class="tim-icons icon-simple-add"></i></span>
+                </a>
+              </p>
+              <p class="bet-nft">
+                <a href="#">
+                  <span class="select-nft"><i class="tim-icons icon-simple-add"></i></span>
+                </a>
+              </p>
+            </div>
+            <div class="bet-footer">
+              <p class="bet-type-buy-in-players">Buy In: <span>1 PENKY ($32)</span> <span class="seperator-penky"> | </span> Players: <span>6/8 max</span></p>
+              <p class="bet-type-prizepool">Prizepool: <span>6,4 PENKY</span></p>
+            </div>
+          </div>
+          <div class="bet-info" *ngIf="showDiv.isShowDiv5">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>            
+          </div>
+          <p class="hide-info" *ngIf="showDiv.isShowDiv5" (click)="showDiv.isShowDiv5 = false">Close Info</p>
+          <p class="show-info" *ngIf="!showDiv.isShowDiv5" (click)="showDiv.isShowDiv5 = true">More Info</p>
+        </div>
+        <div class="col-lg-6 col-sm-12 bet-col">
+          <div class="bet-box">
+            <div class="bet-header">
+              <p class="bet-type-category">SOCCER - Worldwide</p>
+              <p class="bet-type-name">HIGHEST NUMBER OF GOALS</p>
+            </div>
+            <div class="bet-body">
+              <p class="bet-nft">
+                <a href="#"><img src="assets/img/NFT01.png" /></a>
+              </p>
+              <p class="bet-nft">
+                <a href="#">
+                  <span class="select-nft"><i class="tim-icons icon-simple-add"></i></span>
+                </a>
+              </p>
+              <p class="bet-nft">
+                <a href="#">
+                  <span class="select-nft"><i class="tim-icons icon-simple-add"></i></span>
+                </a>
+              </p>
+              <p class="bet-nft">
+                <a href="#">
+                  <span class="select-nft"><i class="tim-icons icon-simple-add"></i></span>
+                </a>
+              </p>
+              <p class="bet-nft">
+                <a href="#">
+                  <span class="select-nft"><i class="tim-icons icon-simple-add"></i></span>
+                </a>
+              </p>
+              <p class="bet-nft">
+                <a href="#">
+                  <span class="select-nft"><i class="tim-icons icon-simple-add"></i></span>
+                </a>
+              </p>
+              <p class="bet-nft">
+                <a href="#">
+                  <span class="select-nft"><i class="tim-icons icon-simple-add"></i></span>
+                </a>
+              </p>
+              <p class="bet-nft">
+                <a href="#">
+                  <span class="select-nft"><i class="tim-icons icon-simple-add"></i></span>
+                </a>
+              </p>
+            </div>
+            <div class="bet-footer">
+              <p class="bet-type-buy-in-players">Buy In: <span>1 PENKY ($32)</span> <span class="seperator-penky"> | </span> Players: <span>6/8 max</span></p>
+              <p class="bet-type-prizepool">Prizepool: <span>6,4 PENKY</span></p>
+            </div>
+          </div>
+          <div class="bet-info" *ngIf="showDiv.isShowDiv6">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>            
+          </div>
+          <p class="hide-info" *ngIf="showDiv.isShowDiv6" (click)="showDiv.isShowDiv6 = false">Close Info</p>
+          <p class="show-info" *ngIf="!showDiv.isShowDiv6" (click)="showDiv.isShowDiv6 = true">More Info</p>
+        </div>
+   </div>
+
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-12 text-center"></div>
+      <div class="col-lg-4 col-md-4 col-sm-12 text-center bets-pagination">
+          <pagination
+              class="pagination-danger"
+              [boundaryLinks]="true"
+              [totalItems]="45"
+              [ngModel]="pagination1"
+              previousText="&lsaquo;"
+              nextText="&rsaquo;"
+              firstText="&laquo;"
+              lastText="&raquo;"
+            >
+          </pagination>   
+      </div>
+      <div class="col-lg-4 col-md-12 col-sm-12 text-center"></div>
+  </div>
+</div>

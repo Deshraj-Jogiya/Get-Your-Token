@@ -1,0 +1,331 @@
+<app-navbar></app-navbar>
+<div class="wrapper">
+  <app-user-profile-level-details></app-user-profile-level-details>
+  <section class="section section-lg user-dashboard-pages">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-12">
+            <ul class="dashboard-side-bar">
+              <li class="dashboard-active" [routerLink]="['/dashboard']"><p><span><img src="assets/img/feather-home.png" class="img-fluid" /></span> Dashboard </p></li>
+              <li [routerLink]="['/settings']"><p><span><img src="assets/img/feather-settings.png" class="img-fluid" /></span> Settings </p></li>
+              <li [routerLink]="['/notifications']"><p><span><img src="assets/img/feather-bell.png" class="img-fluid" /></span> Notifications </p></li> 
+              <li [routerLink]="['/bet-history']"><p><span><img src="assets/img/ionic-ios-list.png" class="img-fluid" /></span> Bet History </p></li> 
+              <li [routerLink]="['/transactions']"><p><span><img src="assets/img/awesome-hand-holding-usd.png" class="img-fluid" /></span> Transactions </p></li> 
+              <li [routerLink]="['/jury']"><p><span><img src="assets/img/awesome-balance-scale-left.png" class="img-fluid" /></span> Jury </p></li> 
+              <li><p><span><img src="assets/img/material-add-shopping-cart.png" class="img-fluid" /></span> Shop </p></li> 
+              <li [routerLink]="['/achievements']"><p><span><img src="assets/img/awesome-first-order.png" class="img-fluid" /></span> Achievements </p></li> 
+              <li><p><span><img src="assets/img/awesome-address-card.png" class="img-fluid" /></span> Your NFTs </p></li> 
+              <li><p><span><img src="assets/img/material-chat_bubble_outline.png" class="img-fluid" /></span> Contact </p></li> 
+              <li class="last-li-logout"><p><span><img src="assets/img/open-account-logout.png" class="img-fluid" /></span> Logout </p></li>              
+            </ul>               
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-12">
+          <div class="dashboard-all-pages-ontent-container">
+                <form class="settings-form dashboard">
+             
+                    <div class="row box-notify jury-notify">
+                      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                        <div class="dashboard-box">
+                           <div class="chart-main">
+                            <p class="graph-name">Monthly Income Graph</p>
+                          </div>
+                          <div class="chart-right">
+                            <div class="chart-arrow">
+                              <i class="fas fa-caret-left"></i>&nbsp;
+                              <i class="fas fa-caret-right"></i>&nbsp;&nbsp;
+                              <span class="graph-name">2021</span>
+                            </div>
+                          </div>
+                          <div id="chart">
+                              <apx-chart
+                                [series]="chartOptions.series"
+                                [chart]="chartOptions.chart"
+                                [dataLabels]="chartOptions.dataLabels"
+                                [plotOptions]="chartOptions.plotOptions"
+                                [yaxis]="chartOptions.yaxis"
+                                [xaxis]="chartOptions.xaxis"
+                              ></apx-chart>
+                            </div>
+                        </div>
+                      </div>
+ 
+                      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                        <div class="dashboard-box">
+                          <div class="chart-main">
+                            <p class="graph-name">Latest Bets</p>
+                          </div>
+                          <div class="chart-right">
+                            <div class="chart-arrow">
+                              <span class="graph-name">View All</span>&nbsp;
+                              <i class="fas fa-caret-right"></i>
+                            </div>
+                          </div>
+
+                          <div class="dashboard-latest">
+                            <div class="row latest-row">
+                              <div class="bet-header-image latest-bet-image col-xl-2 col-lg-2 col-md-2 col-sm-2">
+                                <img src="assets/img/NFT01.png" />
+                              </div>
+                              <div class="bet-history-main col-xl-7 col-lg-7 col-md-7 col-sm-7">
+                                <p class="latest-bet-name"><span>First player to score a goal on... </span></p>
+                                <p class="latest-bet-category">SOCCER - Italy Serie A TIM</p>
+                              </div>
+                              <div class="latest-bets-right col-xl-3 col-lg-3 col-md-3 col-sm-3">
+                                <p class="latest-bets-right-text"><i class="fas fa-clock"> </i></p>
+                              </div>
+                            </div>
+
+                          </div>
+
+                          <br/>
+
+                          <div class="dashboard-latest">
+                            <div class="row latest-row">
+                              <div class="bet-header-image latest-bet-image col-xl-2 col-lg-2 col-md-2 col-sm-2">
+                                <img src="assets/img/Layer19.png" />
+                              </div>
+                              <div class="bet-history-main col-xl-7 col-lg-7 col-md-7 col-sm-7">
+                                <p class="latest-bet-name"><span>First actor to die</span></p>
+                                <p class="latest-bet-category">CINEMA - International</p>
+                              </div>
+                              <div class="latest-bets-right col-xl-3 col-lg-3 col-md-3 col-sm-3">
+                                <p class="latest-bets-right-text-penky"><span class="latest-penky-point-lose">-1</span> <sup class="latest-penky-text-lose" style="top: -0.4em;"> penky</sup></p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <br/>
+
+                          <div class="dashboard-latest">
+                            <div class="row latest-row">
+                              <div class="bet-header-image latest-bet-image col-xl-2 col-lg-2 col-md-2 col-sm-2">
+                                <img src="assets/img/Layer4.png" />
+                              </div>
+                              <div class="bet-history-main col-xl-7 col-lg-7 col-md-7 col-sm-7">
+                                <p class="latest-bet-name"><span>First fighter to lose a match </span></p>
+                                <p class="latest-bet-category">MMA - International</p>
+                              </div>
+                              <div class="latest-bets-right col-xl-3 col-lg-3 col-md-3 col-sm-3">
+                                <p class="latest-bets-right-text-penky"><span class="latest-penky-point-get">+8</span> <sup class="latest-penky-text-get" style="top: -0.4em;"> penky</sup></p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <br/>
+
+                          <div class="dashboard-latest">
+                            <div class="row latest-row">
+                              <div class="bet-header-image latest-bet-image col-xl-2 col-lg-2 col-md-2 col-sm-2">
+                                <img src="assets/img/Layer4.png" />
+                              </div>
+                              <div class="bet-history-main col-xl-7 col-lg-7 col-md-7 col-sm-7">
+                                <p class="latest-bet-name"><span>First pilot to break a bone </span></p>
+                                <p class="latest-bet-category">MOTOGP - International</p>
+                              </div>
+                              <div class="latest-bets-right col-xl-3 col-lg-3 col-md-3 col-sm-3">
+                                <p class="latest-bets-right-text-penky"><span class="latest-penky-point-get">+8</span> <sup class="latest-penky-text-get" style="top: -0.4em;"> penky</sup></p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <br/>
+
+                          <div class="dashboard-latest">
+                            <div class="row latest-row">
+                              <div class="bet-header-image latest-bet-image col-xl-2 col-lg-2 col-md-2 col-sm-2">
+                                <img src="assets/img/Layer4.png" />
+                              </div>
+                              <div class="bet-history-main col-xl-7 col-lg-7 col-md-7 col-sm-7">
+                                <p class="latest-bet-name"><span>First celebrity to be arrested </span></p>
+                                <p class="latest-bet-category">CELEBRITIES - International</p>
+                              </div>
+                              <div class="latest-bets-right col-xl-3 col-lg-3 col-md-3 col-sm-3">
+                                <p class="latest-bets-right-text-penky"><span class="latest-penky-point-get">+8</span> <sup class="latest-penky-text-get" style="top: -0.4em;"> penky</sup></p>
+                              </div>
+                            </div>
+                          </div>
+
+                      </div>
+                    </div>
+                </div>
+
+                <!-- new NFT row -->
+
+                <div class="row">
+                      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <p class="dashboard-sec-row-head">Your NFTs</p>
+                      </div>
+ 
+                      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 dashboard-sec-row-head-expand-div">
+                           <span class="dashboard-sec-row-head-expand">View All</span>&nbsp;
+                            <i class="fas fa-caret-down"></i>
+                      </div>
+                </div>   
+                <div class="row own-nft-main">
+                      <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                          <div class="own-nft-div">
+                              <div class="nft-single-card">
+                                <div class="nft-card-header">
+                                  <img 
+                                    alt="Penky.io"
+                                    class="img-fluid own-nft-img"
+                                    src="assets/img/nft-8.png" />
+                                </div>
+                                <div class="dash-own-nft-body">
+                                  <div class="nf-markets dash-own-nft-bodyfont">
+                                    <div class="avg-price dash-own-nft-avgprice">
+                                      <p class="nft-label own-nft-label">Avg. Price</p>
+                                      <p class="nft-price own-nft-price">6.4 <span class="nft-currency own-nft-currency">Penky</span></p>
+                                    </div>
+                                    <div class="avg-per average-price own-nft-avg-per">
+                                      <p class="per-label"  ><i class="fa fa-caret-up" aria-hidden="true"></i></p>
+                                      <p class="per-price own-nft-per">+2.57%</p>
+                                      <p class="per-time">7 days</p>
+                                      <p class="per-label"><i class="fa fa-caret-down" aria-hidden="true"></i></p>
+                                    </div>
+                                    <div class="avg-per overall-price">
+                                      <p class="per-label"></p>
+                                      <p class="per-price own-nft-per">+4.88%</p>
+                                      <p class="per-time">Overall</p>
+                                      <p class="per-label"></p>
+                                    </div>
+                                     <div class="avg-price dash-own-nft-avgprice-last">
+                                      <p class="nft-label own-nft-label-last">Best Offer</p>
+                                      <p class="nft-price own-nft-price last-own-nft-price">6.8 <span class="nft-currency own-nft-currency last-own-nft-currency">Penky</span></p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="nf-markets-btn">
+                                    <p class="details-btn own-nft-manage"> MANAGE </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                          <div class="own-nft-div">
+                              <div class="nft-single-card">
+                                <div class="nft-card-header">
+                                  <img 
+                                    alt="Penky.io"
+                                    class="img-fluid own-nft-img"
+                                    src="assets/img/nft-4.png" />
+                                </div>
+                                <div class="dash-own-nft-body">
+                                  <div class="nf-markets dash-own-nft-bodyfont">
+                                    <div class="avg-price dash-own-nft-avgprice">
+                                      <p class="nft-label own-nft-label">Avg. Price</p>
+                                      <p class="nft-price own-nft-price">6.4 <span class="nft-currency own-nft-currency">Penky</span></p>
+                                    </div>
+                                    <div class="avg-per average-price own-nft-avg-per">
+                                      <p class="per-label"  ><i class="fa fa-caret-up" aria-hidden="true"></i></p>
+                                      <p class="per-price own-nft-per">+2.57%</p>
+                                      <p class="per-time">7 days</p>
+                                      <p class="per-label"><i class="fa fa-caret-down" aria-hidden="true"></i></p>
+                                    </div>
+                                    <div class="avg-per overall-price">
+                                      <p class="per-label"></p>
+                                      <p class="per-price own-nft-per">+4.88%</p>
+                                      <p class="per-time">Overall</p>
+                                      <p class="per-label"></p>
+                                    </div>
+                                     <div class="avg-price dash-own-nft-avgprice-last">
+                                      <p class="nft-label own-nft-label-last">Best Offer</p>
+                                      <p class="nft-price own-nft-price last-own-nft-price">6.8 <span class="nft-currency own-nft-currency last-own-nft-currency">Penky</span></p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="nf-markets-btn">
+                                    <p class="details-btn own-nft-manage"> MANAGE </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                          <div class="own-nft-div">
+                              <div class="nft-single-card">
+                                <div class="nft-card-header">
+                                  <img 
+                                    alt="Penky.io"
+                                    class="img-fluid own-nft-img"
+                                    src="assets/img/nft-1.png" />
+                                </div>
+                                <div class="dash-own-nft-body">
+                                  <div class="nf-markets dash-own-nft-bodyfont">
+                                    <div class="avg-price dash-own-nft-avgprice">
+                                      <p class="nft-label own-nft-label">Avg. Price</p>
+                                      <p class="nft-price own-nft-price">6.4 <span class="nft-currency own-nft-currency">Penky</span></p>
+                                    </div>
+                                    <div class="avg-per average-price own-nft-avg-per">
+                                      <p class="per-label"  ><i class="fa fa-caret-up" aria-hidden="true"></i></p>
+                                      <p class="per-price own-nft-per">+2.57%</p>
+                                      <p class="per-time">7 days</p>
+                                      <p class="per-label"><i class="fa fa-caret-down" aria-hidden="true"></i></p>
+                                    </div>
+                                    <div class="avg-per overall-price">
+                                      <p class="per-label"></p>
+                                      <p class="per-price own-nft-per">+4.88%</p>
+                                      <p class="per-time">Overall</p>
+                                      <p class="per-label"></p>
+                                    </div>
+                                     <div class="avg-price dash-own-nft-avgprice-last">
+                                      <p class="nft-label own-nft-label-last">Best Offer</p>
+                                      <p class="nft-price own-nft-price last-own-nft-price">6.8 <span class="nft-currency own-nft-currency last-own-nft-currency">Penky</span></p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="nf-markets-btn">
+                                    <p class="details-btn own-nft-manage"> MANAGE </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                          <div class="own-nft-div">
+                              <div class="nft-single-card">
+                                <div class="nft-card-header">
+                                  <img 
+                                    alt="Penky.io"
+                                    class="img-fluid own-nft-img"
+                                    src="assets/img/nft-6.png" />
+                                </div>
+                                <div class="dash-own-nft-body">
+                                  <div class="nf-markets dash-own-nft-bodyfont">
+                                    <div class="avg-price dash-own-nft-avgprice">
+                                      <p class="nft-label own-nft-label">Avg. Price</p>
+                                      <p class="nft-price own-nft-price">6.4 <span class="nft-currency own-nft-currency">Penky</span></p>
+                                    </div>
+                                    <div class="avg-per average-price own-nft-avg-per">
+                                      <p class="per-label"  ><i class="fa fa-caret-up" aria-hidden="true"></i></p>
+                                      <p class="per-price own-nft-per">+2.57%</p>
+                                      <p class="per-time">7 days</p>
+                                      <p class="per-label"><i class="fa fa-caret-down" aria-hidden="true"></i></p>
+                                    </div>
+                                    <div class="avg-per overall-price">
+                                      <p class="per-label"></p>
+                                      <p class="per-price own-nft-per">+4.88%</p>
+                                      <p class="per-time">Overall</p>
+                                      <p class="per-label"></p>
+                                    </div>
+                                     <div class="avg-price dash-own-nft-avgprice-last">
+                                      <p class="nft-label own-nft-label-last">Best Offer</p>
+                                      <p class="nft-price own-nft-price last-own-nft-price">6.8 <span class="nft-currency own-nft-currency last-own-nft-currency">Penky</span></p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="nf-markets-btn">
+                                    <p class="details-btn own-nft-manage"> MANAGE </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>  
+                </div>                
+                    
+             
+            </form>
+          </div>                  
+        </div>
+      </div>
+    </div>
+  </section>
+<app-footer></app-footer>
+</div>

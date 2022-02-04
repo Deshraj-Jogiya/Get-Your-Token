@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>BET APP</h1>
+    <p>Add new bet</p>
+    <form>
+      <div class="mb-3">
+        <input type="text" class="form-control mb-3" id="name" aria-describedby="name" placeholder="Please enter bet name..">
+        <select id="category" class="form-control mb-3">
+          <option>Please select category..</option>
+          <option value="category1">category1</option>
+          <option value="category2">category2</option>
+          <option value="category3">category3</option>
+          <option value="category4">category4</option>
+        </select>
+        <input type="text" class="form-control mb-3" id="prizepool" aria-describedby="prizepool" placeholder="Please enter prize pool..">
+        <input type="text" class="form-control mb-3" id="betBuyIn" aria-describedby="betBuyIn" placeholder="Please enter bet buy In..">
+        <input type="text" class="form-control mb-3" id="maxPlayers" aria-describedby="maxPlayers" placeholder="Please enter Maximum Players..">
+        <input type="text" class="form-control mb-3" id="description" aria-describedby="description" placeholder="Please enter bet Description..">  
+      </div>
+      <button type="button" onClick="submitForm()" class="btn btn-primary">Submit</button>
+    </form>
+  </body>
+  <script>
+    function submitForm(){
+      var data = {
+        name: $('#name').val(),
+        category: $('#category').val(),
+        prizepool: $('#prizepool').val(),
+        buyIn: $('#betBuyIn').val(),
+        maxPlayers: $('#maxPlayers').val(),
+        description: $('#description').val(),
+      }
+      $.post(`http://localhost:3000/bets`, data, function (res) {
+        if (res.status == true) {
+          alert("Add bet successfully")
+        } else {
+          alert("Something went wrong in add bet");
+        }
+      });
+    }
+  </script>
+</html>

@@ -1,0 +1,145 @@
+<app-navbar></app-navbar>
+<div class="wrapper">
+  <app-user-profile-level-details></app-user-profile-level-details>
+  <section class="section section-lg user-dashboard-pages">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-12">
+            <ul class="dashboard-side-bar">
+              <li><p><span><img src="assets/img/feather-home.png" class="img-fluid" /></span> Dashboard </p></li>
+              <li [routerLink]="['/settings']"><p><span><img src="assets/img/feather-settings.png" class="img-fluid" /></span> Settings </p></li>
+              <li class="dashboard-active" [routerLink]="['/notifications']"><p><span><img src="assets/img/feather-bell.png" class="img-fluid" /></span> Notifications <span class="no-badge">3</span></p></li> 
+              <li [routerLink]="['/bet-history']"><p><span><img src="assets/img/ionic-ios-list.png" class="img-fluid" /></span> Bet History </p></li> 
+              <li><p><span><img src="assets/img/awesome-hand-holding-usd.png" class="img-fluid" /></span> Transactions </p></li> 
+              <li [routerLink]="['/jury']"><p><span><img src="assets/img/awesome-balance-scale-left.png" class="img-fluid" /></span> Jury </p></li> 
+              <li><p><span><img src="assets/img/material-add-shopping-cart.png" class="img-fluid" /></span> Shop </p></li> 
+              <li><p><span><img src="assets/img/awesome-first-order.png" class="img-fluid" /></span> Achievements </p></li> 
+              <li><p><span><img src="assets/img/awesome-address-card.png" class="img-fluid" /></span> Your NFTs </p></li> 
+              <li><p><span><img src="assets/img/material-chat_bubble_outline.png" class="img-fluid" /></span> Contact </p></li> 
+              <li class="last-li-logout"><p><span><img src="assets/img/open-account-logout.png" class="img-fluid" /></span> Logout </p></li>              
+            </ul>                
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-12">
+          <div class="dashboard-all-pages-ontent-container">
+            <form class="settings-form">
+              <div class="form-section-header">
+                <h3>Notifications <span class="notification-badge">3</span></h3>
+              </div>
+              <div class="row box-notify">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                  <div class="notfication-box">
+                    <p class="read-notification"><i class="fa fa-circle" aria-hidden="true"></i></p>
+                    <div class="notfication-header">
+                      <p class="notfication-header-data"><span class="noti-tag">Offer</span> <span class="noti-time"><i class="fa fa-clock-o" aria-hidden="true"></i> 1 hour ago</span> <span class="noti-external"><i class="fa fa-external-link" aria-hidden="true"></i></span></p>
+                    </div>
+                    <div class="notfication-main">
+                      <p class="notfication-main-data"><span>CryptoDummy999</span> offered <span>38 PENKY</span> for <span>Cristiano Ronaldo NFT</span></p>
+                    </div>
+                    <div class="notfication-footer">
+                      <p class="notfication-main-text">You received an offer to buy an NFT of Cristiano Ronaldo you own. To view the offer please click on <span>this link</span> or go to Your <span>NFTs page.</span> <span class="more-notify">more <i class="fa fa-caret-down" aria-hidden="true"></i></span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row box-notify">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                  <div class="notfication-box">
+                    <p class="read-notification"><i class="fa fa-circle" aria-hidden="true"></i></p>
+                    <div class="notfication-header">
+                      <p class="notfication-header-data"><span class="noti-tag">Jury</span> <span class="noti-time"><i class="fa fa-clock-o" aria-hidden="true"></i> 2 hours ago</span> <span class="noti-external"><i class="fa fa-external-link" aria-hidden="true"></i></span></p>
+                    </div>
+                    <div class="notfication-main">
+                      <p class="notfication-main-data">You have been selected as jurors for bet <span>Who will die first?</span></p>
+                    </div>
+                    <div class="notfication-footer">
+                      <p class="notfication-main-text">You have been selected ad jurors for bet Who will die first in Movies category. To accept or decline please click the buttons below.<span class="more-notify">more <i class="fa fa-caret-down" aria-hidden="true"></i></span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row box-notify">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                  <div class="read-notfication-box">
+                    <div class="notfication-header">
+                      <p class="notfication-header-data"><span class="noti-tag">Bet Result</span> <span class="noti-time"><i class="fa fa-clock-o" aria-hidden="true"></i> 5 hours ago</span> <span class="noti-external"><i class="fa fa-external-link" aria-hidden="true"></i></span></p>
+                    </div>
+                    <div class="notfication-main">
+                      <p class="notfication-main-data">Conbratulations! you won the bet <span>Who will crash his car first</span></p>
+                    </div>
+                    <div class="notfication-footer">
+                      <p class="notfication-main-text">You received an offer to buy an NFT of Cristiano Ronaldo you own. To view the offer please click on <span>this link</span> or go to Your <span>NFTs page.</span> <span class="more-notify">more <i class="fa fa-caret-down" aria-hidden="true"></i></span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row box-notify">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                  <div class="notfication-box">
+                    <p class="read-notification"><i class="fa fa-circle" aria-hidden="true"></i></p>
+                    <div class="notfication-header">
+                      <p class="notfication-header-data"><span class="noti-tag">Achievement</span> <span class="noti-time"><i class="fa fa-clock-o" aria-hidden="true"></i> 5 hours ago</span> <span class="noti-external"><i class="fa fa-external-link" aria-hidden="true"></i></span></p>
+                    </div>
+                    <div class="notfication-main">
+                      <p class="notfication-main-data">New achievement unlocked. You now reached <span> Level 4</span></p>
+                    </div>
+                    <div class="notfication-footer">
+                      <p class="notfication-main-text">Congratulations, you reached Level 4 and received a new achievement. <span>Click here</span> to go to Achievements section and see all you have.<span class="more-notify">more <i class="fa fa-caret-down" aria-hidden="true"></i></span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row box-notify">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                  <div class="read-notfication-box">
+                    <div class="notfication-header">
+                      <p class="notfication-header-data"><span class="noti-tag">Referral</span> <span class="noti-time"><i class="fa fa-clock-o" aria-hidden="true"></i> 6 hours ago</span> <span class="noti-external"><i class="fa fa-external-link" aria-hidden="true"></i></span></p>
+                    </div>
+                    <div class="notfication-main">
+                      <p class="notfication-main-data">Nice Shot! The user <span>KathyBig69</span> has used your referral code. You'll get your reward soon.</p>
+                    </div>
+                    <div class="notfication-footer">
+                      <p class="notfication-main-text">The user <span>KathyBig69</span> used your referral code to register his account to penky. When he will reach Level 2 you will receive a new NFT for free.<span class="more-notify">more <i class="fa fa-caret-down" aria-hidden="true"></i></span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row box-notify">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                  <div class="read-notfication-box">
+                    <div class="notfication-header">
+                      <p class="notfication-header-data"><span class="noti-tag">Bet Result</span> <span class="noti-time"><i class="fa fa-clock-o" aria-hidden="true"></i> 5 hours ago</span> <span class="noti-external"><i class="fa fa-external-link" aria-hidden="true"></i></span></p>
+                    </div>
+                    <div class="notfication-main">
+                      <p class="notfication-main-data">Conbratulations! you won the bet <span>Who will crash his car first</span></p>
+                    </div>
+                    <div class="notfication-footer">
+                      <p class="notfication-main-text">You received an offer to buy an NFT of Cristiano Ronaldo you own. To view the offer please click on <span>this link</span> or go to Your <span>NFTs page.</span> <span class="more-notify">more <i class="fa fa-caret-down" aria-hidden="true"></i></span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                  <div class="col-lg-4 col-md-4 col-sm-12 text-center"></div>
+                  <div class="col-lg-4 col-md-4 col-sm-12 text-center bets-pagination">
+                      <pagination
+                          class="pagination-danger"
+                          [boundaryLinks]="true"
+                          [totalItems]="45"
+                          [ngModel]="pagination1"
+                          previousText="&lsaquo;"
+                          nextText="&rsaquo;"
+                          firstText="&laquo;"
+                          lastText="&raquo;"
+                        >
+                      </pagination>   
+                  </div>
+                  <div class="col-lg-4 col-md-12 col-sm-12 text-center"></div>
+              </div>
+            </form>
+          </div>                  
+        </div>
+      </div>
+    </div>
+  </section>
+<app-footer></app-footer>
+</div>

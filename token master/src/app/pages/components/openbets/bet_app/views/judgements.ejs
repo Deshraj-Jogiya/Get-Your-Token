@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>bet app</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>BET APP</h1>
+    <p>list of judgement bets</p>
+    <table class="table">
+        <tr>
+            <th>
+              Bet name
+            </th>
+            <th>
+              Bet Category
+            </th>
+            <th>
+              Bet Prizepool
+            </th>
+            <th>
+              Bet Buy In
+            </th>
+            <th>
+              Maximum Players
+            </th>
+            <th>
+              Bet Description
+            </th>
+            <th>
+
+            </th>
+        </tr>
+
+    <% if(judgementList && judgementList.length > 0) {%>
+        <% for( const key in judgementList ) { %>
+            <tr>
+              <td><%- judgementList[key].name %></td>
+              <td><%- judgementList[key].category %></td>
+              <td><%- judgementList[key].prizepool %></td>
+              <td><%- judgementList[key].buyIn %></td>
+              <td><%- judgementList[key].maxPlayers %></td>
+              <td><%- judgementList[key].description %></td>
+            </tr>
+        <% } %>
+    <% } else { %>
+        <p>No data found</p>
+    <% } %>
+    </table>    
+  </body>
+  
+</html>
+
+
