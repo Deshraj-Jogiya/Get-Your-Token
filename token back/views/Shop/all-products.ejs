@@ -1,0 +1,306 @@
+<%- contentFor('HeaderCss') %>
+
+<!-- ION Slider -->
+<link href="public/assets/libs/ion-rangeslider/css/ion.rangeSlider.min.css" rel="stylesheet" type="text/css"/>
+
+
+<!-- DataTables -->
+<link href="public/assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+<link href="public/assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
+<!-- Responsive datatable examples -->
+<link href="public/assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
+<%- contentFor('breadcrumb') %>
+<!-- start page title -->
+<div class="row">
+    <div class="col-12">
+        <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+            <!-- <h4 class="mb-sm-0 font-size-20">Players</h4> -->
+
+            <div class="page-title-left">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item"><a href="javascript: void(0);">SHOP</a></li>
+                    <li class="breadcrumb-item active">All Product</li>
+                </ol>
+            </div>
+
+            <div class="page-title-right">
+                <ul class="nav" role="tablist">
+                    <!-- <li class="nav-item -->
+                        <a class="btn btn-danger" style="background: transparent; border: none; color: red;"  href="#" role="tab">
+                            Delete
+                        </a>
+                    <!-- </li> -->
+                    <!-- <li class="nav-item"> -->
+                        <a class="nav-link"  href="#" role="tab">
+                            Archive
+                        </a>
+                    <!-- </li> -->
+                    <!-- <li class="nav-item"> -->
+                        <a class="nav-link"  href="#" role="tab">
+                            Unpublish
+                        </a>
+                    <!-- </li> -->
+                    <button type="button" class="btn btn-primary waves-effect waves-light">Add Product</button>
+                </ul>
+                <!-- <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item"><a href="javascript: void(0);">Crypto</a></li>
+                    <li class="breadcrumb-item active">Buy/Sell</li>
+                </ol> -->                
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- end page title -->
+
+<%- contentFor('body') %>
+
+
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-body">
+                
+                <ul class="nav nav-tabs nav-tabs-custom">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">All</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Draft</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Archived</a>
+                    </li> 
+                    <li class="nav-item" style="margin-left: 650px;">
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-sm dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="d-none d-sm-inline-block">More Filter</span></button>
+                            <div class="dropdown-menu dropdown-menu-end dropdown-menu-md">
+    
+                                <div class="dropdown-item-text">
+                                    <label class="text-muted" >Content</label>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="toast-type-radio" id="toast-type-radio1" value="success" checked>
+                                        <label class="form-check-label" for="toast-type-radio1">
+                                           PENKY (3)
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="toast-type-radio" id="toast-type-radio1" value="success" checked>
+                                        <label class="form-check-label" for="toast-type-radio1">
+                                            NFTs (65)
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="toast-type-radio" id="toast-type-radio1" value="success" checked>
+                                        <label class="form-check-label" for="toast-type-radio1">
+                                            Bets (78)
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="dropdown-item-text">
+                                    <label class="text-muted" >Collection</label>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="toast-type-radio" id="toast-type-radio1" value="success" checked>
+                                        <label class="form-check-label" for="toast-type-radio1">
+                                            Soccer (4)
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="toast-type-radio" id="toast-type-radio1" value="success" checked>
+                                        <label class="form-check-label" for="toast-type-radio1">
+                                            Fighting (68)
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="toast-type-radio" id="toast-type-radio1" value="success" checked>
+                                        <label class="form-check-label" for="toast-type-radio1">
+                                            Sport (130)
+                                        </label>
+                                    </div>
+                                </div>
+    
+                                <div class="dropdown-item-text">
+                                    <div class="mt-4">
+                                        <h5 class="font-size-14">Min and max</h5>
+                                        <input type="range" class="form-range" min="0" max="5" id="customRange2">
+                                    </div>
+                                    
+                                </div>
+                                
+                                <!-- important -->
+                                <!-- <div class="p-3">
+                                    <h5 class="font-size-14 mb-3 mt-0">Prefix</h5>
+                                    <input type="text" id="tbl_1_range">
+                                </div> -->
+    
+
+                                <div class="dropdown-item-text">
+                                    <div class="search-box me-2 mb-2 d-inline-block">
+                                        <h6 class="mb-3 mt-0">Tagged With</h6>
+                                        <div class="position-relative">
+                                            <input type="text" class="form-control" placeholder="Search...">
+                                            <i class="bx bx-search-alt search-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="dropdown-divider"></div>
+    
+                                <a class="dropdown-item text-primary text-center" href="#">
+                                    <button type="button" class="btn btn-success btn-sm">Apply</button>
+                                    <button type="button" class="btn btn-danger btn-sm">Reset</button>
+                                 </a> 
+
+                        
+
+                            </div>
+                        </div>
+                    
+                    </li>
+                </ul>
+                
+
+                <div class="mt-4">
+                    <div class="table-responsive">
+                        <table id="datatable" class="table table-hover dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                            <thead>
+                                <tr>
+                                    <th style="width: 20px;" class="align-middle">
+                                        <div class="form-check font-size-16">
+                                            <input class="form-check-input" type="checkbox" id="checkAll">
+                                            <label class="form-check-label" for="checkAll"></label>
+                                        </div>
+                                    </th>
+                                    <th>&nbsp Product</th>
+                                    <th>Status</th>
+                                    <th>Inventory</th>
+                                    <th>Sold</th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="form-check font-size-16">
+                                            <input class="form-check-input" type="checkbox" id="orderidcheck09">
+                                            <label class="form-check-label" for="orderidcheck09"></label>
+                                        </div>
+                                    </td>
+                                    <td><img src="public/assets/images/users/avatar-4.jpg" alt="" class="rounded avatar-sm">&nbsp Sort-Pack</td>
+                                    <td><span class="badge badge-pill badge-soft-success font-size-12">Active</span></td>
+                                    <td>3500 in Stock</td>
+                                    <td>12 of 3500</td>
+                                    <td>7,23 PENKY ($210,69)</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-check font-size-16">
+                                            <input class="form-check-input" type="checkbox" id="orderidcheck09">
+                                            <label class="form-check-label" for="orderidcheck09"></label>
+                                        </div>
+                                    </td>
+                                    <td><img src="public/assets/images/users/avatar-5.jpg" alt="" class="rounded avatar-sm">&nbsp Ocen</td>
+                                    <td><span class="badge badge-pill badge-soft-danger font-size-12">Archived</span></td>
+                                    <td>1999 in Stock</td>
+                                    <td>790 of 2500</td>
+                                    <td>1,23 PENKY ($30,69)</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-check font-size-16">
+                                            <input class="form-check-input" type="checkbox" id="orderidcheck09">
+                                            <label class="form-check-label" for="orderidcheck09"></label>
+                                        </div>
+                                    </td>
+                                    <td><img src="public/assets/images/users/avatar-6.jpg" alt="" class="rounded avatar-sm">&nbsp Ocen</td>
+                                    <td><span class="badge badge-pill badge-soft-warning font-size-12">Draft</span></td>
+                                    <td>35 in Stock</td>
+                                    <td>0 of 2800</td>
+                                    <td>2,89PENKY ($70,32)</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-check font-size-16">
+                                            <input class="form-check-input" type="checkbox" id="orderidcheck09">
+                                            <label class="form-check-label" for="orderidcheck09"></label>
+                                        </div>
+                                    </td>
+                                    <td><img src="public/assets/images/users/avatar-7.jpg" alt="" class="rounded avatar-sm">&nbsp 1 NFT Pack</td>
+                                    <td><span class="badge badge-pill badge-soft-success font-size-12">Active</span></td>
+                                    <td>0 in Stock</td>
+                                    <td>0 of 3500</td>
+                                    <td>1,23 PENKY ($30,69)</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-check font-size-16">
+                                            <input class="form-check-input" type="checkbox" id="orderidcheck09">
+                                            <label class="form-check-label" for="orderidcheck09"></label>
+                                        </div>
+                                    </td>
+                                    <td><img src="public/assets/images/users/avatar-5.jpg" alt="" class="rounded avatar-sm">&nbsp Ocen</td>
+                                    <td><span class="badge badge-pill badge-soft-danger font-size-12">Archived</span></td>
+                                    <td>1999 in Stock</td>
+                                    <td>790 of 2500</td>
+                                    <td>1,23 PENKY ($30,69)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <ul class="pagination pagination-rounded justify-content-end mb-2">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="javascript: void(0);" aria-label="Previous">
+                            <i class="mdi mdi-chevron-left"></i>
+                        </a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="javascript: void(0);">1</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript: void(0);">2</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript: void(0);">3</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript: void(0);">4</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript: void(0);">5</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="javascript: void(0);" aria-label="Next">
+                            <i class="mdi mdi-chevron-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<%- contentFor('FooterJs') %>
+
+<!-- Ion Range Slider-->
+<script src="/public/assets/libs/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
+
+<!-- Range slider init js-->
+<script src=" /public/assets/js/pages/range-sliders.init.js"></script>
+
+<%- contentFor('BottomJs') %>
+
+<script>
+    var $range = $("#tbl_1_range");
+
+    $range.ionRangeSlider({
+        skin: "round",
+        type: "double",        
+        grid: false,
+        grid_snap: true,
+        min: 0,
+        max: 12000,
+        from: 200,
+        to: 800
+});
+</script>

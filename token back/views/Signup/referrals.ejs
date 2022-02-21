@@ -1,0 +1,144 @@
+<%- contentFor('HeaderCss') %>
+
+<%- contentFor('breadcrumb') %>
+<!-- start page title -->
+<div class="row">
+    <div class="col-12">
+        <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+            <h4 class="mb-sm-0 font-size-18">Referrals</h4>
+
+            <div class="page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item"><a href="javascript: void(0);">Sign up</a></li>
+                    <li class="breadcrumb-item active">Referrals</li>
+                </ol>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- end page title -->
+
+<%- contentFor('body') %>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="mb-3 row">
+                    <label for="referral-first-name" class="col-md-2 col-form-label">First name</label>
+                    <div class="col-md-10">
+                        <input class="form-control" type="text" placeholder="Enter first name" id="referral-first-name">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="referral-middle-name" class="col-md-2 col-form-label">Middle name</label>
+                    <div class="col-md-10">
+                        <input class="form-control" type="text" id="referral-middle-name" placeholder="Enter middle name">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="referral-last-name" class="col-md-2 col-form-label">Last name</label>
+                    <div class="col-md-10">
+                        <input class="form-control" type="text" id="referral-last-name" placeholder="Enter last name">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="referral-email" class="col-md-2 col-form-label">Email</label>
+                    <div class="col-md-10">
+                        <input class="form-control" type="email" id="referral-email" placeholder="Enter email address">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="referral-contact-no" class="col-md-2 col-form-label">Contact no</label>
+                    <div class="col-md-10">
+                        <input class="form-control" type="text" placeholder="Enter contact number" id="referral-contact-no">
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <label for="referral-birthdate" class="col-md-2 col-form-label">Birth date</label>
+                    <div class="col-md-10">
+                        <input class="form-control" type="date" id="referral-birthdate">
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <label for="countryList" class="col-md-2 col-form-label">Country</label>
+                    <div class="col-md-10">
+                        <input class="form-control" list="countryDataList" id="countryList" placeholder="Type to search country">
+                        <datalist id="countryDataList">
+                            <option value="India">India</option>
+                            <option value="Japan">Japan</option>
+                            <option value="China">China</option>
+                            <option value="Philippines">Philippines</option>
+                            <option value="Vietnam">Vietnam</option>
+                            <option value="Malaysia">Malaysia</option>
+                        </datalist>
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <label for="stateList" class="col-md-2 col-form-label">State</label>
+                    <div class="col-md-10">
+                        <input class="form-control" list="stateDataList" id="stateList" placeholder="Type to search state">
+                        <datalist id="stateDataList">
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Gujarat">Gujarat</option>
+                            <option value="Bihar">Bihar</option>
+                            <option value="Utter Pradesh">Utter Pradesh</option>
+                            <option value="Odisha">Odisha</option>
+                            <option value="Kerala">Kerala</option>
+                        </datalist>
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <label for="cityList" class="col-md-2 col-form-label">City</label>
+                    <div class="col-md-10">
+                        <input class="form-control" list="cityDataList" id="cityList" placeholder="Type to search city">
+                        <datalist id="cityDataList">
+                            <option value="Surat">Surat</option>
+                            <option value="Ahmedabad">Ahmedabad</option>
+                            <option value="Vadodara">Vadodara</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Pune">Pune</option>
+                            <option value="Nagpur">Nagpur</option>
+                        </datalist>
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <label for="referral-password" class="col-md-2 col-form-label">Password</label>
+                    <div class="col-md-10">
+                        <input class="form-control" type="password" placeholder="Enter Password" id="referral-password">
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <label for="referral-re-password" class="col-md-2 col-form-label">Re-Password</label>
+                    <div class="col-md-10">
+                        <input class="form-control" type="password" placeholder="Enter Re-Password" id="referral-re-password">
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <label for="referral-image" class="col-md-2 col-form-label">Image</label>
+                    <div class="col-md-10">
+                        <input class="form-control" type="file" id="referral-image">
+                    </div>
+                </div>
+
+                <div class="row justify-content-end">
+                    <button type="submit" class="col-md-2 btn btn-primary w-md">Submit</button>
+                </div>
+
+            </div>
+        </div>
+    </div> <!-- end col -->
+</div>
+<!-- end row -->
+
+<%- contentFor('FooterJs') %>
+
+<%- contentFor('BottomJs') %>
