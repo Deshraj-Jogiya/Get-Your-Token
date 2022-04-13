@@ -37,7 +37,7 @@ function ensureSecure(req, res, next) {
 }
 app.use(session({
   key: 'user_sid',
-  secret: 'change-me',
+  secret: process.env.JWT_SECRET || 'change-me',
   resave: false,
   saveUninitialized: false,
   cookie: {
@@ -45,7 +45,7 @@ app.use(session({
   }
 }));
 
-app.use(session({ resave: false, saveUninitialized: true, secret: 'change-me' }));
+app.use(session({ resave: false, saveUninitialized: true, secret: process.env.SESSION_SECRET || 'change-me' }));
 app.use(flash());
 app.use(i18n({
   translationsPath: path.join(__dirname, 'i18n'), // <--- use here. Specify translations files path.
