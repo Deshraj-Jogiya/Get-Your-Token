@@ -1,0 +1,294 @@
+<%- contentFor('HeaderCss') %>
+
+  <link href="public/assets/libs/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+  <link href="public/assets/libs/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet"
+    type="text/css">
+  <link href="public/assets/libs/spectrum-colorpicker2/spectrum.min.css" rel="stylesheet" type="text/css">
+  <link href="public/assets/libs/bootstrap-timepicker/css/bootstrap-timepicker.min.css" rel="stylesheet"
+    type="text/css">
+  <link href="public/assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css" rel="stylesheet"
+    type="text/css" />
+  <link rel="stylesheet" href="public/assets/libs/@chenfengyuan/datepicker/datepicker.min.css">
+
+  <%- contentFor('breadcrumb') %>
+    <!-- start page title -->
+    <div class="row">
+      <div class="col-12">
+        <div class="
+        page-title-box
+        d-sm-flex
+        align-items-center
+        justify-content-between
+      ">
+          <h4 class="mb-sm-0 font-size-18">Create Bet</h4>
+
+          <div class="page-title-right">
+            <ol class="breadcrumb m-0">
+              <li class="breadcrumb-item">
+                <a href="javascript: void(0);">Bets</a>
+              </li>
+              <li class="breadcrumb-item active">Create Bet</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end page title -->
+
+    <%- contentFor('body') %>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="card">
+            <div class="card-body">
+
+              <div id="basic-example">
+                <!-- Seller Details -->
+                <h3>Bet Details</h3>
+                <section>
+                  <form>
+                    <div class="mb-3 row">
+                      <label for="example-text-input" class="col-md-2 col-form-label">Title</label>
+                      <div class="col-md-10">
+                        <input class="form-control" type="text" minlength="10" id="betTitle"
+                          placeholder="Enter title" />
+                      </div>
+                    </div>
+                    <div class="mb-3 row">
+                      <label for="example-search-input" class="col-md-2 col-form-label">Description</label>
+                      <div class="col-md-10">
+                        <textarea class="form-control" minlength="20" placeholder="Enter description"></textarea>
+                      </div>
+                    </div>
+                    <div class="mb-3 row">
+                      <label for="example-search-input" class="col-md-2 col-form-label">Select Participants</label>
+                      <div class="col-md-3">
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="checkbox" id="formCheck1" checked />
+                          <label class="form-check-label" for="formCheck1">
+                            Participant 1
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="checkbox" id="formCheck2" />
+                          <label class="form-check-label" for="formCheck2">
+                            Participant 2
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="formCheck3" />
+                          <label class="form-check-label" for="formCheck3">
+                            Participant 3
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="checkbox" id="formCheck4" />
+                          <label class="form-check-label" for="formCheck4">
+                            Participant 4
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="checkbox" id="formCheck5" />
+                          <label class="form-check-label" for="formCheck5">
+                            Participant 5
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="formCheck6" checked />
+                          <label class="form-check-label" for="formCheck6">
+                            Participant 6
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="checkbox" id="formCheck7" />
+                          <label class="form-check-label" for="formCheck7">
+                            Participant 7
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="checkbox" id="formCheck8" />
+                          <label class="form-check-label" for="formCheck8">
+                            Participant 8
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-3 row">
+                      <label for="example-date-input" class="col-md-2 col-form-label">Deadline</label>
+                      <div class="col-md-10">
+                        <input class="form-control" type="date" format="YYYY/MM/DD" id="example-date-input" />
+                      </div>
+                    </div>
+                    <div class="mb-3 row">
+                      <label for="example-month-input" class="col-md-2 col-form-label">Buy($)</label>
+                      <div class="col-md-10">
+                        <input class="form-control" type="number" value="0" id="example-number-input" />
+                      </div>
+                    </div>
+                    <div class="mb-3 row">
+                      <label class="col-md-2 col-form-label">Select Category</label>
+                      <div class="col-md-10">
+                        <select class="form-select">
+                          <option value="-1">Select</option>
+                          <option value="1">Art</option>
+                          <option value="2">Business</option>
+                          <option value="3">Cinema</option>
+                          <option value="4">Villain</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <label for="exampleDataList" class="col-md-2 col-form-label">Select Tags</label>
+                      <div class="col-md-10">
+                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                          placeholder="Type to search..." />
+                        <datalist id="datalistOptions">
+                          <option value="Italian Serie A"></option>
+                          <option value="German Bundesliga"></option>
+                          <option value="Spanish LaLiga"></option>
+                        </datalist>
+                      </div>
+                    </div>
+                  </form>
+                </section>
+
+                <!-- Company Document -->
+                <h3>Jury Details</h3>
+                <section>
+                  <form>
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="mb-3">
+                          <label class="form-label">Juror preferences</label>
+                          <input class="form-control" type="text"
+                            placeholder="Matching tags" value="Tag1, Tag2, Tag3, Tag4" />
+                        </div>
+                      </div>
+
+                      <div class="col-lg-6">
+                        <div class="mb-3">
+                          <label for="basicpill-vatno-input">Country</label>
+                          <select class="form-select">
+                            <option value="-1">Select</option>
+                            <option value="1">India</option>
+                            <option value="2">USA</option>
+                            <option value="3">China</option>
+                            <option value="4">UK</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="mb-3">
+                          <label for="basicpill-vatno-input">Area</label>
+                          <select class="form-select">
+                            <option value="-1">Select</option>
+                            <option value="1">X</option>
+                            <option value="2">Y</option>
+                            <option value="3">Z</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-6">
+                        <div class="mb-3">
+                          <label for="basicpill-vatno-input">Languages</label>
+                          <select class="form-select">
+                            <option value="-1">Select</option>
+                            <option value="1">English</option>
+                            <option value="2">Hindi</option>
+                            <option value="3">Dutch</option>
+                            <option value="4">Japanese</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="mb-3">
+                          <label for="basicpill-companyuin-input">Experience</label>
+                          <input type="number" min="5" class="form-control" value="5"/>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-6">
+                        <div class="mb-3">
+                          <label for="basicpill-declaration-input">Specialize</label>
+                          <select class="form-select">
+                            <option value="-1">Select</option>
+                            <option value="1">Art</option>
+                            <option value="2" selected>Business</option>
+                            <option value="3">Cinema</option>
+                            <option value="4">Villain</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="mb-3">
+                          <label for="basicpill-declaration-input">Jury request number</label>
+                          <input class="form-control" value="50" type="number">
+                        </div>
+                      </div>
+
+                      <div class="col-lg-6">
+                        <div class="mb-3">
+                          <label for="basicpill-companyuin-input">Jury members</label>
+                          <input type="number" min="5" class="form-control" value="5"/>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="mb-3">
+                          <label for="basicpill-declaration-input">Vote request response time (in minutes)</label>
+                          <input class="form-control" value="120" type="number">
+                        </div>
+                      </div>
+
+                      <div class="col-lg-6">
+                        <div class="mb-3">
+                          <label for="basicpill-companyuin-input">Replacement vote request numbers</label>
+                          <input type="number" class="form-control" value="10"/>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </section>
+            </div>
+            <!-- end card body -->
+          </div>
+          <!-- end card -->
+        </div>
+        <!-- end col -->
+      </div>
+
+      <%- contentFor('FooterJs') %>
+
+        <!-- jquery step -->
+        <script src="public/assets/libs/jquery-steps/build/jquery.steps.min.js"></script>
+
+        <!-- form wizard init -->
+        <script src="public/assets/js/pages/form-wizard.init.js"></script>
+
+        <script src="public/assets/libs/select2/js/select2.min.js"></script>
+        <script src="public/assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+        <script src="public/assets/libs/spectrum-colorpicker2/spectrum.min.js"></script>
+        <script src="public/assets/libs/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
+        <script src="public/assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js"></script>
+        <script src="public/assets/libs/bootstrap-maxlength/bootstrap-maxlength.min.js"></script>
+        <script src="public/assets/libs/@chenfengyuan/datepicker/datepicker.min.js"></script>
+
+        <!-- form advanced init -->
+        <script src="public/assets/js/pages/form-advanced.init.js"></script>
+
+        <%- contentFor('BottomJs') %>

@@ -1,0 +1,259 @@
+<app-navbar></app-navbar>
+<div class="wrapper">
+  <app-user-profile-level-details></app-user-profile-level-details>
+  <section class="section section-lg user-dashboard-pages">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-12">
+            <ul class="dashboard-side-bar">
+              <li [routerLink]="['/dashboard']"><p><span><img src="assets/img/feather-home.png" class="img-fluid" /></span> Dashboard </p></li>
+              <li [routerLink]="['/settings']"><p><span><img src="assets/img/feather-settings.png" class="img-fluid" /></span> Settings </p></li>
+              <li [routerLink]="['/notifications']"><p><span><img src="assets/img/feather-bell.png" class="img-fluid" /></span> Notifications <span class="no-badge">3</span></p></li> 
+              <li [routerLink]="['/bet-history']"><p><span><img src="assets/img/ionic-ios-list.png" class="img-fluid" /></span> Bet History </p></li> 
+              <li class="dashboard-active" [routerLink]="['/transactions']"><p><span><img src="assets/img/awesome-hand-holding-usd.png" class="img-fluid" /></span> Transactions </p></li> 
+              <li [routerLink]="['/jury']"><p><span><img src="assets/img/awesome-balance-scale-left.png" class="img-fluid" /></span> Jury </p></li> 
+              <li><p><span><img src="assets/img/material-add-shopping-cart.png" class="img-fluid" /></span> Shop </p></li> 
+              <li [routerLink]="['/achievements']"><p><span><img src="assets/img/awesome-first-order.png" class="img-fluid" /></span> Achievements </p></li> 
+              <li><p><span><img src="assets/img/awesome-address-card.png" class="img-fluid" /></span> Your NFTs </p></li> 
+              <li><p><span><img src="assets/img/material-chat_bubble_outline.png" class="img-fluid" /></span> Contact </p></li> 
+              <li class="last-li-logout"><p><span><img src="assets/img/open-account-logout.png" class="img-fluid" /></span> Logout </p></li>              
+            </ul>                  
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-12">
+          <div class="dashboard-all-pages-ontent-container">
+            <form class="settings-form">
+              <div class="form-section-header row">
+                <div class="col-lg-9 col-md-9 col-sm-12">
+                  <h3>Transactions</h3>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12">
+                  <div class="select-dropdown inner-page-dropdown">
+                    <div class="wrap-drop" id="bet-history-gases">
+                        <span>Showing all</span>
+                        <ul class="drop">
+                            <li><a>Show pending</a></li>
+                            <li><a>Show completed</a></li>
+                            <li><a>Show reclined</a></li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row box-notify box-transaction">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                  <div class="bet-header-image transaction-header-image">
+                     <span class="transaction-left-img"><img src="assets/img/transfer-card.png" /></span>
+                    </div>
+                  <div class="transaction-read-box">
+                    <div class="transaction-main">
+                      <p class="notfication-main-data"><span class="trans-buy-text">Buy PENKY</span> <span class="trans-date">09 Sep, 2021 </span> </p>
+                      <p class="notfication-main-text"><span class="trans-purchase-via">Visa PURCHASE $150,00</span></p>
+                    </div>
+                    <div class="transaction-right-side">
+                      <div class="nf-markets-btn transaction-status-block">
+                        <p class="transaction-price">6,25 <span class="nft-currency transaction-currency">Penky</span></p><br/>
+                        <p class="trans-status">In progress</p>
+                      </div>
+                    </div>
+                    <div class="transaction-bottom-box">
+                      <p class="notfication-main-data">
+                          <span class="card-img"><img src="assets/img/card1.png" /></span><span class="trans-date trans-card-no">**** **** **** 9024 </span> <span class="trans-opText trans-operation">Status: </span>
+                          <span class="trans-id"> Pending execution</span>
+                      </p>
+                    </div>
+                    <div class="trans-bottom-status">
+                      <div class="nf-markets-btn transaction-status-block">
+                        <p class="notfication-main-data"><span class="trans-opText">Operation ID: </span><span class="trans-id">34590875492776364847</span> </p>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="row box-notify box-transaction">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                  <div class="bet-header-image transaction-header-image">
+                     <span class="transaction-left-img"><img src="assets/img/transfer-card.png" /></span>
+                    </div>
+                  <div class="transaction-read-box">
+                    <div class="transaction-main">
+                      <p class="notfication-main-data"><span class="trans-buy-text">Buy PENKY</span> <span class="trans-date">08 Sep, 2021 </span> </p>
+                      <p class="notfication-main-text"><span class="trans-purchase-via">Mastercard PURCHASE $200,00</span></p>
+                    </div>
+                    <div class="transaction-right-side">
+                      <div class="nf-markets-btn transaction-status-block">
+                        <p class="transaction-price">8,35 <span class="nft-currency transaction-currency">Penky</span></p><br/>
+                        <p class="trans-status fail">Failed</p>
+                      </div>
+                    </div>
+                    <div class="transaction-bottom-box">
+                      <p class="notfication-main-data">
+                          <span class="card-img"><img src="assets/img/card3.png" /></span><span class="trans-date trans-card-no">**** **** **** 1824 </span> <span class="trans-opText trans-operation">Status: </span>
+                          <span class="trans-id"> Refused for insufficent funds</span>
+                      </p>
+                    </div>
+                    <div class="trans-bottom-status">
+                      <div class="nf-markets-btn transaction-status-block">
+                        <p class="notfication-main-data"><span class="trans-opText">Operation ID: </span><span class="trans-id">9548654948374349564</span> </p>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row box-notify box-transaction">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                  <div class="bet-header-image transaction-header-image">
+                     <span class="transaction-left-img"><img src="assets/img/Earning.png" /></span>
+                    </div>
+                  <div class="transaction-read-box">
+                    <div class="transaction-main">
+                      <p class="notfication-main-data"><span class="trans-buy-text">NFT Card sold</span> <span class="trans-date">08 Sep, 2021 </span> </p>
+                      <p class="notfication-main-text"><span class="trans-purchase-via"><span class="trans-id">Cristiano Ronaldo</span> <span class="trans-opText"> bought by </span> <span class="trans-id">Canesciolto84</span></span></p>
+                    </div>
+                    <div class="transaction-right-side">
+                      <div class="nf-markets-btn transaction-status-block">
+                        <p class="transaction-price">+14,0<span class="nft-currency transaction-currency">Penky</span></p><br/>
+                        <p class="trans-status success">Success</p>
+                      </div>
+                    </div>
+                    <div class="transaction-bottom-box">
+                      <p class="notfication-main-data">
+                          <span class="card-img"><img src="assets/img/metamaskcard.png" style="width: 25px;" /></span><span class="trans-date trans-card-no">***98542aDFh </span> 
+                      </p>
+                    </div>
+                    <div class="trans-bottom-status media-bottom-status">
+                      <div class="nf-markets-btn transaction-status-block">
+                        <p class="notfication-main-data"><span class="trans-opText media-opText">TxHash: </span><span class="trans-id media-id">0f58d4h3949a3d6d9e7d30c443a74d5f1b0f54fc10e785d2276035b8253d56ce31</span>&nbsp;&nbsp; <span class="noti-external trans-external"><i class="fa fa-external-link" aria-hidden="true"></i></span></p>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               
+              <div class="row box-notify box-transaction">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                  <div class="bet-header-image transaction-header-image">
+                     <span class="transaction-left-img"><img src="assets/img/Cart.png" /></span>
+                    </div>
+                  <div class="transaction-read-box">
+                    <div class="transaction-main">
+                      <p class="notfication-main-data"><span class="trans-buy-text">NFT Card bought</span> <span class="trans-date">08 Sep, 2021 </span> </p>
+                      <p class="notfication-main-text"><span class="trans-purchase-via"><span class="trans-id">Ronald Reagan</span> <span class="trans-opText"> sold by </span> <span class="trans-id">TetraPackFrancis</span></span></p>
+                    </div>
+                    <div class="transaction-right-side">
+                      <div class="nf-markets-btn transaction-status-block">
+                        <p class="transaction-price">-6,2 <span class="nft-currency transaction-currency">Penky</span></p><br/>
+                        <p class="trans-status success">Success</p>
+                      </div>
+                    </div>
+                    <div class="transaction-bottom-box">
+                      <p class="notfication-main-data">
+                          <span class="card-img"><img src="assets/img/metamaskcard.png" style="width: 25px;"/></span><span class="trans-date trans-card-no">**** **** **** 9024 </span> 
+                      </p>
+                    </div>
+                    <div class="trans-bottom-status media-bottom-status">
+                      <div class="nf-markets-btn transaction-status-block">
+                        <p class="notfication-main-data"><span class="trans-opText media-opText">TxHash: </span><span class="trans-id media-id">3a74d5f1b0f54fc10e785d2276035b8253d56ce310f58d4h3949a3d6d9e7d30c44</span>&nbsp;&nbsp;<span class="noti-external trans-external"><i class="fa fa-external-link" aria-hidden="true"></i></span> </p>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row box-notify box-transaction">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                  <div class="bet-header-image transaction-header-image">
+                     <span class="transaction-left-img"><img src="assets/img/Box.png" /></span>
+                    </div>
+                  <div class="transaction-read-box">
+                    <div class="transaction-main">
+                      <p class="notfication-main-data"><span class="trans-buy-text">Special Pack bought</span> <span class="trans-date">09 Sep, 2021 </span> </p>
+                      <p class="notfication-main-text"><span class="trans-purchase-via"><span class="trans-opText"> Bought </span><span class="trans-id">SPECIAL SOCCER PACK</span> <span class="trans-opText"> from the </span> <span class="trans-id">Shop</span></span></p>
+                    </div>
+                    <div class="transaction-right-side">
+                      <div class="nf-markets-btn transaction-status-block">
+                        <p class="transaction-price">-2,4 <span class="nft-currency transaction-currency">Penky</span></p><br/>
+                        <p class="trans-status success">Success</p>
+                      </div>
+                    </div>
+                    <div class="transaction-bottom-box">
+                      <p class="notfication-main-data">
+                          <span class="card-img"><img src="assets/img/metamaskcard.png"  style="width: 25px;" /></span><span class="trans-date trans-card-no">**** **** **** 9024 </span> 
+                      </p>
+                    </div>
+                    <div class="trans-bottom-status media-bottom-status">
+                      <div class="nf-markets-btn transaction-status-block">
+                        <p class="notfication-main-data"><span class="trans-opText media-opText">TxHash: </span><span class="trans-id media-id"> 310f58d4h3949a3d6d9e7d30c443a74d5f1b0f54fc10e785d2276035b8253d56ce</span>&nbsp;&nbsp;<span class="noti-external trans-external"><i class="fa fa-external-link" aria-hidden="true"></i></span> </p>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               
+              <div class="row box-notify box-transaction">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                  <div class="bet-header-image transaction-header-image">
+                     <span class="transaction-left-img"><img src="assets/img/transfer-card.png" /></span>
+                    </div>
+                  <div class="transaction-read-box">
+                    <div class="transaction-main">
+                      <p class="notfication-main-data"><span class="trans-buy-text">Buy PENKY</span> <span class="trans-date">01 Sep, 2021 </span> </p>
+                      <p class="notfication-main-text"><span class="trans-purchase-via">American Express PURCHASE $2500,00</span></p>
+                    </div>
+                    <div class="transaction-right-side">
+                      <div class="nf-markets-btn transaction-status-block">
+                        <p class="transaction-price">104,3 <span class="nft-currency transaction-currency">Penky</span></p><br/>
+                        <p class="trans-status success">Approved</p>
+                      </div>
+                    </div>
+                    <div class="transaction-bottom-box">
+                      <p class="notfication-main-data">
+                          <span class="card-img"><img src="assets/img/card2.png" /></span><span class="trans-date trans-card-no">**** **** **** 4415 </span> <span class="trans-opText trans-operation">Status: </span>
+                          <span class="trans-id"> Completed</span>
+                      </p>
+                    </div>
+                    <div class="trans-bottom-status">
+                      <div class="nf-markets-btn transaction-status-block">
+                        <p class="notfication-main-data"><span class="trans-opText">Operation ID: </span><span class="trans-id">9548654948374349564</span> </p>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            
+             
+              <div class="row page">
+                  <div class="col-lg-4 col-md-4 col-sm-12 text-center"></div>
+                  <div class="col-lg-4 col-md-4 col-sm-12 text-center bets-pagination">
+                      <pagination
+                          class="pagination-danger"
+                          [boundaryLinks]="true"
+                          [totalItems]="45"
+                          [ngModel]="pagination1"
+                          previousText="&lsaquo;"
+                          nextText="&rsaquo;"
+                          firstText="&laquo;"
+                          lastText="&raquo;"
+                        >
+                      </pagination>   
+                  </div>
+                  <div class="col-lg-4 col-md-12 col-sm-12 text-center"></div>
+              </div>
+            </form>
+          </div>                  
+        </div>
+      </div>
+    </div>
+  </section>
+<app-footer></app-footer>
+</div>

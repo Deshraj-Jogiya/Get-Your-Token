@@ -1,0 +1,3877 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {font-family: "Bahnschrift";  
+    src: url('/assets/fonts/BAHNSCHRIFT.TTF') format("truetype"); }
+.nav-header {
+    background: url("/assets/img/BG.png") !important;
+    background-size: cover!important;
+    background-position: center !important;
+}
+
+.footer {
+    padding: 50px 0 0px!important;;
+    border-top: 0px solid #435db5!important;;
+    background: rgba(23,22,30,0.5)!important;
+}
+body {
+    background-color: transparent!important;
+}
+.widget-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    color: #fff;
+}
+.about-penky {
+    color: #fff;
+    font-size: 15px;
+    line-height: 25px;
+}
+.img-fluid.footer-logo {
+    height: 50px;
+    margin-bottom: 25px;
+    margin-left: -45px;
+    margin-top: -20px;
+}
+.copyright-penky {
+    background: #24242F;
+    padding: 20px 50px;
+}
+.copyright-security {
+    list-style: none;
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+}
+.social-media-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    text-align: right;
+    float: right;
+}
+.copyright-security li a {
+    color: #EC5774;
+}
+.social-media-links li a i {
+    color: #fff;
+    padding: 0px 20px 0px 0px;
+    font-size: 24px;
+}
+.footer .nav-link {
+    color: #ffffff;
+    padding: 0px 0 15px!important;
+    font-size: 15px!important;
+    text-decoration: none!important;
+    text-transform: none!important;
+}
+.header-logo {
+    height: 35px !important;
+}
+.navbar-nav.header-nav li {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+}
+.header-nav .nav-item .nav-link {
+    color: #fff;
+    font-weight: 500;
+    padding: 0px 25px !important;
+    line-height: 45px!important;
+}
+.connect-to-wallet {
+    text-align: center;
+    margin-left: 45px;
+    display: block;
+    padding: 12px 42px;
+    border-radius: 5px;
+    font-size: 15px;
+    background: linear-gradient(to top left, #ec5774 50%, #ec6882 50%);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 1px 1px 0px 1px #b8344e;
+    border-top-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.connect-to-wallet:hover {
+    background: linear-gradient(to top left, #ec5774 50%, #eb8095 50%);
+}
+
+.info {
+    max-width: 100%!important;
+    margin: 15px auto!important;
+    padding: 30px 0 30px!important;
+    background: #fff;
+    box-shadow: 0px 0px 10px 0px #2a2a2a;
+}
+.home-details-img {
+    height: 80px !important;
+}
+.info .info-title {
+    color: #000!important;
+    margin: 1.75rem 0 0.875rem;
+    font-weight: 700;
+    font-size: 20px;
+}
+.info:hover {
+    background: #ec5774;
+}
+.info p {
+    color: #000!important;
+    line-height: 24px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.info:hover .info-title{
+    color: #FFF!important;
+}
+.info:hover p{
+    color: #FFF!important;
+}
+section.section.section-lg.nft-marketplace-home {
+    background: url('/assets/img/RepeatGrid.png'), #FFF;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.register-connect-wallet {
+    background: #fff;
+    padding: 150px 0px !important;
+}
+.wallet-image {
+    height: 60px !important;
+}
+.wallet-main {
+    margin: 50px 0px;
+}
+.header-title {
+    color: #29294E;
+    font-weight: 800;
+    font-size: 30px;
+}
+.header-sub-title {
+    color: #29294E;
+    font-weight: 600;
+    font-size: 18px;
+}
+.wallet-image-div {
+    border: 1px solid #d2d2d2;
+    padding: 5px 15px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.walletconnect {
+    height: 43px !important;
+}
+.walletconnect-div {
+    padding: 13.5px 0px;
+}
+.wallet-image-div:hover {
+    box-shadow: 2px 2px 6px rgb(0 0 0 / 40%);
+    transform: scale(1.1);
+}
+.create-account-page {
+    background: #fff;
+}
+.create-account-page .header-sub-title {
+    color: #29294E;
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.create-account-page .header-title {
+    color: #29294E;
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.input-group-prepend .input-group-text, .input-group-prepend .input-group-text {
+    background-color: transparent;
+    border: 0!important;
+    border-bottom: 1px solid #2b3553!important;
+    border-radius: 0!important;
+    color: #29294e!important;
+    margin: 0;
+    padding: 0!important;
+}
+.form-control {
+    border: 0!important;
+    border-bottom: 1px solid #2b3553!important;
+    border-radius: 0!important;
+    color: #29294e!important;
+}
+.form-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.form-control-placeholder {
+  position: absolute;
+  top: 0;
+  padding: 7px 0 0 13px;
+  transition: all 200ms;
+  font-weight: 600;
+  font-size: 16px;
+  font-size: 100%;
+  transform: translate3d(0, -80%, 0);
+  opacity: 1;
+}
+
+.form-control:focus + .form-control-placeholder, .form-control:valid + .form-control-placeholder{
+    
+}
+.form-control:focus {
+    border-color: #e14eca;
+    background-color: #fff !important;
+    box-shadow: none;
+}
+.input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+    margin-bottom: 35px !important;
+}
+
+.form-check .lable-avatar {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    padding-left: 0px!important;
+    line-height: 18px;
+    margin-bottom: 0;
+    transition: color 0.3s linear;
+    color: #000!important;
+}
+.form-check .form-check-label {
+    color: #29294e !important;
+    font-size: 14px;
+    font-weight: 600;
+}
+.form-check .form-check-label a{
+    color: #29294e !important;
+    font-size: 14px;
+    font-weight: 600;
+    border-bottom: 1px solid #29294e !important;
+}
+label.form-check-label.lable-avatar img {
+    float: left;
+}
+label.form-check-label.lable-avatar {
+    width: 100%;
+}
+.form-check.text-left {
+    margin-bottom: 35px;
+}
+label.form-check-label.lable-avatar p {
+    color: #29294e !important;
+    margin: 15px;
+    font-weight: 600;
+    font-size: 14px;
+}
+input.btn.submit-button {
+    text-transform: uppercase;
+}
+.submit-create{
+    display: block!important;
+}
+.picture-gradient {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background: linear-gradient(
+        to bottom, 
+        rgba(255,255,255,1) 0%, 
+        rgba(255,255,255,0) 10%, 
+        rgba(255,255,255,0) 90%, 
+        rgba(255,255,255,1) 100%
+    ); 
+}
+.submit-button {
+    padding: 8px!important;
+    border-radius: 3px!important;
+}
+.input-group.form-group.input-box {
+    margin: 20px 20px !important;
+    background: rgba(255, 255, 255, 0);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    color: #fff;
+    border: 1px solid #fff !important;
+    border-radius: 5px;
+    height: 70px;
+}
+.input-group.form-group.input-box input {
+    border: 0 !important;
+    height: 70px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+}
+.input-group.form-group.input-box input::-webkit-input-placeholder { /* Edge */
+  color: #fff;
+}
+
+.input-group.form-group.input-box input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #fff;
+}
+
+.input-group.form-group.input-box input::placeholder {
+  color: #fff;
+}
+.btn-browse-marketplace {
+    background: linear-gradient(to top left, #29294e 50%, #2c2c50d9 50%);
+    margin: 0;
+    height: 68px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.one-block{
+    background: url(/assets/img/one.png);
+    padding: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80px !important;
+}
+.info:hover .one-block{
+    background: url(/assets/img/one-hover.png);
+    padding: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80px !important;
+}
+.two-block{
+    background: url(/assets/img/two.png);
+    padding: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80px !important;
+}
+.info:hover .two-block{
+    background: url(/assets/img/two-hover.png);
+    padding: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80px !important;
+}
+.three-block{
+    background: url(/assets/img/three.png);
+    padding: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80px !important;
+}
+.info:hover .three-block{
+    background: url(/assets/img/three-hover.png);
+    padding: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80px !important;
+}
+.four-block{
+    background: url(/assets/img/four.png);
+    padding: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80px !important;
+}
+.info:hover .four-block{
+    background: url(/assets/img/four-hover.png);
+    padding: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80px !important;
+}
+.home-instant-games .pagination .page-item .page-link {
+    border: 0;
+    border-radius: 30px !important;
+    transition: all 0.3s;
+    margin: 0 3px;
+    min-width: 30px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+.home-instant-games .pagination.pagination-danger .page-item.active > .page-link,.home-instant-games .pagination.pagination-danger .page-item.active > .page-link:focus,.home-instant-games .pagination.pagination-danger .page-item.active > .page-link:hover {
+    background: #EC5774;
+    background-size: 210% 210%;
+    background-position: top right;
+}
+
+.main-nft-marketplace-cards .pagination .page-item .page-link {
+    border: 0;
+    border-radius: 30px !important;
+    transition: all 0.3s;
+    margin: 0 3px;
+    min-width: 30px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+.main-open-bets .pagination .page-item .page-link {
+    border: 0;
+    border-radius: 50% !important;
+    transition: all 0.3s;
+    margin: 0 3px;
+    min-width: 8px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+    padding: 0px;
+    width: 30px;
+}
+.main-nft-marketplace-cards .pagination.pagination-danger .page-item.active > .page-link,.main-nft-marketplace-cards .pagination.pagination-danger .page-item.active > .page-link:focus,.main-nft-marketplace-cards .pagination.pagination-danger .page-item.active > .page-link:hover {
+    background: #EC5774;
+    background-size: 210% 210%;
+    background-position: top right;
+}
+.game-section-title {
+   background: #EC5774;
+    width: 22%;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 auto 35px;
+    text-transform: uppercase;
+    padding: 5px 25px;
+    font-size: 31px;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    -webkit-box-shadow: 10px 10px 10px #000, inset 0 0 10px #000;
+    -moz-box-shadow: 10px 10px 10px #000, inset 0 0 10px #000;
+    -o-box-shadow: 10px 10px 10px #000, inset 0 0 10px #000;
+    box-shadow: 1px 1px 2px 0px #fff, inset 0 0 10px #00000085;
+}
+.game-section-text {
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.game-section-text a{
+    color: #EC5774;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: underline;
+}
+.game-card-header-section {
+    background: #fff;
+    border-radius: 3px;
+    padding: 10px;
+}
+.game-head-info {
+    list-style: none;
+    display: flex;
+    padding: 10px 0px 0px;
+    margin: 0;
+    text-align: center;
+}
+.game-head-info li {
+    color: #29294E;
+    font-size: 12px;
+    width: 33.33%;
+    font-weight: 500;
+}
+ul.game-head-info li span {
+    font-weight: 900;
+}
+.game-card-footer-section {
+    background: #fff;
+    border-radius: 3px;
+    border-top: 2px dashed #4a4a69;
+}
+.game-bet-amount-changes p {
+    background: #29294E;
+    padding: 0px 6px;
+    border-radius: 2px;
+    font-size: 11px;
+    color: #fff;
+    margin: 0px 0px 3px;
+}
+.penky-bet-amount-game {
+    display: inline-flex;
+    text-align: center;
+    width: 100%;
+    padding: 0px 97px;
+}
+.game-input-penky {
+    border: 5px solid #29294e;
+    border-radius: 5px;
+    height: 35px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 5px;
+    width: 50%;
+    text-align: center;
+}
+.game-paly-now {
+    background: #EC5774;
+    text-align: center;
+    margin-left: 5px;
+    border-radius: 5px;
+    height: 35px;
+    padding: 5px 10px;
+}
+.play-now-btn a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.game-info-icon {
+    color: #29294e;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 15px;
+}
+.game-card-footer-section {
+    background: #fff;
+    border-radius: 3px;
+    border-top: 2px dashed #4a4a69;
+    padding: 15px 0px;
+}
+.game-box {
+    margin-bottom: 25px;
+}
+.hero-image {
+    border-radius: 0;
+}
+.all-home-bets ul li {
+    width: 25%;
+}
+.all-home-bets .nav.nav-tabs{
+    background: transparent;
+    padding: 0;
+    width: 100%;
+}
+.all-home-bets .tab-content {
+    background: #fff;
+    padding: 0;
+    width: 100%;
+        border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.all-home-bets .nav.nav-tabs li a {
+    color: #71707D !important;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-shadow: 1px 0px 2px #ffffff;
+    border: 0 !important;
+}
+.all-home-bets .nav.nav-tabs .nav-item {
+    background: #B9B9B9;
+    height: 45px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    -moz-box-shadow: inset 10px -5px 20px #888;
+    -webkit-box-shadow: inset 10px -5px 20px #888;
+    box-shadow: inset 10px -5px 20px #888;
+}
+.all-home-bets .nav.nav-tabs li.active.nav-item {
+    background: #fff !important;
+    height: 60px !important;
+    box-shadow: 8px -2px 2px -8px #2a2a2a;
+    z-index: 1040;
+    margin-top: -15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 10px;
+}
+.nav-tabs > .nav-item > .nav-link {
+    padding: 5px 23px!important;
+}
+.nav-tabs > .nav-item > .nav-link:hover {
+    background-color: transparent;
+    border: 0px solid #191f31!important;
+    color: rgba(255, 255, 255, 0.8);
+}
+.nav-tabs-danger .nav-tabs > .nav-item > .nav-link.active {
+    border-color: #fff!important;
+    color: #fd5d93;
+}
+.all-home-bets .nav.nav-tabs li.active.nav-item a span {
+    color: #EC5774 !important;
+    font-size: 30px !important;
+    font-weight: 800;
+}
+.main-open-bets {
+    padding: 20px !important;
+}
+.bets-categories {
+    background: #29294e;
+    display: flex;
+    height: 60px;
+    border-radius: 10px;
+}
+.all-bets-category {
+    list-style: none;
+    display: inline-flex;
+    width: 100%;
+    padding: 0;
+    overflow-x: scroll;
+    margin: 0 !important;
+    height: 60px;
+    border-radius: 10px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.search-bets-category {
+    list-style: none;
+    width: 100%;
+    padding: 10px 10px 0px;
+    margin: 0;
+}
+.search-bets-category li {
+    width: 100%!important;
+}
+.bet-active {
+    background: #db4764;
+}
+.bets-categories div {
+    padding: 0;
+}
+.all-bets-category li p {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    padding: 15px 10px;
+    width: 135px;
+    text-align: center;
+}
+.search-bets input {
+    background: #fff;
+    border-top-left-radius: 50px !important;
+    border-bottom-left-radius: 50px !important;
+    color: #2b3553 !important;
+    font-weight: 700;
+    border: 0 !important;
+}
+.search-bets span.input-group-text {
+    background: #fff !important;
+    color: #2b3553 !important;
+    border-top-right-radius: 50px !important;
+    border-bottom-right-radius: 50px !important;
+    border: 0 !important;
+        padding: 10px !important;
+}
+.filters-data {
+    display: flex;
+    padding: 0;
+    list-style: none;
+}
+.main-filter-class {
+    background: #D3D3D3;
+    color: #71707D;
+        text-transform: uppercase;
+}
+.filters-data li {
+    text-align: center;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 6px 0px;
+    height: 40px;
+    border: 2px solid #D3D3D3;
+    margin-right: 10px;
+}
+.filters-row {
+    margin: 20px 0px;
+}
+p.filter-data a {
+    color: #9D9D9D;
+    font-weight: 500;
+    font-size: 15px;
+}
+.highest-prize {
+    width: 300px !important;
+}
+.bet-filter-active {
+    border-color: #da4764!important;
+}
+.bet-filter-active a{
+    color: #db4765 !important;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.sort-by-bets select {
+    border: 2px solid #71707D !important;
+    border-radius: 5px !important;
+}
+.bets-pagination .page-link {
+    color: #71707D;
+    font-weight: 600!important;
+    font-size: 20px;
+}
+.bets-pagination .pagination.pagination-danger .page-item.active > .page-link, .bets-pagination .pagination.pagination-danger .page-item.active > .page-link:focus, .bets-pagination .pagination.pagination-danger .page-item.active > .page-link:hover {
+    background: #EC5774;
+    background-size: 210% 210%;
+    background-position: top right;
+}
+.bet-box {
+    background: #E6E6E6;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 2px #e6e6e6;
+}
+.bet-header {
+    display: flex;
+    color: #fff;
+    width: 100%;
+}
+.bet-footer {
+    display: flex;
+    color: #fff;
+    width: 100%;
+    background: #D3D3D3;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.bet-type-category {
+    background: #71707D;
+    padding: 10px;
+    border-top-left-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    width: 75%;
+}
+.bet-type-name {
+    background: #8F8D9E;
+    padding: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    border-top-right-radius: 8px;
+    width: 100%;
+}
+.bet-type-buy-in-players {
+    color: #71707D;
+    font-weight: 500;
+    font-size: 12px;
+    padding: 3px 10px;
+    width: 100%;
+    margin: 0;
+}
+.bet-type-prizepool {
+    color: #71707D;
+    font-weight: 500;
+    font-size: 12px;
+    padding: 3px 10px;
+    float: right;
+    width: 42%;
+    text-align: right;
+}
+.bet-footer p span {
+    font-weight: 800;
+}
+.bet-body {
+    display: inline-flex;
+    width: 100%;
+    padding: 0px 0px;
+    height: 125px;
+}
+.bet-nft {
+    width: 12.5%;
+    margin: auto;
+    text-align: center;
+}
+.bet-nft-selected {
+    background: #EC5774;
+    padding: 10px 0px;
+    border-radius: 5px;
+}
+
+.bet-nft img {
+    height: 75px;
+    width: 70px;
+    object-fit: cover;
+}
+.select-nft {
+    color: #71707D;
+    padding: 18px 23px 23px;
+    font-size: 22px;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='%2371707DFF' stroke-width='4' stroke-dasharray='9' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+    border-radius: 100px;
+    font-weight: 600;
+}
+.select-nft i {
+    font-weight: 600;
+}
+.select-nft:hover {
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='%23EC5774FF' stroke-width='3' stroke-dasharray='9' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+    border-radius: 100px;
+}
+.select-nft:hover i {
+    color: #EC5774;
+}
+.bet-info {
+    background: #d1d0d0;
+    width: 90%;
+    margin: auto;
+    padding: 5px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: inset 0px 5px 15px -6px #808080;
+    text-align: justify;    
+    transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.bet-info p {
+    color: #71707D;
+    font-size: 10px;
+    font-weight: 600;
+}
+.show-info {
+    background: #8F8D9E;
+    text-align: center;
+    width: 18%;
+    margin: auto;
+    color: #fff;
+    font-size: 11px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+.hide-info {
+    background: #29294e;
+    text-align: center;
+    width: 18%;
+    margin: auto;
+    color: #fff;
+    font-size: 11px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+.show-info:hover {
+    background: #29294e;
+}
+.bets-row .bet-col{
+    margin-bottom: 20px;
+}
+.bets-search-box {
+    box-shadow: -25px 0px 32px -2px #00000038;
+}
+.main-open-bets .pagination .page-item .page-link:hover, .main-open-bets .pagination .page-item .page-link:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #7d7d88;
+    border: none;
+    box-shadow: none;
+}
+.home-instant-games {
+    padding: 20px 0px 70px;
+}
+.nft-cards-category {
+    padding: 0;
+    list-style: none;
+    background: #fff;
+    color: #000;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 1px #0000006e;
+    margin: 0;
+}
+.nft-cards-category li p {
+    color: #29294E;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 15px 15px;
+    margin: 0;
+}
+.nft-cards-category li p span{
+    float: right;
+}
+.nft-category-active p {
+    background: #EC5774;
+    color: #fff!important;
+}
+.nft-cards-category li p span i {
+    font-weight: 900;
+    font-size: 14px;
+}
+.nft-cards-category .nft-category-active:first-child p {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.nft-cards-category .nft-category-active:last-child p {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.nft-category-active p span i:before {
+    content: "\ea35";
+}
+.nft-cards-category li {
+    cursor: pointer;
+}
+.nft-cards-category li:hover p{
+    background: #EC5774;
+    color: #fff!important;
+}
+.nft-cards-category li:hover:first-child p{
+    background: #EC5774;
+    color: #fff!important;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.nft-cards-category li:hover:last-child p{
+    background: #EC5774;
+    color: #fff!important;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.nft-cards-category li:hover p span i:before {
+    content: "\ea35";
+}
+.nft-cards-category li:after {
+    content: "";
+    border-bottom: 1px solid #d3d3d3;
+    display: block;
+    margin: 0px 15px;
+}
+
+.nft-card-body {
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    border-top: 2px dashed #29294E;
+    padding: 10px 0px;
+}
+.nf-markets {
+    display: inline-flex;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.nf-markets div {
+    width: 23%;
+    padding: 5px 0px 0px;
+    text-align: center;
+    border-left: 1px solid #29294e;
+    border-right: 1px solid #29294e;
+    height: 50px;
+}
+.avg-price p {
+    color: #29294E;
+}
+.avg-per p {
+    color: #29294E;
+}
+.nft-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0;
+    line-height: 0px;
+}
+.nft-price {
+    font-family: "Bahnschrift";
+    font-size: 25px;
+    font-weight: 600;
+    display: inline-flex;
+    width: 100%;
+    padding: 0px 8px;
+    line-height: 50px;
+}
+.nft-currency {
+    transform: rotate(
+270deg);
+    font-size: 8px !important;
+    position: relative;
+    text-transform: uppercase;
+    left: 15px;
+    font-weight: 700;
+    bottom: 3px;
+    line-height: 2;
+}
+
+.avg-per {
+    text-align: center;
+    line-height: 5px;
+}
+.per-price {
+    font-family: "Bahnschrift";
+    color: #2FAC40 !important;
+    font-size: 16px;
+}
+.per-time {
+    font-size: 10px;
+    font-weight: 600;
+    margin: 0;
+    line-height: 18px;
+}
+.per-label .fa-caret-up {
+    position: relative;
+    top: -8px;
+    font-size: 14px;
+}
+.per-label .fa-caret-down {
+    position: relative;
+    bottom: 3px;
+    font-size: 14px;
+}
+.per-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0;
+    line-height: 0px;
+}
+.nf-markets p {
+    margin: 0;
+}
+.nf-markets-btn {
+    display: inline-flex;
+    width: 100%;
+    margin: auto 0;
+    text-align: center;
+}
+.details-btn {
+    float: left;
+    border-radius: 3px;
+    font-size: 15px;
+    background: linear-gradient(to top left, #EC5774 50%, #ec5774c4 50%);
+    color: white;
+    transform: translateY(-3px);
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 50%;
+    cursor: pointer;
+    margin: 0px 5px 0px 25px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 35px;
+}
+.details-btn:hover {
+    background: linear-gradient(to top left, #EC5774 50%, #ec57749e 50%);
+}
+.offer-btn {
+    background: linear-gradient(to top left, #29294e 50%, #2c2c50d9 50%);
+    border-radius: 3px;
+    font-size: 15px;
+    color: white;
+    transform: translateY(-3px);
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 50%;
+    cursor: pointer;
+    margin: 0px 25px 0px 5px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 35px;
+}
+.offer-btn:hover {
+    background: linear-gradient(to top left, #29294e 50%, #2c2c509e 50%);
+}
+.avg-per.overall-price {
+    padding: 19px 0px 0px;
+}
+.avp-1 {
+    border-left: 2px solid #29294e!important;
+}
+.avp-2 {
+    border-right: 2px solid #29294e!important;
+}
+.nft-single-card {
+    margin-bottom: 30px;
+}
+.section {
+    padding: 40px 0!important;
+}
+.navbar.navbar-transparent {
+    background: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.navbar-transparent .header-nav li::after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 4px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+    bottom: -25px;
+    position: relative;
+}
+.navbar-transparent .header-nav li:hover::after {
+    width: 100%;
+    background: #db4765;
+}
+.bg-danger .header-nav li::after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 4px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+    bottom: -15px;
+    position: relative;
+}
+.bg-danger .header-nav li:hover::after {
+    width: 100%;
+    background: #db4765;
+}
+.connect-to-wallet::after{
+    display: none!important;
+}
+span.seperator-penky {
+    padding: 0px 10px;
+}
+.user-level-details {
+    background: linear-gradient(270deg, #35516E, #1F2234);
+    margin: 0 !important;
+    box-shadow: 0px 0px 5px 1px #0000002b;
+}
+.left-data-ul {
+    list-style: none;
+    padding: 0;
+    display: inline-flex;
+    margin: 0 !important;
+}
+.user-circle-progress {
+    width: 100%;
+    height: 100%;
+}
+.search-whole {
+    width: 50%;
+}
+.circle-level {
+    width: 15%;
+    text-align: center;
+}
+.circle-level-data{
+    width: 35%;
+    padding: 20px 30px 25px 0px;
+}
+.search-whole .input-group {
+    margin: 0 !important;
+    padding: 25px 30px 25px 5px;
+}
+.search-whole .input-group-prepend .input-group-text, .search-whole .input-group-prepend .input-group-text {
+    background-color: #fff !important;
+    border-bottom: 0px solid #2b3553 !important;
+    border-top-left-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
+    color: #a9a9a9 !important;
+    margin: 0;
+    padding: 8px 1px 8px 20px !important;
+    font-size: 18px;
+    height: 45px;
+}
+.search-whole .form-control {
+    border: 0 !important;
+    border-bottom: 0px solid #2b3553 !important;
+    border-radius: 0 !important;
+    color: #a9a9a9 !important;
+    border-top-right-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+    background-color: #fff!important;
+    font-size: 18px;
+    font-weight: 600;
+    height: 45px;
+}
+.point-user {
+    color: #b0b2b7;
+    font-weight: 500;
+    margin: 0;
+    font-size: 16px;
+}
+.user-name-level {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+}
+.right-data-ul {
+    margin: 12px 20px 0px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    text-align: center;
+    width: 96%;
+    background: #172a42;
+    border-radius: 9px;
+    box-shadow: inset 0px 0px 10px 2px #0d1f37;
+}
+.right-data-ul li {
+    width: 33.33%;
+}
+.jackpot-price {
+    font-family: "Bahnschrift";
+    font-size: 30px;
+    font-weight: 500;
+    display: inline-flex;
+    width: 100%;
+    padding: 0px 8px;
+    line-height: 50px;
+    color: #fff;
+    margin: 0;
+}
+.jackpot-currency {
+    transform: rotate(
+270deg);
+    font-size: 8px !important;
+    position: relative;
+    text-transform: uppercase;
+    left: 0px;
+    font-weight: 700;
+    top: 12px;
+    line-height: 2;
+    font-family: "Quicksand";
+    height: 18px;
+}
+.right-data-ul li {
+    width: 33.33%;
+    display: flex;
+    padding: 0px 2px;
+    height: 45px;
+}
+.jackpot-label {
+    margin: 0;
+    padding: 10px;
+    font-size: 16px;
+}
+.jackpot-user-position p {
+    padding: 10px 8px;
+    margin: 0;
+}
+.jackpot-position-price {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+.jackpot-position-label {
+    font-size: 16px;
+}
+.jackpot-user-time p {
+    padding: 10px 4px;
+    margin: 0;
+}
+.jackpot-time-price {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+.jackpot-time-label {
+    font-size: 16px;
+}
+.jackpot-user-position::after{
+    content: "";
+    border-right: 2px solid #2d425a;
+    height: 35px;
+    margin: auto;
+}
+ .jackpot-user-data::after{
+    content: "";
+    border-right: 2px solid #2d425a;
+    height: 35px;
+    margin: auto 0px auto 0px;
+}
+.jackpot-user-position {
+    margin-left: 15px;
+}
+.level-progress-li {
+    border-radius: 50px;
+    margin: 5px 20px 12px;
+    padding: 2px 2px;
+    list-style: none;
+    display: flex;
+    text-align: center;
+    width: 96%;
+    background: #172a42;
+    box-shadow: inset 0px 0px 10px 2px #0d1f37;
+}
+.level-progress-li li {
+    width: 10%;
+    background: #71707d;
+    margin: 2px;
+    font-size: 10px;
+    color: #71707d;
+    box-shadow: 0px 0px 15px -2px #71707d7d;
+}
+.level-progress-li li:first-child {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.level-progress-li li:last-child {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.added-progress-level {
+    background: #ec5774 !important;
+    color: #ec5774!important;
+}
+.section.level-user-details {
+    padding: 0px !important;
+    margin: 70px 0px 0px !important;
+}
+.user-level-user-details {
+    padding: 0 !important;
+    margin-top: 70px;
+}
+.user-dashboard-pages {
+    padding: 0 0px 50px !important;
+}
+.dashboard-side-bar {
+    padding: 20px 0px 0px;
+    list-style: none;
+    background: linear-gradient(
+140deg, #35516E, #1F2234);
+    box-shadow: -5px 5px 5px 0px #0000002b;
+    height: 950px;
+}
+.dashboard-all-pages-ontent-container {
+    background: #fff;
+}
+.dashboard-side-bar li {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.dashboard-side-bar li p {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    color: #fff;
+}
+.dashboard-side-bar li p span {
+    margin-right: 15px;
+}
+.dashboard-active {
+    background: #ec5774;
+    color: #fff;
+}
+.dashboard-side-bar li p span img {
+    height: 18px;
+    width: 18px;
+}
+.last-li-logout {
+    margin-top: 446px;
+}
+.dashboard-side-bar li:hover {
+    background: #ec5774;
+}
+.user-dashboard-pages .col-lg-3 {
+    padding-right: 0;
+}
+.user-dashboard-pages .col-lg-9 {
+    padding-left: 0;
+}
+.dashboard-all-pages-ontent-container {
+    background: #fff;
+    box-shadow: 0px 5px 5px 0px #0000002b;
+    padding: 20px;
+    height: 950px;
+}
+.form-section-header h3 {
+    color: #29294E;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.settings-form .input-group {
+    background: #e6e6e6;
+    border-radius: 3px;
+    height: 40px;
+}
+.settings-form .form-control {
+    border: 0 !important;
+    border-bottom: 0px solid #2b3553 !important;
+    color: #29294E !important;
+    font-size: 18px;
+    font-weight: 600;
+    border-top-left-radius: 5px!important;
+    border-bottom-left-radius: 5px!important;
+}
+.settings-form .input-group-text {
+    border: 0 !important;
+    border-bottom: 0px solid #2b3553 !important;
+    color: #29294E !important;
+    font-size: 18px;
+    font-weight: 600;
+     border-top-right-radius: 5px!important;
+    border-bottom-right-radius: 5px!important;
+}
+.settings-form .input-group-text i {
+    font-size: 18px;
+    font-weight: 600;
+}
+.input-label {
+    color: #9D9D9D;
+    font-weight: 600;
+    font-size: 12px;
+    padding-left: 20px;
+    margin: 0;
+}
+.input-label-right {
+    float: right;
+    font-weight: 600;
+    font-size: 12px;
+    padding-left: 20px;
+    color: #29294e;
+    text-decoration: underline;
+    margin: 0;
+}
+.referalco-de {
+    background: transparent!important;
+    border: 2px solid #e6e6e6;
+}
+.new {
+  padding: 50px;
+}
+
+.communications-group {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.communications-group input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.communications-group label {
+  position: relative;
+  cursor: pointer;
+}
+
+.communications-group label:before {
+  content:'';
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 2px solid #29294E;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.communications-group input:checked + label:after {
+  content: "";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 8px;
+    width: 8px;
+    height: 16px;
+    border: solid #29294E;
+    border-width: 0 4px 4px 0;
+    transform: rotate(
+45deg);
+}
+.checkbox-text {
+    font-weight: 500;
+}
+.switch input
+{
+  display: none!important;
+}
+
+.switch 
+{
+  display: inline-block;
+    width: 45px;
+    height: 25px;
+    margin: 4px;
+    transform: translateY(50%);
+    position: relative;
+}
+
+.slider
+{
+  position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 30px;
+    box-shadow: 0 0 0 2px #9d9d9d, 0 0 4px #9d9d9d;
+    cursor: pointer;
+    border: 0px solid transparent;
+    overflow: hidden;
+    transition: 0.2s;
+    background: #9D9D9D;
+}
+
+.slider:before
+{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 30px;
+  transform: translateX(-20px); /*translateX(-(w-h))*/
+  transition: 0.2s;
+}
+
+.switch input:checked + .slider:before
+{
+  transform: translateX(20px); /*translateX(w-h)*/
+  background-color: #fff;
+}
+
+.switch input:checked + .slider {
+    box-shadow: 0 0 0 2px #ec5774, 0 0 0px #ec5774;
+    background: #ec5774;
+}
+.nf-markets-btn.settings-page.row {
+    margin: 20px 0px;
+}
+.settings-page .details-btn {
+    float: left;
+    border-radius: 3px;
+    font-size: 15px;
+    background: linear-gradient(to top left, #EC5774 50%, #ec5774c4 50%);
+    color: white;
+    transform: translateY(-3px);
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 100%;
+    cursor: pointer;
+    margin: 0px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 35px;
+}
+.settings-page .offer-btn {
+    background: linear-gradient(to top left, #29294e 50%, #2c2c50d9 50%);
+    border-radius: 3px;
+    font-size: 15px;
+    color: white;
+    transform: translateY(-3px);
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 100%;
+    cursor: pointer;
+    margin: 0px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 35px;
+}
+.no-badge {
+    float: right;
+    margin: 0 !important;
+    background: #fff;
+    padding: 0px 8px;
+    color: #ec5774;
+    border-radius: 5px;
+    font-weight: 800;
+}
+.notification-badge {
+    float: right;
+    background: #ec5774;
+    padding: 0 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+.notfication-main-text {
+    color: #29294E;
+}
+.notfication-header-data {
+    color: #29294E;
+}
+.notfication-main-data {
+    color: #29294E;
+}
+.notfication-box {
+    padding: 10px;
+    border: 3px solid #ec5774;
+    border-radius: 8px;
+}
+.noti-tag {
+    background: #29294E;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    margin-right: 20px;
+}
+.noti-external {
+    float: right;
+    font-size: 16px;
+}
+.noti-external:hover i {
+    color: #ec5774;
+}
+.noti-time {
+    color: #9D9D9D;
+    font-size: 14px;
+    font-weight: 500;
+}
+.notfication-main-data span {
+    font-weight: 700;
+}
+.notfication-main-data {
+    font-size: 18px;
+    font-weight: 500;
+}
+.notfication-main-text {
+    font-size: 14px;
+    font-weight: 500;
+}
+.notfication-main-text span {
+    font-weight: 700;
+}
+.more-notify {
+    float: right;
+}
+.read-notification {
+    color: #ec5774;
+    background: #fff;
+    position: absolute;
+    left: 0.9%;
+    top: 40%;
+}
+.read-notfication-box {
+    padding: 10px;
+    border: 3px solid #E6E6E6;
+    border-radius: 8px;
+}
+.box-notify {
+    margin-bottom: 20px;
+}
+.pagination {
+    margin: 0;
+}
+.bet-header-image {
+    width: 90px;
+    float: left;
+    text-align: center;
+}
+.bet-header-image img {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto;
+} 
+.bet-history-footer {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    padding: 18px 0px;
+}
+.bet-history-main {
+    padding: 5px 10px;
+    color: #9e9e9e;
+}
+.bet-history-main .notfication-main-text{
+    color: #9e9e9e;
+}
+.buy-in-bet-history {
+    color: #9e9e9e;
+    font-size: 13px;
+    padding: 0px 15px 0px 0px;
+}
+.players-in-bet-history {
+    color: #9e9e9e;
+    font-size: 13px;
+    padding: 0px 15px;
+}
+.ended-on-bet-history {
+    color: #9e9e9e;
+    font-size: 13px;
+    padding: 0px 0px 0px 15px;
+}
+.bet-history-main .notfication-main-data span {
+    font-weight: 700;
+}
+.bet-history-main .notfication-main-data {
+    font-size: 16px;
+    font-weight: 400;
+}
+.play-again-btn {
+    background: #ec5774;
+    color: #fff;
+    font-size: 12px;
+    padding: 3px 15px;
+    border-radius: 50px;
+    margin-left: 15px;
+    box-shadow: 0px 0px 2px 2px #d2d2d2;
+    cursor: pointer;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.price-penky {
+    transform: rotate(
+270deg);
+    font-size: 10px !important;
+    position: relative;
+    text-transform: uppercase;
+    left: 15px;
+    font-weight: 700;
+    bottom: 3px;
+    line-height: 2;
+}
+.bet-history-price {
+    color: red;
+    font-family: "Bahnschrift";
+    font-size: 40px;
+    font-weight: 500;
+    display: inline-flex;
+    width: 100%;
+    padding: 0px 0px;
+    line-height: 60px;
+}
+.success-green-bet-history {
+    color: green;
+}
+.bet-history-logout {
+    margin-top: 392px;
+}
+.disable-play-again {
+    background: #d3d3d3;
+    box-shadow: none;
+    cursor: none;
+}
+.disable-play-again:hover {
+    box-shadow: none;
+    zoom: normal;
+}
+.jury-notify .read-notfication-box {
+    border: 3px solid #29294e;
+}
+.jury-heading {
+    width: 65px;
+    background: #29294e;
+    height: 65px;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 400;
+    border-radius: 50%;
+    padding: 12px;
+    margin-right: 20px;
+}
+.jury-notify .bet-history-main .notfication-main-data span {
+    font-weight: 800;
+}
+.jury-notify .bet-history-main .notfication-main-data {
+    font-size: 18px;
+    font-weight: 400;
+}
+.jury-notify .details-btn {
+    float: left;
+    border-radius: 3px;
+    font-size: 15px;
+    background: linear-gradient(to top left, #EC5774 50%, #ec5774c4 50%);
+    color: white;
+    transform: translateY(-3px);
+    padding: 0px 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 50%;
+    cursor: pointer;
+    margin: 10px 5px 10px 25px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 35px;
+    height: 35px;
+}
+.jury-notify .offer-btn {
+    background: linear-gradient(to top left, #29294e 50%, #2c2c50d9 50%);
+    border-radius: 3px;
+    font-size: 15px;
+    color: white;
+    transform: translateY(-3px);
+    padding: 0px 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 50%;
+    cursor: pointer;
+    margin: 10px 5px 10px 10px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 35px;
+    height: 35px;
+}
+.jury-notify .offer-btn:hover {
+    background: linear-gradient(to top left, #29294e 50%, #2c2c509e 50%);
+}
+.jury-notify .details-btn:hover {
+    background: linear-gradient(to top left, #EC5774 50%, #ec57749e 50%);
+}
+.jury-notify .vote-btn {
+    padding: 0px 30px;
+    margin: 10px 5px 10px 85px;
+}
+.nft-for-bets {
+    position: absolute;
+    background: #fff;
+    top: -210px;
+    width: 50%;
+    z-index: 1040;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px #888686;
+    left: 55%;
+}
+.nft-for-bets::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-top: solid 25px #fff;
+    border-left: solid 25px transparent;
+    border-right: solid 25px transparent;
+    text-shadow: 0 0 20px black;
+}
+.nft-single {
+    position: absolute;
+    background: #fff;
+    top: -310px;
+    width: 30%;
+    z-index: 1040;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px #888686;
+    left: 65%;
+}
+.nft-single::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-top: solid 25px #fff;
+    border-left: solid 25px transparent;
+    border-right: solid 25px transparent;
+    text-shadow: 0 0 20px black;
+}
+.nft-for-bets-header {
+    background: #71707D;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 5px;
+}
+.nft-for-bets-header p{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;    
+}
+.nftslist {
+    padding: 15px 20px 0px;
+    display: -webkit-box;
+    list-style: none;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.nft-name-of-nft {
+    color: #343434;
+    font-size: 16px;
+    font-weight: 700;
+}
+.nftslist li{
+   width: 33.33% !important;
+}
+.buy-nft-single {
+    text-align: center;
+    margin: 5px 70px 10px;
+    display: block;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 13px;
+    background: linear-gradient(to top left, #ec5774 50%, #ec6882 50%);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0px 1px 0px 1px #b8344e;
+    border-top-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.buy-nft-single a{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+.or-tag {
+   text-align: center; 
+   border-bottom: 2px solid #343434; 
+   line-height: 0.1em;
+   margin: 0px 20px 15px;
+} 
+
+.or-tag span { 
+    background:#fff; 
+    padding:0 10px; 
+    color: #343434;
+    font-weight: 600;
+}
+.close-nft-buy {
+    position: absolute;
+    background: #EC5774;
+    padding: 5px 10px;
+    right: -13px;
+    top: -10px;
+    border-radius: 50%;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+.single-bet-card-d img{
+    width: 193px;
+    height: 273px;
+}
+.nftslist li:hover p {
+    color: #ec5774;
+}
+.nft-playing-bet {
+    z-index: 1040;
+    position: absolute;
+    background: transparent;
+    top: -200px;
+    left: 27%;
+    border-radius: 10px;
+}
+.nft-playing-bet::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: -150px;
+    right: 0;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-top: solid 25px #fff;
+    border-left: solid 25px transparent;
+    border-right: solid 25px transparent;
+    text-shadow: 0 0 20px black;
+}
+.right-side-bet-div {
+    float: right;
+}
+.left-side-bet-div {
+    float: left;
+    border-radius: 10px;
+    background: #ffff;
+    height: 100%;
+}
+.right-side-bet-div img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.playing-this-bet {
+    font-weight: 500;
+    font-size: 18px;
+    color: #29294e;
+    padding: 10px;
+    text-align: center;
+}
+.left-side-bet-div .nft-for-bets-body.single-bet-card-d {
+    height: 148px;
+}
+.want-to-quit-this-bet {
+    font-size: 20px;
+    color: #2a2a4f;
+    font-weight: 800;
+    margin: 0;
+}
+.only-report{
+    visibility: visible;
+    display: block;
+    position: absolute;
+    right: 20px;
+    background: #fff;
+    color: #ec5774;
+    top: 15px;
+    border-radius: 50px;
+    padding: 0 5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.report-as-wrong{
+    visibility: hidden;
+    display: none;
+    position: absolute;
+    right: 20px;
+    background: #fff;
+    color: #ec5774;
+    top: 15px;
+    border-radius: 50px;
+    padding: 0 5px;
+    font-size: 12px;
+    font-weight: 600;
+    transition: all 2s ease;
+    cursor: pointer;
+}
+.bet-report:hover .report-as-wrong{
+    visibility: visible;
+    display: block;
+}
+.bet-report:hover .only-report{
+    visibility: hidden;
+    display: none;
+}
+.bet-report-wrong-span {
+    background: #fff;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    width: 18%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px #2a2a2a75;
+    text-align: center;
+    z-index: 999;
+}
+.report-as-wrong-2{
+    color: #ec5774!important;
+    top: 15px;
+    border-radius: 50px;
+    padding: 0 5px;
+    font-size: 12px;
+    font-weight: 600!important;
+    transition: all 2s ease;
+    cursor: pointer;
+}
+.bet-report-wrong-span p{
+    color: #29294e;
+    font-size: 12px;
+    font-weight: 500;
+}
+.bet-report-wrong-span .nf-markets-btn p{
+    color: #fff!important;
+}
+.bet-report-wrong-span .nf-markets-btn .offer-btn {
+    background: linear-gradient(to top left, #29294e 50%, #2c2c50d9 50%);
+    border-radius: 3px;
+    font-size: 15px;
+    color: white;
+    transform: translateY(-3px);
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 65%;
+    cursor: pointer;
+    margin: 0px 10px 0px 5px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 16px;
+    height: 25px;
+}
+.bet-report-wrong-span .nf-markets-btn .details-btn {
+    float: left;
+    border-radius: 3px;
+    font-size: 15px;
+    background: linear-gradient(to top left, #EC5774 50%, #ec5774c4 50%);
+    color: white;
+    transform: translateY(-3px);
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 70%;
+    cursor: pointer;
+    margin: 0px 5px 0px 10px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 16px;
+    height: 25px;
+}
+.closed-bets .bet-nft img {
+    cursor: none;
+}
+.closed-bets .bet-nft{
+    cursor: none;
+    opacity: 0.4;
+}
+.winner-nft {
+    opacity: 1!important;
+    cursor: pointer !important;
+}
+.winner-nft img {
+    cursor: pointer !important;
+}
+.bet-reported {
+    position: absolute;
+    right: 20px;
+    top: 14px;
+    background: #29294e;
+    color: #fff;
+    font-size: 12px;
+    padding: 0 5px;
+    border-radius: 50px;
+    font-weight: 500;
+}
+.closed-bets .bet-type-prizepool {
+    color: #71707D;
+    font-weight: 500;
+    font-size: 12px;
+    padding: 3px 10px;
+    float: right;
+    width: 33%;
+    text-align: right;
+}
+.closed-bets .bet-type-buy-in-players {
+    color: #71707D;
+    font-weight: 500;
+    font-size: 12px;
+    padding: 3px 10px;
+    width: 40%;
+    margin: 0;
+}
+.closed-bets .waiting-desision {
+    font-size: 12px;
+    background: red;
+    color: #fff;
+    border-radius: 50px;
+    margin: 3px 0;
+    padding: 0px 0px;
+    width: 35%;
+    text-align: center;
+    height: 20px;
+    font-weight: 500;
+}
+.closed-bets .no-des{
+    visibility: hidden;
+}
+.play-btn-closed-bet {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    box-shadow: 0px 0px 2px 2px #49494942;
+}
+.play-again-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 5px 3px #4b4b4b40;
+}
+.only-running-bet {
+    color: #8f8d9e;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 0px 7px;
+}
+.all-home-bets .nav.nav-tabs .nav-item:hover a {
+    color: #29294d !important;
+}
+.jury-title {
+    text-transform: uppercase;
+    background: #8F8D9E;
+    margin: 0;
+    padding: 4px 8px;
+    border-bottom-left-radius: 10px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    width: 15%;
+    height: 30px;
+}
+.jury-list {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    text-align: center;
+    width: 100%;
+}
+.jury-list li {
+    width: 20% !important;
+    background: #E6E6E6;
+    border-radius: 3px;
+    color: #8f8d9e;
+    font-size: 10px;
+    height: 20px;
+    padding: 2px;
+    margin: 5px 4px;
+    font-weight: 500;
+}
+.judging-footer {
+    height: 30px;
+}
+.voted-jury i {
+    font-size: 8px;
+}
+.voted-jury {
+    background: #ec5774!important;
+    color: #fff!important;
+}
+.vote-dot i {
+    border: 1px solid #D3D3D3;
+    border-radius: 50%;
+    margin: 2px 1px;
+}
+.selcted-for-vote {
+    color: #EC5774;
+    border: 1px solid #B93B54 !important;
+    background: #B93B54;
+}
+.judgin-timeslot {
+    display: flex;
+    margin: 0;
+}
+.timing-remain {
+    background:#B7B7B7;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.timing-remain p {
+    color: #71707D;
+    margin: 4px;
+    font-weight: 500;
+    padding: 3px 10px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background: #fff;
+}
+.judgin-bets {
+    border-top-left-radius: 0px !important;
+}
+.judgin-bets .bet-type-category {
+    border-top-left-radius: 0px !important;
+}
+.report-a-problem p {
+    color: #71707D;
+    margin: 4px;
+    font-weight: 500;
+    padding: 3px 10px;
+}
+.report-a-problem span {
+    color: #29294E;
+    font-weight: 700;
+    padding: 0px 2px;
+}
+.report-seperater {
+    font-size: 5px;
+    position: relative;
+    top: -3px;
+}
+.succes-class {
+    color: #2FAC40;
+    font-weight: 700;
+}
+.danger-class{
+    color: #F03F3F;
+    font-weight: 700;
+}
+.transaction-header-image {
+    width: 80px;
+    background: #29294e;
+    height: 80px;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 400;
+    border-radius: 10px;
+    padding: 10px;
+    padding-top: 21px;
+}
+.transaction-main {
+    background: #e6e6e6;
+    border-radius: 6px;
+    padding: 11px 15px;
+}
+.trans-date {
+    font-size: 13px;
+    color: #71707D;
+    font-weight: 500 !important;
+    padding-left: 10px;
+    vertical-align: text-bottom;
+}
+.trans-buy-text {
+    font-size: 16px;
+}
+.trans-purchase-via {
+    font-size: 12px;
+    color: #71707D;
+    font-weight: 600 !important;
+}
+.transaction-price {
+    font-family: "Bahnschrift";
+    font-size: 33px;
+    font-weight: 600;
+    display: inline-flex;
+    width: 100%;
+    padding: 0px 0px;
+    line-height: 35px;
+    color: #29294E;
+    margin-left: 19px;
+    margin-bottom: 0px;
+}
+.transaction-currency {
+    transform: rotate(270deg);
+    font-size: 8px !important;
+    position: relative;
+    text-transform: uppercase;
+    left: 0px;
+    font-weight: 700;
+    bottom: 3px;
+    line-height: 3;
+}
+.transaction-status-block {
+    display: block;
+}
+.trans-status {
+    color: #29294E;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: right;
+    padding-right: 15px;
+}
+.transaction-right-side {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    padding: 7px 0px;
+}
+.trans-bottom-status {
+    position: absolute;
+    right: 34px;
+    top: 65%;
+    padding: 7px 0px;
+}
+.trans-id {
+    color: #71707D;
+    font-weight: 700 !important;
+    font-size: 13px;
+}
+.trans-opText {
+    color: #71707D;
+    font-weight: 400 !important;
+    font-size: 14px;
+}
+.transaction-bottom-box {
+    background: #D3D3D3;
+    border-radius: 6px;
+    padding: 0px 15px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+.transaction-read-box {
+    background: lightgrey;
+    margin-left: 84px;
+    border-radius: 6px;
+}
+.trans-operation {
+    padding-left: 40px;
+}
+.card-img img {
+    width: 36px;
+    height: 25px;
+}
+
+.transaction-left-img {
+    background: white;
+    border-radius: 50px;
+    padding: 11px;
+}
+.transaction-left-img img {
+    width: 28.86px;
+    height: 26px;
+}
+.fail {
+    color: #F03F3F;
+}
+.success {
+    color: #2FAC40;
+}
+.trans-external{
+    padding-top : 2px;
+}
+
+.pagination .page-item .page-link:hover, .pagination .page-item .page-link:focus {
+    background-color: rgb(236 87 116) !important;
+}
+.pagination .page-item .page-link {
+    height: 32px !important;
+    line-height: 31px !important;
+}
+.page {
+    margin-top: 35px;
+}
+.achi-tabs {
+    width: 124px !important;
+    background: #ffffff;
+    height: 171px;
+    text-align: center;
+    vertical-align: middle;
+    color: #29294e;
+    font-size: 25px;
+    font-weight: 400;
+    border-radius: 15px;
+    padding: 10px;
+    padding-top: 21px;
+    margin: 20px;
+    box-shadow: 1px 1px 7.5px 1px #00000040;
+}
+
+.achi-left-img img{
+    width: 73px;
+    height: 79px;
+}
+
+.achi-name {
+    color: #29294E;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding-top: 21px;
+    font-family: 'Bahnschrift';
+}
+
+.selected-name {
+    color: white;
+}
+.selected-tab {
+    background: #ec5774;
+    box-shadow: 2px 2px 20px 2px rgb(0 0 0 / 31%);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.achi-tabs:hover {
+    box-shadow: 2px 2px 20px 2px rgb(0 0 0 / 31%);
+    transform: scale(1.1);
+    transition: all 0.8s;
+    cursor: pointer;
+}
+.achi-main-img {
+    margin: 20px;
+    margin-left: 0;
+    margin-right: 0;
+}
+.achi-main-img img {
+    width: 95px;
+    height: 108px;
+}
+.achi-box {
+    top: 35px;
+}
+.achi-name-main {
+    font-size: 30px;
+    color: #29294E;
+    font-weight: 700;
+    font-family: 'Bahnschrift';
+    text-transform: uppercase;
+}
+.achi-dificulty {
+    color: #29294E;
+    font-weight: 400 !important;
+    font-size: 18px;
+    font-family: 'Bahnschrift';
+}
+.achi-level {
+    font-weight: 900;
+    font-size: 21px;
+}
+.achi-points-text {
+    color: #29294E;
+    font-weight: 400 !important;
+    font-size: 18px;
+    font-family: 'Bahnschrift';
+}
+.achi-points {
+    font-weight: 900;
+    font-size: 21px;
+}
+.achi-data-name{
+    margin-bottom: 0px;
+}
+.achi-data-dificulty{
+    margin-bottom:0px;
+}
+
+.achieves {
+    width: 124px !important;
+    text-align: center;
+    margin-left: -30px;
+}
+.achieves:hover {
+    cursor: pointer;
+}
+.achieves:focus {
+    opacity: 0.5;
+}
+.first{
+    margin-left:132px;
+}
+.achi-sub-name {
+    color: #29294E;
+    font-weight: 600;
+    font-size: 14px;
+    padding-top: 11px;
+    font-family: 'Bahnschrift';
+}
+.apexcharts-toolbar {
+    display: none !important;
+}
+.apexcharts-tooltip {
+    display: none !important;
+}
+.dashboard-box {
+    background: linear-gradient(120deg, #A6C8B8, #45475F);
+    border-radius: 6px;
+    height: 100%;
+}
+.graph-name {
+    color: white;
+    font-weight: 700;
+    font-size: 17px;
+    padding-left: 10px;
+}
+.chart-right {
+    position: absolute;
+    right: 31px;
+    top: 0;
+    padding: 16px 0px;
+}
+.chart-arrow {
+    color: white;
+}
+.chart-main {
+    padding: 13px 10px;
+}
+.latest-bets-right-text{
+    color: white;
+    font-family: "Bahnschrift";
+    font-size: 15px;
+    font-weight: 500;
+}
+.latest-bets-right{
+    position: relative;
+    float: right;
+    padding: 24px 50px 0px 44px;
+    text-align: center;
+}
+.latest-bet-name {
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+}
+.latest-bet-category {
+    color: white;
+    font-weight: 300;
+    font-size: 14px;
+}
+.latest-bet-image img {
+   width: 66px;
+    height: 57px;
+}
+.latest-row {
+    margin-left: 0px !important;
+}
+.latest-penky-point-lose {
+    color: #F8A45D;
+    font-weight: 700;
+    font-size: 16px;
+}
+.latest-penky-text-lose {
+    color: #F8A45D;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.latest-penky-point-get {
+    color: #1CEB82;
+    font-weight: 700;
+    font-size: 16px;
+}
+.latest-penky-text-get {
+    color: #1CEB82;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.dashboard-latest {
+    padding: 0;
+    margin: 0;
+    height: 40px;
+}
+.dashboard-sec-row-head {
+    color: #29294E;
+    font-weight: 700;
+    font-size: 18px;
+    padding-left: 25px;
+}
+.dashboard-sec-row-head-expand-div {
+    text-align: right;
+    padding-right: 28px !important;
+    font-weight: 700;
+    font-size: 15px;
+    color: #29294E;
+}
+.own-nft-div {
+    background: linear-gradient(180deg, #A6C8B8, #45475F);
+    border-radius: 6px;
+   height: 462px;
+}
+.own-nft-main {
+    margin-right: 0px !important;
+}
+.own-nft-img {
+    padding: 12px;
+}
+.dash-own-nft-body {
+    width: 94%;
+    background: url(/assets/img/own-nft-bodybg.png);
+    border-top: 0px;
+    padding: 2px;
+    background-size: contain;
+    margin: 8px;
+    padding-bottom: 0px !important;
+    background-repeat: no-repeat;
+}
+.dash-own-nft-avgprice {
+    border-left: 0px !important;
+    margin-right: 5px !important;
+    border-right: 0px !important;
+}
+.dash-own-nft-avgprice-last {
+    border-right: 0px !important;
+}
+.own-nft-label {
+    font-size: 9px;
+    font-weight: 600;
+}
+.own-nft-price {
+   font-size: 27px;
+    padding: 0px 1px;
+}
+.dash-own-nft-bodyfont p {
+    color: white;
+}
+.own-nft-currency {
+    left: 15px;
+    font-weight: 600;
+    line-height: 2;
+    letter-spacing: 1px;
+    font-size: 6px !important;
+}
+.own-nft-per {
+    font-size: 12px;
+}
+.dash-own-nft-bodyfont div {
+    width: 23%;
+    padding: 5px 0px 0px;
+    text-align: center;
+    border-left: 1px solid #ffff;
+    border-right: 1px solid #ffff;
+    height: 50px;
+}
+.dash-own-nft-bodyfont{
+    margin-left: 6px;
+}
+.own-nft-label-last {
+    font-size: 8px;
+    padding-left: 2px;
+}
+.last-own-nft-price {
+    font-size: 27px;
+    padding: 0px 1px 0px 5px;
+}
+.last-own-nft-currency {
+    left: 13px;
+    line-height: 2;
+    letter-spacing: 1px;
+    font-size: 6px !important;
+}
+.own-nft-manage {
+    width: 100%;
+    cursor: pointer;
+    margin: 0px 8px 0px 10px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 35px;
+    background: linear-gradient(to top left, #ec5774 50%, #ec6882 50%);
+}
+.own-nft-manage:hover {
+    background: linear-gradient(to top left, #ec5774 50%, #eb8095 20%);
+}
+.wrap-drop {
+    background: #fff;
+    cursor: pointer;
+    max-width: 225px;
+    padding: 6px 15px;
+    height: 40px;
+    position: relative;
+    width: 75%;
+    z-index: 3;
+    border: 1px solid #71707D;
+    border-radius: 8px;
+}
+.wrap-drop::after {
+    border-color:#71707D transparent;
+    border-style:solid;
+    border-width: 7px 7px 0;
+    content:"";
+    height:0;
+    margin-top:-4px;
+    position:absolute;
+    right:1rem;
+    top:50%;
+    width:0;
+}
+
+.wrap-drop .drop {
+    background: #fff;
+    box-shadow: 0px 0px 0px rgb(0 0 0 / 20%);
+    display: none;
+    left: -1px;
+    max-width: 229px;
+    list-style: none;
+    margin-top: 0;
+    opacity: 0;
+    padding-left: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 85%;
+    z-index: 2;
+    border: 1px solid #71707D;
+    border-top: 0px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    width: 101%;
+}
+.wrap-drop .drop li{ 
+    width: 100%;
+}
+.wrap-drop .drop li a {
+    color:#71707D;
+    display:block;
+    padding:10px 15px;
+    text-decoration:none;
+    font-weight: 600;
+}
+
+.wrap-drop span {
+    color:#71707D;
+    font-weight: 600;
+}
+
+.wrap-drop .drop li:hover a {
+    background-color:#71707D;
+    color:#e7ded5;
+}
+
+.wrap-drop.active::after {
+    border-width:0 7px 7px;
+}
+
+.wrap-drop.active .drop {
+    display:block;
+    opacity:1;
+    pointer-events:auto;
+    box-shadow: -5px 14px 10px 1px rgb(0 0 0 / 5%);
+    max-width: 225px;
+}
+.drop li::after {
+    content: "";
+    border-bottom: 1px solid #D3D3D3;
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+.drop::before {
+    content: "";
+    border-top: 1px solid #D3D3D3;
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+.form-section-header .col-lg-9, .form-section-header .col-lg-3 {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+.inner-page-dropdown .wrap-drop {
+    width: 100%;
+}
+.wrap-drop.active {
+    box-shadow: 0px 6px 8px 2px rgb(0 0 0 / 20%);
+}
+
+@media screen and (max-width: 1200px) {
+
+    .copyright-security {
+        list-style: none;
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+    }
+    .social-media-links {
+        list-style: none;
+        padding: 15px 0px;
+        display: inline-flex;
+        text-align: center;
+        float: none;
+    }
+    .img-fluid.footer-logo {
+        height: 50px;
+        margin-bottom: 25px;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .widget-title {
+        margin: 10px 0px 0px;
+    }
+    .social-media-links li a i {
+        padding: 0px 20px 0px 20px;
+    }
+    .wrapper {
+        position: relative;
+        top: 75px;
+    }
+    .header-nav .nav-item .nav-link {
+        display: block !important;
+    }
+    .game-input-penky {
+        width: 35%;
+    }
+    .game-section-title {
+        width: 80%;
+    }
+    .penky-bet-amount-game {
+        display: inline-flex;
+        text-align: center;
+        margin: auto 10px;
+        width: 100%;
+        padding: 0;
+    }
+    .nft-cards-category {
+        margin-bottom: 30px;
+    }
+    .left-data-ul {
+        display: block;
+    }
+    .left-data-ul li {
+        width: 100%;
+        padding: 0 !important;
+        text-align: center;
+    }
+    .user-circle-progress {
+        width: 20%;
+        height: 90%;
+    }
+    .right-data-ul {
+        display: block;
+        width: 100%;
+        margin: 25px 0px;
+        text-align: center;
+    }
+    .right-data-ul li {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 0px 54px;
+    }
+    .jackpot-user-data::after {
+       display: none;
+    }
+    .jackpot-user-position::after {
+       display: none;
+    }
+    .level-progress-li {
+        margin: 10px 0;
+        width: 100%;
+    }
+    .search-whole .input-group {
+        margin: 0 !important;
+        padding: 25px 0px 25px 0px;
+    }
+    .user-level-details {
+        background: linear-gradient(
+    360deg, #35516E, #1F2234);
+    }
+    .user-dashboard-pages .col-lg-3 {
+        padding-right: 15px;
+    }
+    .user-dashboard-pages .col-lg-9 {
+        padding-left: 15px;
+    }
+    .last-li-logout {
+        margin-top: 0;
+    }
+    .page-header {
+        min-height: 25vh!important;
+    }
+    .all-home-bets ul li {
+        width: 50%;
+    }
+    .bets-categories {
+        background: #29294e;
+        display: block;
+        height: 130px;
+        border-radius: 10px;
+    }
+    .filters-data {
+        display: flex;
+        padding: 0;
+        list-style: none;
+        overflow-x: scroll;
+        margin: 10px 0px;
+    }
+    .filters-data li {
+        text-align: center;
+        font-weight: 600;
+        border-radius: 5px;
+        padding: 5px 18px;
+        height: 60px;
+        border: 2px solid #D3D3D3;
+        margin-right: 10px;
+    }
+    .bet-body {
+        display: -webkit-box;
+        width: 100%;
+        padding: 10px;
+        overflow-x: scroll;
+    }
+    .bet-nft {
+        margin: 0px 5px;
+    }
+    .bet-type-category {
+        font-size: 14px;
+    }
+    .bet-type-name {
+        font-size: 14px;
+    }
+    .game-section-title {
+        font-size: 24px;
+    }   
+    .input-group.form-group.input-box {
+        display: block;
+        margin: 0!important;
+    }
+    .input-group.form-group.input-box input {
+        border: 0 !important;
+        height: 70px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+        width: 100%;
+    }
+    .btn-browse-marketplace {
+        background: linear-gradient(to top left, #29294e 50%, #2c2c50eb 50%);
+        margin: 0;
+        height: 68px;
+        padding: 20px;
+        font-size: 20px;
+        text-transform: uppercase;
+        width: 100%;
+        border-radius: 5px;
+        margin-top: 10px;
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px);
+        text-align: center;
+    }
+    .bet-header-image {
+        width: 90px;
+        float: none;
+        text-align: center;
+    }
+    .bet-history-main .notfication-main-data {
+        font-size: 15px;
+    }
+    .pagination {
+        margin-left: -15px;
+    }
+    .read-notification {
+        left: 1.5%;
+        top: 40%;
+    }
+    .notfication-main-text {
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .notfication-main-data {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .noti-tag {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    .noti-time {
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .form-section-header h3 {
+        font-size: 18px;
+    }
+    .dashboard-all-pages-ontent-container {
+        height: 100%;
+    }
+    .dashboard-side-bar {
+        height: 100%;
+    }
+    .jury-heading {
+        width: 65px !important;
+    }
+    .nft-for-bets {    
+        position: fixed;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px 0px #888686;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.4);
+        padding-top: 250px;
+    }
+    .close-nft-buy {
+        position: absolute;
+        background: #EC5774;
+        padding: 0px 4px;
+        right: -5px;
+        top: -10px;
+        border-radius: 50%;
+        font-size: 20px;
+        font-weight: 600;
+        color: #fff;
+        cursor: pointer;
+        height: 30px;
+        line-height: 30px;
+    }
+    .select-nft {
+        color: #71707D;
+        padding: 20px 23px 20px;
+        font-size: 20px;
+        font-weight: 600;
+        height: 85px;
+        line-height: 80px;
+    }
+    .bet-nft-selected {
+        background: #EC5774;
+        padding: 0px 0px;
+        border-radius: 5px;
+        height: 75px;
+    }
+    .nft-playing-bet {
+        position: fixed;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px 0px #888686;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.4);
+        padding-top: 250px;
+    }
+    .left-side-bet-div {
+        float: left;
+        border-radius: 10px;
+        background: #ffff;
+        height: 100%;
+        width: 50%;
+    }
+    .right-side-bet-div {
+        float: right;
+        width: 50%;
+    }
+    .nft-playing-bet::after, .nft-single::after,.nft-for-bets::after {
+        display: none;
+    }
+    .left-side-bet-div .nft-for-bets-body.single-bet-card-d {
+        height: 138px;
+    }
+    .nft-single {
+        position: fixed;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px 0px #888686;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.4);
+        padding-top: 250px;
+    }
+    .innerdivForMobile {
+        background-color: #fff;
+        margin: 15% auto;
+        padding: 0px;
+        border: 0px solid #888;
+        width: 60%;
+        border-radius: 11px;
+    }
+    .close-nft-buy {
+        position: relative !important;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        top: -15px;
+        right: -10px;
+        color: #fff;
+        padding: 0px 5px;
+    }
+    .dashboard-side-bar li p {
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 768px) {
+
+    .copyright-security {
+        list-style: none;
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+    }
+    .social-media-links {
+        list-style: none;
+        padding: 15px 0px;
+        display: inline-flex;
+        text-align: center;
+        float: none;
+    }
+    .img-fluid.footer-logo {
+        height: 50px;
+        margin-bottom: 25px;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .widget-title {
+        margin: 10px 0px 0px;
+    }
+    .social-media-links li a i {
+        padding: 0px 20px 0px 20px;
+    }
+    .wrapper {
+        position: relative;
+        top: 75px;
+    }
+    .header-nav .nav-item .nav-link {
+        display: block !important;
+    }
+    .game-input-penky {
+        width: 35%;
+    }
+    .game-section-title {
+        width: 80%;
+    }
+    .penky-bet-amount-game {
+        display: inline-flex;
+        text-align: center;
+        margin: auto 10px;
+        width: 100%;
+        padding: 0;
+    }
+    .nft-cards-category {
+        margin-bottom: 30px;
+    }
+    .left-data-ul {
+        display: block;
+    }
+    .left-data-ul li {
+        width: 100%;
+        padding: 0 !important;
+        text-align: center;
+    }
+    .user-circle-progress {
+        width: 40%;
+        height: 100%;
+    }
+    .right-data-ul {
+        display: block;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+    .right-data-ul li {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 0px 54px;
+    }
+    .jackpot-user-data::after {
+       display: none;
+    }
+    .jackpot-user-position::after {
+       display: none;
+    }
+    .level-progress-li {
+        margin: 10px 0;
+        width: 100%;
+    }
+    .search-whole .input-group {
+        margin: 0 !important;
+        padding: 25px 0px 25px 0px;
+    }
+    .user-level-details {
+        background: linear-gradient(
+    360deg, #35516E, #1F2234);
+    }
+    .user-dashboard-pages .col-lg-3 {
+        padding-right: 15px;
+    }
+    .user-dashboard-pages .col-lg-9 {
+        padding-left: 15px;
+    }
+    .last-li-logout {
+        margin-top: 0;
+    }
+    .page-header {
+        min-height: 25vh!important;
+    }
+    .all-home-bets ul li {
+        width: 100%;
+    }
+    .bets-categories {
+        background: #29294e;
+        display: block;
+        height: 130px;
+        border-radius: 10px;
+    }
+    .filters-data {
+        display: flex;
+        padding: 0;
+        list-style: none;
+        overflow-x: scroll;
+        margin: 10px 0px;
+    }
+    .filters-data li {
+        text-align: center;
+        font-weight: 600;
+        border-radius: 5px;
+        padding: 5px 18px;
+        height: 60px;
+        border: 2px solid #D3D3D3;
+        margin-right: 10px;
+    }
+    .bet-body {
+        display: -webkit-box;
+        width: 100%;
+        padding: 10px;
+        overflow-x: scroll;
+    }
+    .bet-nft {
+        margin: 0px 5px;
+    }
+    .bet-type-category {
+        font-size: 14px;
+    }
+    .bet-type-name {
+        font-size: 14px;
+    }
+    .game-section-title {
+        font-size: 24px;
+    }   
+    .input-group.form-group.input-box {
+        display: block;
+        margin: 0!important;
+    }
+    .input-group.form-group.input-box input {
+        border: 0 !important;
+        height: 70px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+        width: 100%;
+    }
+    .btn-browse-marketplace {
+        background: linear-gradient(to top left, #29294e 50%, #2c2c50eb 50%);
+        margin: 0;
+        height: 68px;
+        padding: 20px;
+        font-size: 20px;
+        text-transform: uppercase;
+        width: 100%;
+        border-radius: 5px;
+        margin-top: 10px;
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px);
+        text-align: center;
+    }
+    .bet-header-image {
+        width: 90px;
+        float: none;
+        text-align: center;
+    }
+    .bet-history-main .notfication-main-data {
+        font-size: 15px;
+    }
+    .pagination {
+        margin-left: -15px;
+    }
+    .read-notification {
+        left: 3%;
+        top: 40%;
+    }
+    .notfication-main-text {
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .notfication-main-data {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .noti-tag {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    .noti-time {
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .form-section-header h3 {
+        font-size: 18px;
+    }
+    .dashboard-all-pages-ontent-container {
+        height: 100%;
+    }
+    .dashboard-side-bar {
+        height: 100%;
+    }
+    .bet-history-footer {
+        position: relative;
+    }
+    .jury-heading {
+        width: 65px !important;
+        margin: auto;
+    }
+    .nft-for-bets {    
+        position: fixed;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px 0px #888686;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.4);
+        padding-top: 250px;
+    }
+    .close-nft-buy {
+        position: absolute;
+        background: #EC5774;
+        padding: 0px 4px;
+        right: -5px;
+        top: -10px;
+        border-radius: 50%;
+        font-size: 20px;
+        font-weight: 600;
+        color: #fff;
+        cursor: pointer;
+        height: 30px;
+        line-height: 30px;
+    }
+    .select-nft {
+        color: #71707D;
+        padding: 20px 23px 20px;
+        font-size: 20px;
+        font-weight: 600;
+        height: 85px;
+        line-height: 80px;
+    }
+    .bet-nft-selected {
+        background: #EC5774;
+        padding: 0px 0px;
+        border-radius: 5px;
+        height: 75px;
+    }
+    .nft-playing-bet {
+        position: fixed;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px 0px #888686;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.4);
+        padding-top: 250px;
+    }
+    .left-side-bet-div {
+        float: left;
+        border-radius: 10px;
+        background: #ffff;
+        height: 100%;
+        width: 50%;
+    }
+    .right-side-bet-div {
+        float: right;
+        width: 50%;
+    }
+    .nft-playing-bet::after, .nft-single::after,.nft-for-bets::after {
+        display: none;
+    }
+    .left-side-bet-div .nft-for-bets-body.single-bet-card-d {
+        height: 138px;
+    }
+    .nft-single {
+        position: fixed;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px 0px #888686;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.4);
+        padding-top: 250px;
+    }
+    .innerdivForMobile {
+        background-color: #fff;
+        margin: 15% auto;
+        padding: 0px;
+        border: 0px solid #888;
+        width: 60%;
+        border-radius: 11px;
+    }
+    .close-nft-buy {
+        position: relative !important;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        top: -15px;
+        right: -10px;
+        color: #fff;
+        padding: 0px 5px;
+    }
+}
+@media screen and (max-width: 576px) {
+
+    .copyright-security {
+        list-style: none;
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+    }
+    .social-media-links {
+        list-style: none;
+        padding: 15px 0px;
+        display: inline-flex;
+        text-align: center;
+        float: none;
+    }
+    .img-fluid.footer-logo {
+        height: 50px;
+        margin-bottom: 25px;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .widget-title {
+        margin: 10px 0px 0px;
+    }
+    .social-media-links li a i {
+        padding: 0px 20px 0px 20px;
+    }
+    .wrapper {
+        position: relative;
+        top: 75px;
+    }
+    .header-nav .nav-item .nav-link {
+        display: block !important;
+    }
+    .game-section-title {
+        width: 80%;
+    }
+    .nft-cards-category {
+        margin-bottom: 30px;
+    }
+    .left-data-ul {
+        display: block;
+    }
+    .left-data-ul li {
+        width: 100%;
+        padding: 0 !important;
+        text-align: center;
+    }
+    .user-circle-progress {
+        width: 40%;
+        height: 100%;
+    }
+    .right-data-ul {
+        display: block;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+    .right-data-ul li {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 0px 54px;
+    }
+    .jackpot-user-data::after {
+       display: none;
+    }
+    .jackpot-user-position::after {
+       display: none;
+    }
+    .level-progress-li {
+        margin: 10px 0;
+        width: 100%;
+    }
+    .search-whole .input-group {
+        margin: 0 !important;
+        padding: 25px 0px 25px 0px;
+    }
+    .user-level-details {
+        background: linear-gradient(
+    360deg, #35516E, #1F2234);
+    }
+    .user-dashboard-pages .col-lg-3 {
+        padding-right: 15px;
+    }
+    .user-dashboard-pages .col-lg-9 {
+        padding-left: 15px;
+    }
+    .last-li-logout {
+        margin-top: 0;
+    }
+    .page-header {
+        min-height: 25vh!important;
+    }
+    .all-home-bets ul li {
+        width: 100%;
+    }
+    .bets-categories {
+        background: #29294e;
+        display: block;
+        height: 130px;
+        border-radius: 10px;
+    }
+    .filters-data {
+        display: flex;
+        padding: 0;
+        list-style: none;
+        overflow-x: scroll;
+        margin: 10px 0px;
+    }
+    .filters-data li {
+        text-align: center;
+        font-weight: 600;
+        border-radius: 5px;
+        padding: 5px 18px;
+        height: 60px;
+        border: 2px solid #D3D3D3;
+        margin-right: 10px;
+    }
+    .bet-body {
+        display: -webkit-box;
+        width: 100%;
+        padding: 10px;
+        overflow-x: scroll;
+    }
+    .bet-nft {
+        width: 25%;
+        margin: 0px 5px;
+    }
+    .bet-type-category {
+        font-size: 14px;
+    }
+    .bet-type-name {
+        font-size: 14px;
+    }
+    .game-section-title {
+        font-size: 24px;
+    }   
+    .input-group.form-group.input-box {
+        display: block;
+        margin: 0!important;
+    }
+    .input-group.form-group.input-box input {
+        border: 0 !important;
+        height: 70px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+        width: 100%;
+    }
+    .btn-browse-marketplace {
+        background: linear-gradient(to top left, #29294e 50%, #2c2c50eb 50%);
+        margin: 0;
+        height: 68px;
+        padding: 20px;
+        font-size: 20px;
+        text-transform: uppercase;
+        width: 100%;
+        border-radius: 5px;
+        margin-top: 10px;
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px);
+        text-align: center;
+    }
+    .bet-header-image {
+        width: 90px;
+        float: none;
+        text-align: center;
+    }
+    .bet-history-main .notfication-main-data {
+        font-size: 15px;
+    }
+    .pagination {
+        margin-left: -15px;
+    }
+    .read-notification {
+        left: 3%;
+        top: 40%;
+    }
+    .notfication-main-text {
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .notfication-main-data {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .noti-tag {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    .noti-time {
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .form-section-header h3 {
+        font-size: 18px;
+    }
+    .dashboard-all-pages-ontent-container {
+        height: 100%;
+    }
+    .dashboard-side-bar {
+        height: 100%;
+    }
+    .bet-history-footer {
+        position: relative;
+    }
+    .jury-heading {
+        width: 65px !important;
+        margin: auto;
+    }
+    .nft-for-bets {    
+        position: fixed;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px 0px #888686;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.4);
+    }
+    .close-nft-buy {
+        position: absolute;
+        background: #EC5774;
+        padding: 0px 4px;
+        right: -5px;
+        top: -10px;
+        border-radius: 50%;
+        font-size: 20px;
+        font-weight: 600;
+        color: #fff;
+        cursor: pointer;
+        height: 30px;
+        line-height: 30px;
+    }
+    .select-nft {
+        color: #71707D;
+        padding: 20px 23px 20px;
+        font-size: 20px;
+        font-weight: 600;
+        height: 85px;
+        line-height: 80px;
+    }
+    .bet-nft-selected {
+        background: #EC5774;
+        padding: 0px 0px;
+        border-radius: 5px;
+        height: 75px;
+    }
+    .nft-playing-bet {
+        left: 0%;
+    }
+    .left-side-bet-div {
+        float: left;
+        border-radius: 10px;
+        background: #ffff;
+        height: 100%;
+        width: 50%;
+    }
+    .right-side-bet-div {
+        float: right;
+        width: 50%;
+    }
+    .nft-playing-bet::after, .nft-single::after,.nft-for-bets::after {
+        display: none;
+    }
+    .left-side-bet-div .nft-for-bets-body.single-bet-card-d {
+        height: 138px;
+    }
+    .nft-single {
+        position: fixed;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px 0px #888686;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: black;
+        background-color: rgba(0, 0, 0, 0.4);
+        padding-top: 250px;
+    }
+    .innerdivForMobile {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 0px;
+        border: 1px solid #888;
+        width: 90%;
+        border-radius: 11px;
+    }
+    .close-nft-buy {
+        position: relative !important;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        top: -15px;
+        right: -10px;
+        color: #fff;
+        padding: 0px 5px;
+    }
+    .penky-bet-amount-game {
+        display: inline-flex;
+        text-align: center;
+        margin: auto 10px;
+        width: 100%;
+        padding: 0 15px 0px 55px;
+    }
+    .trans-id {
+        font-size: 10px !important;
+    }
+    .trans-operation {
+        padding-left: 12px !important;
+    }
+    .trans-opText {
+        font-size: 8px !important;
+    }
+    .trans-date {
+        font-size: 14px !important;
+        padding-left: 2px !important;
+    }
+    .transaction-read-box {
+        margin-left: 0px !important;
+        margin-top: 4px !important;
+        height: 110px !important;
+    }
+    .trans-bottom-status {
+        right: 25px !important;
+        top: 85% !important;
+        padding: 8px 0px !important;
+    }
+    .media-bottom-status {
+        right: 0px !important;
+        top: 82% !important;
+        padding: 0px 0px !important;
+        font-size: 10px !important;
+    }
+    .media-id {
+        font-size: 4px !important;
+    }
+    .transaction-bottom-box {
+        padding: 0px 15px;
+    }
+    .wrap-drop{
+        max-width: 288px;
+        width: 100%;
+    }
+    .wrap-drop .drop {
+        max-width: 295px;
+        width: 100.8%;
+    }
+}
+
+@media (min-width: 768px){
+    .wrapper {
+        position: relative;
+        top: 75px;
+    }
+    .user-dashboard-pages .col-lg-3 {
+        padding-right: 0px;
+    }
+    .user-dashboard-pages .col-lg-9 {
+        padding-left: 0px;
+    }
+}
+@media (min-width: 1200px){
+    .home-main-bets .container {
+        max-width: 1394px!important;
+    }
+    .container {
+        max-width: 1394px!important;
+    }
+    .user-dashboard-pages .col-lg-3 {
+        padding-right: 0px;
+    }
+    .user-dashboard-pages .col-lg-9 {
+        padding-left: 0px;
+    }
+}

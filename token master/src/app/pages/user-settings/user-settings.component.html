@@ -1,0 +1,155 @@
+<app-navbar></app-navbar>
+<div class="wrapper">
+  <app-user-profile-level-details></app-user-profile-level-details>
+  <section class="section section-lg user-dashboard-pages">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-12">
+            <ul class="dashboard-side-bar">
+              <li [routerLink]="['/dashboard']"><p><span><img src="assets/img/feather-home.png" class="img-fluid" /></span> Dashboard </p></li>
+              <li class="dashboard-active" [routerLink]="['/settings']"><p><span><img src="assets/img/feather-settings.png" class="img-fluid" /></span> Settings </p></li>
+              <li [routerLink]="['/notifications']"><p><span><img src="assets/img/feather-bell.png" class="img-fluid" /></span> Notifications <span class="no-badge">3</span></p></li> 
+              <li [routerLink]="['/bet-history']"><p><span><img src="assets/img/ionic-ios-list.png" class="img-fluid" /></span> Bet History </p></li> 
+              <li [routerLink]="['/transactions']"><p><span><img src="assets/img/awesome-hand-holding-usd.png" class="img-fluid" /></span> Transactions </p></li> 
+              <li [routerLink]="['/jury']"><p><span><img src="assets/img/awesome-balance-scale-left.png" class="img-fluid" /></span> Jury </p></li> 
+              <li><p><span><img src="assets/img/material-add-shopping-cart.png" class="img-fluid" /></span> Shop </p></li> 
+              <li [routerLink]="['/achievements']"><p><span><img src="assets/img/awesome-first-order.png" class="img-fluid" /></span> Achievements </p></li> 
+              <li><p><span><img src="assets/img/awesome-address-card.png" class="img-fluid" /></span> Your NFTs </p></li> 
+              <li><p><span><img src="assets/img/material-chat_bubble_outline.png" class="img-fluid" /></span> Contact </p></li> 
+              <li class="last-li-logout"><p><span><img src="assets/img/open-account-logout.png" class="img-fluid" /></span> Logout </p></li>              
+            </ul>                   
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-12">
+          <div class="dashboard-all-pages-ontent-container">
+            <form class="settings-form">
+              <div class="form-section-header">
+                <h3>Personal Data</h3>
+              </div>
+              <div class="row">
+                <div class="col-md-4 col-sm-12">
+                  <label class="input-label">Your username</label>   
+                  <div class="input-group">                                     
+                    <input class="form-control" placeholder="Your username" type="text" value="Harry Callahan" />
+                    <div class="input-group-append">
+                      <span class="input-group-text">
+                        <i class="tim-icons icon-pencil"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <label class="input-label">Nationality</label>
+                  <div class="input-group">
+                    <input class="form-control" placeholder="Nationality" type="text" value="United Kingdom" />
+                    <div class="input-group-append">
+                      <span class="input-group-text">
+                        <i class="tim-icons icon-pencil"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-7 col-sm-12">
+                  <label class="input-label">Your email (verified)</label><label class="input-label-right">Resend verification email</label>   
+                  <div class="input-group">                                     
+                    <input class="form-control" placeholder="Your email" type="email" value="44mcallahanthemith@gmail.com" />
+                    <div class="input-group-append">
+                      <span class="input-group-text">
+                        <i class="tim-icons icon-pencil"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  
+                </div>
+              </div>
+              <div class="form-section-header">
+                <h3>Your Referral Code</h3>
+              </div>
+              <div class="row">
+                <div class="col-md-7 col-sm-12">   
+                  <div class="input-group referalco-de">                                     
+                    <input class="form-control" placeholder="Your email" type="email" value="HHFJ4872jjuslJKK120" />
+                    <div class="input-group-append">
+                      <span class="input-group-text">
+                        <i class="tim-icons icon-single-copy-04"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  
+                </div>
+              </div>
+              <div class="form-section-header">
+                <h3>COMMUNICATIONS</h3>
+              </div>
+              <div class="row">
+                <div class="col-md-7 col-sm-12">   
+                  <div class="form-group communications-group">
+                    <input type="checkbox" id="one">
+                    <label for="one" class="checkbox-text">Receive promotional mails and offers</label>
+                  </div>
+                  <div class="form-group communications-group">
+                    <input type="checkbox" id="two">
+                    <label for="two" class="checkbox-text">Receive congratulations email</label>
+                  </div>
+                  <div class="form-group communications-group">
+                    <input type="checkbox" id="three">
+                    <label for="three" class="checkbox-text">Receive emails for NFT transactions and fund movements</label>
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  
+                </div>
+              </div>
+              <div class="form-section-header">
+                <h3>Notifications</h3>
+              </div>
+              <div class="row">
+                <div class="col-md-7 col-sm-12">   
+                  <div class="form-group checkbox-text">
+                    <label class="switch checkbox-text">
+                      <input type="checkbox">
+                      <span class="slider"></span>
+                    </label> Request to be juror
+                  </div>
+                  <div class="form-group checkbox-text">
+                    <label class="switch checkbox-text">
+                      <input type="checkbox">
+                      <span class="slider"></span>
+                    </label> Bet results
+                  </div>
+                  <div class="form-group checkbox-text">
+                    <label class="switch checkbox-text">
+                      <input type="checkbox">
+                      <span class="slider"></span>
+                    </label> Achievements
+                  </div>
+                  <div class="form-group checkbox-text">
+                    <label class="switch checkbox-text">
+                      <input type="checkbox">
+                      <span class="slider"></span>
+                    </label> Special offers and promotions
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  
+                </div>
+              </div>
+              <div class="row">
+                <div class="nf-markets-btn settings-page row">
+                  <div class="col-md-3 col-sm-12"> <p class="details-btn"> APPLY CHANGES </p></div>
+                  <div class="col-md-3 col-sm-12"> <p class="offer-btn"> DISCARD CHANGES </p></div>
+                </div>
+              </div>
+            </form>
+          </div>                  
+        </div>
+      </div>
+    </div>
+  </section>
+<app-footer></app-footer>
+</div>

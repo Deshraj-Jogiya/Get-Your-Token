@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>bet app</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>BET APP</h1>
+    <p>list of bets</p>
+    <table class="table">
+        <tr>
+            <th>
+              Bet name
+            </th>
+            <th>
+              Bet Category
+            </th>
+            <th>
+              Bet Prizepool
+            </th>
+            <th>
+              Bet Buy In
+            </th>
+            <th>
+              Maximum Players
+            </th>
+            <th>
+              Bet Description
+            </th>
+            <th>
+
+            </th>
+        </tr>
+
+    <% if(betList && betList.length > 0) {%>
+        <% for( const key in betList ) { %>
+            <tr>
+              <td><%- betList[key].name %></td>
+              <td><%- betList[key].category %></td>
+              <td><%- betList[key].prizepool %></td>
+              <td><%- betList[key].buyIn %></td>
+              <td><%- betList[key].maxPlayers %></td>
+              <td><%- betList[key].description %></td>
+              <td><button type="button" onClick="submitForm(`<%= betList[key]._id %>`)" class="btn btn-primary">BET NOW</button></td>
+            </tr>
+        <% } %>
+    <% } else { %>
+        <p>No data found</p>
+    <% } %>
+    </table>    
+  </body>
+  <script>
+    var user = prompt("Please enter your email", "Test@gmail.com");
+    function submitForm(id){
+      data = {
+        id,
+        user
+      } 
+      $.post(`http://localhost:3000/bets/userBetting`, data, function (res) {
+        if (res.message) {
+          alert(res.message)
+        }
+      })
+    }
+  </script>
+</html>
+
+
