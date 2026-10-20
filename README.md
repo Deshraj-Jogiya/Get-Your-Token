@@ -1,11 +1,11 @@
 # Get Your Token
 
-> Team project. This repository holds the team's code; the section below describes my part.
+> Team project. This repository holds the team's code; the section below lists the individual contribution.
 
 A Web3 marketplace for NFT and Penky token transactions with an administrative dashboard, built by a team (Jan – Apr 2022): an Express
 backend (`token back/`) and an Angular frontend (`token master/`).
 
-## My part
+## Individual contribution
 
 - Node.js/Express controller routes for payment processing and token-ledger validation.
 - UI work and crypto-API integration on the Angular frontend and admin dashboard.
