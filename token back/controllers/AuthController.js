@@ -13,7 +13,7 @@ const Register = require('../model/register');
 var mock = new MockAdapter(axios);
 
 let users = [
-  { id: 1, username: 'admin', password: 'change-me', email: 'admin@penky.io' }
+  { id: 1, username: 'admin', password: process.env.ADMIN_PASSWORD || 'change-me', email: 'admin@penky.io' }
 ];
 
 // Mock GET request to /users when param `searchText` is 'John'
